@@ -1,0 +1,26 @@
+.menu_desktop {
+  color: black;
+  padding: 60px;
+  background-color: rgb(13, 117, 13);
+}
+.container {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 200px;
+  background-color: white;
+}
+.menu_desktop_left {
+  padding: 20px;
+}
+.menu_desktop_right {
+  padding-right: 20px;
+}
+.menu_desktop_right li {
+  font-size: 12px;
+  padding: 20px;
+  display: inline-block;
+}
