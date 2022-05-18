@@ -5,7 +5,7 @@
 .header { 
   padding: 100px 300px;
   text-align: left;
-  background-color: rgb(13, 117, 13);
+  background-color: black;
 }
 .header h1 {
   margin: 0;
@@ -27,14 +27,22 @@
 /* section1 */
 
 .section1{
-  padding: 20px 300px;
+  padding: 50px 300px;
+  color: white;
+  background-color: rgb(13, 117, 13);
 }
 .section_card{
+  background-color: rgb(13, 117, 13);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 300px;
   padding-bottom: 75px;
+}
+.section_cards{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 .section_card h5{
   text-align: left!important;
@@ -57,26 +65,57 @@
   width: 90%;
   margin-bottom: 20px;
 }
+.separador3{
+  background-color: rgb(13, 117, 13); ;
+  margin: 0  auto;
+  border: .5px solid white;
+  width: 80%;
+
+}
 
 /* section2 */
-
-.section2 {
+.section2{
   text-align: center;
   background-color: rgb(13, 117, 13);
-  padding: 200px 150px;
+  padding: 30px 
+}
+/* section3 */
+.section3 {
+  text-align: center;
+  background-color: rgb(13, 117, 13);
+  padding: 50px 150px;
+  padding-bottom: 200px;
 }
 
 .somos {
 text-align: center;
 color: white;
-
 }
 .somos h4{
   color: rgb(187, 187, 187);
 }
-.section2 button{
+.section3 button{
   color: rgb(13, 117, 13);
   font-size: 10px;
   padding: 15px 25px;
   border-radius: 50px;
+  
+}
+/* section4 */
+
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  padding: 100px;
+  grid-gap: 100px;
+}
+.content_left img{
+  border-radius: 10px;
+}
+.content_right{
+  text-align: left!important;
+}
+.content_right_text{
+  font-size: 13px;
 }
