@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.izquierda}>
-        <p>© 2022 Todos los derechos reservados</p>
+        <p></p>
       </div>
       <div className={styles.derecha}>
         <Link href="#">
-          <a rel="noreferrer">Aviso De Privacidad</a>
+          <a rel="noreferrer"></a>
         </Link>
       </div>
     </footer>

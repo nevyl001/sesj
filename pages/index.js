@@ -240,6 +240,16 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className={styles.foo_down}>
+        <div className={styles.foo_left}>
+          <li>Privacy Policy </li>
+          <li>Terms and Conditions </li>
+          <li>Help </li>
+          <li>Partners </li>
+        </div>
+        <div className={styles.foo_right}></div>
+      </div>
     </main>
   );
 }

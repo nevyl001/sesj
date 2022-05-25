@@ -236,7 +236,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 200px;
 }
 .footer_text p {
   color: #7d7d7d;
@@ -259,4 +258,18 @@
   border-style: none;
   border-radius: 23px;
   padding: 5px 20px;
+}
+
+.foo_down {
+  padding: 25px;
+  padding-left: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.foo_left li {
+  font-size: 12px;
+  padding: 10px;
+  display: inline-block;
 }
