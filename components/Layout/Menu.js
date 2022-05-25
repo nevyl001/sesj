@@ -1,11 +1,19 @@
 import styles from "./Menu.module.css";
+import Image from 'next/image';
 
 function Menu() {
   return (
     <div className={styles.menu_desktop}>
       <div className={styles.container}>
         <div className={styles.menu_desktop_left}>
-          <h1>SESJ</h1>
+               <div className={styles.img}>
+                  <Image
+                    alt="logo"
+                    src="/img/SESJ_Logo_Pres_V5.png"
+                    width={157}
+                    height={90}
+                    />
+                </div>
         </div>
         <div className={styles.menu_desktop_right}>
           <li>HOME </li>
