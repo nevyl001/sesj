@@ -22,7 +22,7 @@ export default function Home() {
                 </Link>
                 </div>
        </div>
-
+       <div className={styles.section}> 
        <div className={styles.section1}>
               <h4>LAS MEJORES SOLUCIONES</h4>
               <h2>Nuestros Servicios</h2>
@@ -91,19 +91,21 @@ export default function Home() {
                 </Link>
              </div>
 
+             </div>
+
              <div className={styles.section4}>
              <div className={styles.content_left}>
-             <div className={styles.img}>
+                <div className={styles.img}>
                   <Image
                     alt="im1"
                     src="/img/manwork.jpg"
                     width={600}
                     height={500}
                     />
-                  </div>
+                </div>
              </div>
              <div className={styles.content_right}>
-             <div className={styles.content_right_text}>
+                <div className={styles.content_right_text}>
                <h4>Nosotros</h4>
                <h2>Nuestra Mision</h2>
                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen</p>
@@ -120,12 +122,41 @@ export default function Home() {
                </div>
              </div>
 
+             
 
 
-             </div>
+
+       </div>
       
 
-
+ <div className={styles.clients}>
+  <div className={styles.clients_inner}>
+       <div className={styles.clients_text}> 
+          <p>CLIENTES</p>
+          <h1>Lo que dicen los clientes</h1>
+       </div>
+       <div className={styles.clients_card}>
+          <div className={styles.clients_card1}>
+            <p>“Vestibulum sollicitudin nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh tortor mauris condimentum nibh ”</p>
+            <h3>JONT KOOK</h3> 
+            <p>CEO lacinia faucibus risus</p> 
+          </div>
+          <div className={styles.clients_card1}>
+            <p>“Vestibulum sollicitudin nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh tortor mauris condimentum nibh ”</p>
+            <h3>JONT KOOK</h3> 
+            <p>CEO lacinia faucibus risus</p> 
+          </div>
+       </div>
+       <div className={styles.clients_img}>
+                  <Image
+                    alt="im1"
+                    src="/img/Content.png"
+                    width={1180}
+                    height={140}
+                    />
+                </div>
+      </div>
+  </div>
     </main>
     
   );
