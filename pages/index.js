@@ -217,7 +217,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.footer}>
+      <div className={styles.flex_footer}>
         <div className={styles.footer_left}>
           <div className={styles.footer_img}>
             <Image alt="footer" src="/img/footer.png" width={80} height={83} />
@@ -241,35 +241,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.foo_down}>
+      <div className={styles.flex_footer}>
         <div className={styles.foo_left}>
           <li>Privacy Policy </li>
           <li>Terms and Conditions </li>
           <li>Help </li>
-          <li>Partners. </li>
+          <li>Partners </li>
         </div>
         <div className={styles.foo_right}>
-          <a href="https://www.facebook.com/" target="_blank">
-            <Image
-              fill="red"
-              alt="facebook"
-              src="/img/logo-facebook.svg"
-              width={25}
-              height={25}
-            />
-          </a>
+          <Link href="https://www.facebook.com">
+            <a target="_blank" rel="noreferrer">
+              <Image
+                alt="facebook"
+                src="/img/facebook-svgrepo-com.svg"
+                width={25}
+                height={25}
+              />
+            </a>
+          </Link>
           <a href="https://www.twitter.com/" target="_blank">
-            <Image
-              alt="twitter"
-              src="/img/logo-twitter.svg"
-              width={25}
-              height={25}
-            />
+            <Image alt="twitter" src="/img/gorjeo.png" width={25} height={25} />
           </a>
           <a href="https://www.instagram.com/" target="_blank">
             <Image
               alt="instagram"
-              src="/img/logo-instagram.svg"
+              src="/img/instagram.png"
               width={25}
               height={25}
             />
@@ -277,7 +273,7 @@ export default function Home() {
           <a href="https://www.youtube.com/" target="_blank">
             <Image
               alt="youtube"
-              src="/img/logo-youtube.svg"
+              src="/img/youtube.png"
               width={25}
               height={25}
             />
