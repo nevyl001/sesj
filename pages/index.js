@@ -216,7 +216,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <div className={styles.footer_space1}></div>
       <div className={styles.flex_footer}>
         <div className={styles.footer_left}>
           <div className={styles.footer_img}>
@@ -240,8 +240,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className={styles.flex_footer}>
+      <div className={styles.footer_space}></div>
+      <div className={styles.flex_footer_down}>
         <div className={styles.foo_left}>
           <li>Privacy Policy </li>
           <li>Terms and Conditions </li>
