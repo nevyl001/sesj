@@ -1,9 +1,10 @@
 .menu_desktop {
+  width: 100%;
   position: fixed;
   text-align: center;
-  top: 20px;
-  left: 250px;
-  z-index: 100;
+  top: 40px;
+  left: 0;
+  z-index: 999;
 }
 .container {
   margin: 0 auto;
