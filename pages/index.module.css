@@ -260,16 +260,30 @@
   padding: 5px 20px;
 }
 
+/* footer-down */
+
 .foo_down {
   padding: 25px;
-  padding-left: 200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
+.foo_left {
+  padding-left: 175px;
+}
 .foo_left li {
   font-size: 12px;
   padding: 10px;
   display: inline-block;
+}
+
+.foo_right {
+  padding-right: 200px;
+}
+.foo_right a {
+  padding: 10px;
+}
+.foo_right .img {
+  fill: red;
 }

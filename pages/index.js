@@ -246,9 +246,43 @@ export default function Home() {
           <li>Privacy Policy </li>
           <li>Terms and Conditions </li>
           <li>Help </li>
-          <li>Partners </li>
+          <li>Partners. </li>
         </div>
-        <div className={styles.foo_right}></div>
+        <div className={styles.foo_right}>
+          <a href="https://www.facebook.com/" target="_blank">
+            <Image
+              fill="red"
+              alt="facebook"
+              src="/img/logo-facebook.svg"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <Image
+              alt="twitter"
+              src="/img/logo-twitter.svg"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <Image
+              alt="instagram"
+              src="/img/logo-instagram.svg"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <Image
+              alt="youtube"
+              src="/img/logo-youtube.svg"
+              width={25}
+              height={25}
+            />
+          </a>
+        </div>
       </div>
     </main>
   );
