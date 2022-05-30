@@ -1,6 +1,10 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
+import Button from "../components/UI/Button";
+import Paragraph from "../components/UI/Paragraph";
+import Subtitle from "../components/UI/Subtitle";
+import Title from "../components/UI/Title";
 
 export default function Home() {
   return (
@@ -13,30 +17,39 @@ export default function Home() {
               en limpieza, mantenimiento
               <br />y administracion de residuos.
             </h1>
-            <p>
+            <Paragraph color="white">
               Estamos comprometidos con el cumplimiento legal en materia
               ambiental, seguridad y calidad para la <br />
               proteccion del medio ambiente, de nuestros colaboradores y
               sociedad.
-            </p>
+            </Paragraph>
             <Link href="#">
-              <button>CONTÁCTANOS</button>
+              <Button>CONTÁCTANOS</Button>
             </Link>
           </div>
         </div>
+        <div className={styles.line}>
+          <Image alt="Divider" src="/img/linea.png" width={2444} height={335} />
+        </div>
       </div>
-
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.section1}>
-            <h4>LAS MEJORES SOLUCIONES</h4>
-            <h2>Nuestros Servicios</h2>
+            <Subtitle color="white">LAS MEJORES SOLUCIONES</Subtitle>
+            <Title size="medium" color="white" align="left">
+              Nuestros Servicios
+            </Title>
           </div>
           <div className={styles.section_card}>
             <div className={styles.section_cards}>
               <h5>Servicios Especializados</h5>
               <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im1.png" width={200} height={200} />
+              <Image
+                alt="Servicios Especializados"
+                src="/img/im1.png"
+                width={200}
+                height={200}
+              />
               <div className={styles.separador2}></div>
               <div className={styles.text_card}>
                 <p>Gestion de Residuos</p>
@@ -73,13 +86,14 @@ export default function Home() {
 
           <div className={styles.section3}>
             <div className={styles.somos}>
-              <h2>
+              <Title size="medium" color="white" align="center">
                 Somos una empresa especializada <br /> en servicios integrales
-              </h2>
-              <h4>
+              </Title>
+              <Paragraph color="white">
                 Estamos comprometidos con la mejora continua de los procesos y
                 de <br /> nuestri Sistema de Gestion Integral
-              </h4>
+              </Paragraph>
+              <h4></h4>
             </div>
             <Link href="#">
               <button>CONTÁCTANOS</button>
@@ -105,12 +119,12 @@ export default function Home() {
               <div className={styles.content_right_text}>
                 <h4>Nosotros</h4>
                 <h2>Nuestra Misión</h2>
-                <p>
+                <Paragraph color="gray">
                   Ofrecer servicios integrales de administración de limpieza,
                   mantenimiento en general y administración de residuos de
                   manejo especial y peligrosos, conforme al marco regulatorio y
                   requerimientos del cliente.
-                </p>
+                </Paragraph>
               </div>
               <div className={styles.content_right_text}>
                 <h2>Nuestra Visión</h2>
@@ -298,7 +312,11 @@ export default function Home() {
                   />
                 </a>
               </Link>
-              <a href="https://www.twitter.com/" target="_blank">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   alt="twitter"
                   src="/img/gorjeo.png"
@@ -306,7 +324,11 @@ export default function Home() {
                   height={25}
                 />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   alt="instagram"
                   src="/img/instagram.png"
@@ -314,7 +336,11 @@ export default function Home() {
                   height={25}
                 />
               </a>
-              <a href="https://www.youtube.com/" target="_blank">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   alt="youtube"
                   src="/img/youtube.png"
