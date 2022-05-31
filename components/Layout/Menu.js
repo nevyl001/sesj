@@ -1,5 +1,6 @@
 import styles from "./Menu.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Menu() {
   return (
@@ -17,11 +18,21 @@ function Menu() {
             </div>
           </div>
           <div className={styles.menu_desktop_right}>
-            <li>HOME </li>
-            <li>NOSOTROS </li>
-            <li>SERVICIOS </li>
-            <li>CLIENTES </li>
-            <li>CONTACTO </li>
+            <Link href="#">
+              <a className={styles.link}>HOME</a>
+            </Link>
+            <Link href="#">
+              <a className={styles.link}>NOSOTROS</a>
+            </Link>
+            <Link href="#">
+              <a className={styles.link}>CLIENTES</a>
+            </Link>
+            <Link href="#">
+              <a className={styles.link}>SERVICIOS</a>
+            </Link>
+            <Link href="#">
+              <a className={styles.link}>CONTACTO</a>
+            </Link>
           </div>
         </div>
       </div>

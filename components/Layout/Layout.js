@@ -7,23 +7,26 @@ function Layout(props) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/img/#" />
+        <link rel="icon" href="/img/icon.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <title>SESJ</title>
+        <title>
+          SESJ - Estamos comprometidos con el cumplimiento legal en materia
+          ambiental, seguridad y calidad para la proteccion del medio ambiente,
+          de nuestros colaboradores y sociedad.
+        </title>
         <meta
-        //   name="description"
-        //   content="Ubicado en el corazón del Pedregal, Sud 777 es un restaurante que
-        //         honra la tradición de una zona diseñada por destacados urbanistas
-        //         y arquitectos"
+          name="description"
+          content="Estamos comprometidos con el cumplimiento legal en materia ambiental, seguridad y calidad para la proteccion del medio ambiente, de nuestros colaboradores y sociedad."
         />
-        <meta property="og:image" content="/img/#"></meta>
-        <meta property="og:title" content="SESJ"></meta>
+        <meta property="og:image" content="/img/meta.png"></meta>
+        <meta
+          property="og:title"
+          content="SESJ -  Estamos comprometidos con el cumplimiento legal en materia ambiental, seguridad y calidad para la proteccion del medio ambiente, de nuestros colaboradores y sociedad."
+        ></meta>
         <meta
           property="og:description"
-          //   content="Ubicado en el corazón del Pedregal, Sud 777 es un restaurante que
-          //         honra la tradición de una zona diseñada por destacados urbanistas
-          //         y arquitectos"
+          content="Estamos comprometidos con el cumplimiento legal en materia ambiental, seguridad y calidad para la proteccion del medio ambiente, de nuestros colaboradores y sociedad."
         ></meta>
         {/* <meta property="og:url" content="https://sud777.com.mx/"></meta>
         <meta property="og:type" content="website" /> */}
