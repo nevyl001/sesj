@@ -4,14 +4,12 @@
 }
 .head {
   text-align: left;
-  background-image: url("/img/FONDO.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: white;
 }
 .header {
-  padding: 50px 0;
-  padding-top: 250px;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 150px;
 }
 .header h1 {
   margin: 0;

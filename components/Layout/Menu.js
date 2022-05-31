@@ -21,7 +21,7 @@ function Menu() {
             <Link href="#">
               <a className={styles.link}>HOME</a>
             </Link>
-            <Link href="#">
+            <Link href="/nosotros">
               <a className={styles.link}>NOSOTROS</a>
             </Link>
             <Link href="#">

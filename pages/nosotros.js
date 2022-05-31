@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./index.module.css";
+import styles from "./nosotros.module.css";
 import Image from "next/image";
 import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
@@ -12,20 +12,33 @@ export default function Home() {
       <div className={styles.head}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <Title size="big" color="white" align="left">
-              Somos empresa lider <br />
-              en limpieza, mantenimiento
-              <br />y administracion de residuos.
+            <Title size="big" color="black" align="left">
+              Nosotros
             </Title>
-            <Paragraph color="white">
-              Estamos comprometidos con el cumplimiento legal en materia
-              ambiental, seguridad y calidad para la <br />
-              proteccion del medio ambiente, de nuestros colaboradores y
-              sociedad.
+            <Paragraph color="black">
+              Somos empresa líder de servicios que ofrecer servicios integrales
+              de administración de limpieza, mantenimiento en general y
+              administración de residuos de manejo especial y peligrosos,
+              conforme al marco regulatorio, que satisface las necesidades de
+              nuestros clientes en diferentes sectores de la industria y que
+              pertenecen primordialmente al Sector Automotriz.
             </Paragraph>
-            <Link href="#">
-              <Button>CONTÁCTANOS</Button>
-            </Link>
+            <Paragraph color="black">
+              Estamos comprometidos con el cumplimiento legal en materia
+              ambiental, seguridad y calidad para la protección del medio
+              ambiente, de nuestros colaboradores y sociedad. Impulsamos la
+              transformación de nuestra empresa y entorno con un equipo
+              altamente competitivo e íntegro que propicia su desarrollo,
+              alienta su compromiso y crecimiento excepcional.
+            </Paragraph>
+            <Paragraph color="black">
+              Servicios Especializados Silviano Julio S.A. de C.V. fue fundada
+              en 1985 con el reciclaje de solvente proveniente de plantas
+              automotrices del estado de Puebla. Con el tiempo fue desarrollando
+              e implementado nuevos procesos y servicios especializados como la
+              Gestión Integral de Residuos Industriales, Limpieza Industrial y
+              Conservación de Edificios.
+            </Paragraph>
           </div>
         </div>
         <div className={styles.line}>
