@@ -3,11 +3,14 @@
   margin: 40px 0;
   color: #828282;
 }
-.small {
+.size_small {
   font-size: 12px;
 }
 .color_white {
   color: white;
+}
+.color_black {
+  color: black;
 }
 .center {
   text-align: center !important;
