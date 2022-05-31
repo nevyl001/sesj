@@ -119,7 +119,7 @@ export default function Home() {
             <div className={styles.content_right}>
               <div className={styles.content_right_text}>
                 <Subtitle color="black">Nosotros</Subtitle>
-                <Title size="medium" color="black" align="left">
+                <Title size="small" color="black" align="left">
                   Nuestra Misión
                 </Title>
                 <Paragraph color="black">
