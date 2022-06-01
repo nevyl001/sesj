@@ -8,7 +8,12 @@
 }
 .header {
   margin: 0 auto;
+  padding: 0 100px;
   padding-top: 150px;
+  padding-bottom: 50px;
+}
+.header p {
+  margin: 20px 0;
 }
 .header h1 {
   margin: 0;
@@ -19,9 +24,9 @@
   width: 100%;
 }
 .header_down {
-  text-align: right;
   display: flex;
-  padding: 40px 0;
+  padding: 10px 100px;
+  padding-bottom: 50px;
 }
 .header_item1 {
   display: flex;
@@ -34,7 +39,7 @@
 }
 .header_text p {
   font-size: 11px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 /* section1 */
 .section {
