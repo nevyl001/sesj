@@ -18,17 +18,17 @@ function Menu() {
             </div>
           </div>
           <div className={styles.menu_desktop_right}>
-            <Link href="#">
+            <Link href="/index">
               <a className={styles.link}>HOME</a>
             </Link>
-            <Link href="#">
+            <Link href="/nosotros">
               <a className={styles.link}>NOSOTROS</a>
             </Link>
             <Link href="#">
-              <a className={styles.link}>CLIENTES</a>
-            </Link>
-            <Link href="#">
               <a className={styles.link}>SERVICIOS</a>
+            </Link>
+            <Link href="/clientes">
+              <a className={styles.link}>CLIENTES</a>
             </Link>
             <Link href="#">
               <a className={styles.link}>CONTACTO</a>

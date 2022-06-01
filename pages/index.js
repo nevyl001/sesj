@@ -12,11 +12,11 @@ export default function Home() {
       <div className={styles.head}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <h1>
+            <Title size="big" color="white" align="left">
               Somos empresa lider <br />
               en limpieza, mantenimiento
               <br />y administracion de residuos.
-            </h1>
+            </Title>
             <Paragraph color="white">
               Estamos comprometidos con el cumplimiento legal en materia
               ambiental, seguridad y calidad para la <br />
@@ -58,25 +58,27 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.section_cards}>
-              <h5>Servicios Especializados</h5>
+              <h5>Residuos Industriales</h5>
               <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im1.png" width={200} height={200} />
+              <Image alt="im1" src="/img/im2.png" width={200} height={200} />
               <div className={styles.separador2}></div>
               <div className={styles.text_card}>
-                <p>Gestion de Residuos</p>
-                <p>Limpieza Industrial y Corporativa</p>
-                <p>Conservacion de Edificios</p>
+                <p>Compra-venta de residuos</p>
+                <p>Reciclaje</p>
+                <p>Disposicion final</p>
               </div>
             </div>
             <div className={styles.section_cards}>
-              <h5>Servicios Especializados</h5>
+              <h5>Transportes Especializados de Residuos</h5>
               <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im1.png" width={200} height={200} />
+              <Image alt="im1" src="/img/im3.png" width={200} height={200} />
               <div className={styles.separador2}></div>
               <div className={styles.text_card}>
-                <p>Gestion de Residuos</p>
-                <p>Limpieza Industrial y Corporativa</p>
-                <p>Conservacion de Edificios</p>
+                <p>
+                  Caja seca, plataforma, roll-off
+                  <br />
+                  tolvas, etc.
+                </p>
               </div>
             </div>
           </div>
@@ -93,10 +95,9 @@ export default function Home() {
                 Estamos comprometidos con la mejora continua de los procesos y
                 de <br /> nuestri Sistema de Gestion Integral
               </Paragraph>
-              <h4></h4>
             </div>
             <Link href="#">
-              <button>CONTÁCTANOS</button>
+              <Button>CONTÁCTANOS</Button>
             </Link>
           </div>
         </div>
@@ -117,9 +118,11 @@ export default function Home() {
             </div>
             <div className={styles.content_right}>
               <div className={styles.content_right_text}>
-                <h4>Nosotros</h4>
-                <h2>Nuestra Misión</h2>
-                <Paragraph color="gray">
+                <Subtitle color="black">Nosotros</Subtitle>
+                <Title size="small" color="black" align="left">
+                  Nuestra Misión
+                </Title>
+                <Paragraph color="black">
                   Ofrecer servicios integrales de administración de limpieza,
                   mantenimiento en general y administración de residuos de
                   manejo especial y peligrosos, conforme al marco regulatorio y
@@ -127,15 +130,20 @@ export default function Home() {
                 </Paragraph>
               </div>
               <div className={styles.content_right_text}>
-                <h2>Nuestra Visión</h2>
-                <p>
+                <Title size="small" color="black" align="left">
+                  Nuestra Visión
+                </Title>
+                <Paragraph color="black">
                   Ser la mejor opción en los servicios de limpieza,
                   mantenimiento en general y administración de residuos,
-                  generando confianza a nuestros clientes.
-                </p>
+                  generando confianza a nuestros clientes., conforme al marco
+                  regulatorio y requerimientos del cliente.
+                </Paragraph>
               </div>
               <div className={styles.content_right_text}>
-                <h2>Valores</h2>
+                <Title size="small" color="black" align="left">
+                  Valores
+                </Title>
                 <li>Integridad</li>
                 <li>Calidad</li>
                 <li>Respeto y equidad</li>
@@ -143,7 +151,7 @@ export default function Home() {
               </div>
               <div className={styles.content_right_boton}>
                 <Link href="#">
-                  <button>VER MÁS</button>
+                  <Button>VER MÁS</Button>
                 </Link>
               </div>
             </div>
@@ -155,27 +163,29 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.clients_inner}>
             <div className={styles.clients_text}>
-              <p>CLIENTES</p>
-              <h1>Lo que dicen los clientes</h1>
+              <Subtitle color="black">CLIENTES</Subtitle>
+              <Title size="small" color="black" align="left">
+                Lo que dicen los clientes
+              </Title>
             </div>
             <div className={styles.clients_card}>
               <div className={styles.clients_card1}>
-                <p>
+                <Paragraph color="black">
                   “Vestibulum sollicitudin nunc in eros a justo facilisis
                   rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                  nibh tortor mauris condimentum nibh ”
-                </p>
-                <h3>JONT KOOK</h3>
-                <p>CEO lacinia faucibus risus</p>
+                  nibh tortor mauris condimentum nibh”
+                </Paragraph>
+                <Subtitle color="black">JONT KOOK</Subtitle>
+                <h4>CEO lacinia faucibus risus</h4>
               </div>
               <div className={styles.clients_card1}>
-                <p>
-                  “Vestibulum sollicitudin nunc in eros a justo facilisis
-                  rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                  nibh tortor mauris condimentum nibh ”
-                </p>
-                <h3>JONT KOOK</h3>
-                <p>CEO lacinia faucibus risus</p>
+                <Paragraph color="black">
+                  “Sollicitudin nunc in eros a justo facilisis rutrum. Aenean id
+                  ullamcorper libero. Vestibulum imperdiet nibh tortor mauris
+                  condimentum”
+                </Paragraph>
+                <Subtitle color="black"> DAVID JAME</Subtitle>
+                <h4>CEO lacinia faucibus risus</h4>
               </div>
             </div>
             <div className={styles.clients_img}>
@@ -195,8 +205,10 @@ export default function Home() {
           <div className={styles.contact1}>
             <div className={styles.contact_left}>
               <div className={styles.contact_left_text}>
-                <p>ESTAMOS A TU SERVICIO</p>
-                <h1>Contáctanos</h1>
+                <Subtitle color="black">ESTAMOS A TU SERVICIO</Subtitle>
+                <Title size="medium" color="black" align="left">
+                  Contáctanos
+                </Title>
               </div>
               <form action="/send-data-here" method="post">
                 <div className={styles.empresa}>
@@ -234,7 +246,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.contact_boton}>
-                  <button type="submit">ENVIAR</button>
+                  <Link type="submit" href="#">
+                    <Button> ENVIAR</Button>
+                  </Link>
                 </div>
               </form>
             </div>
@@ -254,28 +268,23 @@ export default function Home() {
       <div className={styles.footer_space1}></div>
       <div className={styles.footer}>
         <div className={styles.container}>
+          <div className={styles.footer_img}>
+            <Image alt="footer" src="/img/footer.png" width={80} height={83} />
+          </div>
           <div className={styles.flex_footer}>
             <div className={styles.footer_left}>
-              <div className={styles.footer_img}>
-                <Image
-                  alt="footer"
-                  src="/img/footer.png"
-                  width={80}
-                  height={83}
-                />
-              </div>
               <div className={styles.footer_text}>
-                <h4>Contacto</h4>
-                <p>
+                <Subtitle color="black">Contacto</Subtitle>
+                <Paragraph color="black">
                   London Oxford Street, 012 United <br /> Kingdom.
-                </p>
-                <p>+032 3456 7890</p>
-                <p>Business@moontheme.net</p>
+                </Paragraph>
+                <Paragraph color="black">+032 3456 7890</Paragraph>
+                <Paragraph color="black">Business@moontheme.net</Paragraph>
               </div>
             </div>
             <div className={styles.footer_right}>
-              <h4>Email Newsletters</h4>
-              <p>Suscríbete al Newsleter</p>
+              <Subtitle color="black">Email Newsletters</Subtitle>
+              <Paragraph color="black">Suscríbete al Newsleter</Paragraph>
               <div className={styles.email}>
                 <input
                   type="email"
@@ -283,7 +292,9 @@ export default function Home() {
                   name="email"
                   placeholder="Email"
                 />
-                <button type="submit">SUSCRÍBETE</button>
+                <Link type="submit" href="#">
+                  <Button> SUSCRÍBETE</Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -296,10 +307,18 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.flex_footer_down}>
             <div className={styles.foo_left}>
-              <li>Privacy Policy </li>
-              <li>Terms and Conditions </li>
-              <li>Help </li>
-              <li>Partners </li>
+              <Link href="#">
+                <a className={styles.link}>Privacy Policy</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Terms and Conditions</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Help </a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Partners</a>
+              </Link>
             </div>
             <div className={styles.foo_right}>
               <Link href="https://www.facebook.com">
