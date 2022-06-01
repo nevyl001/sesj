@@ -268,16 +268,11 @@ export default function Home() {
       <div className={styles.footer_space1}></div>
       <div className={styles.footer}>
         <div className={styles.container}>
+          <div className={styles.footer_img}>
+            <Image alt="footer" src="/img/footer.png" width={80} height={83} />
+          </div>
           <div className={styles.flex_footer}>
             <div className={styles.footer_left}>
-              <div className={styles.footer_img}>
-                <Image
-                  alt="footer"
-                  src="/img/footer.png"
-                  width={80}
-                  height={83}
-                />
-              </div>
               <div className={styles.footer_text}>
                 <Subtitle color="black">Contacto</Subtitle>
                 <Paragraph color="black">
@@ -312,10 +307,18 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.flex_footer_down}>
             <div className={styles.foo_left}>
-              <li>Privacy Policy </li>
-              <li>Terms and Conditions </li>
-              <li>Help </li>
-              <li>Partners </li>
+              <Link href="#">
+                <a className={styles.link}>Privacy Policy</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Terms and Conditions</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Help </a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Partners</a>
+              </Link>
             </div>
             <div className={styles.foo_right}>
               <Link href="https://www.facebook.com">

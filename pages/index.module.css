@@ -282,15 +282,11 @@
 /* footer */
 .footer {
   background-color: white;
+  padding: 100px 200px;
 }
 .flex_footer {
-  margin: 0 auto;
-  padding: 100px;
-  padding-top: 60px;
-  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .flex_footer p {
   margin: 10px 0 !important;
@@ -304,10 +300,7 @@
 .flex_footer p {
   color: #7d7d7d;
 }
-.footer_right h2 {
-  padding: 15px 0;
-  margin-top: 15px;
-}
+
 .footer_right input {
   border-style: none;
   background: #f1f8fc 0% 0% no-repeat padding-box;
@@ -317,8 +310,7 @@
 .footer_right button {
   color: white;
   font-size: 10px;
-  background: transparent linear-gradient(270deg, #007b3a 0%, #003e1d 100%) 0%
-    0% no-repeat padding-box;
+  background: linear-gradient(270deg, #007b3a 0%, #003e1d 100%);
   border-style: none;
   border-radius: 23px;
   padding: 10px 50px;
@@ -326,7 +318,7 @@
 
 /* footer-down */
 .footer_img {
-  padding: 15px 0;
+  padding: 30px 0;
 }
 .footer_down {
   background-color: white;
@@ -335,13 +327,9 @@
   margin: 20px 0 !important;
 }
 .flex_footer_down {
-  margin: 0 auto;
-  padding: 90px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .space {
   background-color: white;
@@ -353,11 +341,12 @@
   width: 80%;
   background-color: white;
 }
-.foo_left li {
+.foo_left a {
   font-size: 12px;
   padding-right: 10px;
   text-decoration: none;
   background-color: white;
+  display: flex;
   display: inline-block;
 }
 

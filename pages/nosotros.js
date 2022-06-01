@@ -87,33 +87,37 @@ export default function Home() {
       </div>
       <div className={styles.section}>
         <div className={styles.container}>
-          <div className={styles.section1_title}>
-            <Title size="small" color="white" align="left">
-              Nuestro Equipo
-            </Title>
-          </div>
-          <div className={styles.section1}>
-            <div className={styles.section1_item_1}>
-              <Image
-                alt="Servicios Especializados"
-                src="/img/im918.png"
-                width={518}
-                height={468}
-              />
+          <div className={styles.nuestro}>
+            <div className={styles.section1_title}>
+              <Title size="small" color="white" align="left">
+                Nuestro Equipo
+              </Title>
             </div>
-            <div className={styles.section1_item_2}>
-              <div className={styles.section1_item_2_text}>
-                <Title size="small" color="green1" align="left">
-                  Abraham Gonzalez
-                </Title>
-                <Subtitle color="black">Administración Mantenimiento</Subtitle>
-                <div className={styles.line}>
-                  <div className={styles.separador}></div>
+            <div className={styles.section1}>
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/im918.png"
+                  width={518}
+                  height={468}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                    Abraham Gonzalez
+                  </Title>
+                  <Subtitle color="black">
+                    Administración Mantenimiento
+                  </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                    “Llevo más de 15 años mejorando procesos que reflejan el
+                    cuidado por el medio ambiente”
+                  </Paragraph>
                 </div>
-                <Paragraph color="black">
-                  “Llevo más de 15 años mejorando procesos que reflejan el
-                  cuidado por el medio ambiente”
-                </Paragraph>
               </div>
             </div>
           </div>
@@ -250,16 +254,11 @@ export default function Home() {
       <div className={styles.footer_space1}></div>
       <div className={styles.footer}>
         <div className={styles.container}>
+          <div className={styles.footer_img}>
+            <Image alt="footer" src="/img/footer.png" width={80} height={83} />
+          </div>
           <div className={styles.flex_footer}>
             <div className={styles.footer_left}>
-              <div className={styles.footer_img}>
-                <Image
-                  alt="footer"
-                  src="/img/footer.png"
-                  width={80}
-                  height={83}
-                />
-              </div>
               <div className={styles.footer_text}>
                 <Subtitle color="black">Contacto</Subtitle>
                 <Paragraph color="black">
@@ -294,10 +293,18 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.flex_footer_down}>
             <div className={styles.foo_left}>
-              <li>Privacy Policy </li>
-              <li>Terms and Conditions </li>
-              <li>Help </li>
-              <li>Partners </li>
+              <Link href="#">
+                <a className={styles.link}>Privacy Policy</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Terms and Conditions</a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Help </a>
+              </Link>
+              <Link href="#">
+                <a className={styles.link}>Partners</a>
+              </Link>
             </div>
             <div className={styles.foo_right}>
               <Link href="https://www.facebook.com">
