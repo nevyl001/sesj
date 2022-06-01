@@ -44,6 +44,9 @@
 .color_green {
   color: #00bf6f;
 }
+.color_green1 {
+  color: rgb(13, 117, 13);
+}
 
 @media (max-width: 1080px) {
   .title {

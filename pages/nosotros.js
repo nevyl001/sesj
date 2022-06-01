@@ -40,78 +40,82 @@ export default function Home() {
               Conservación de Edificios.
             </Paragraph>
           </div>
+          <div className={styles.header_down}>
+            <div className={styles.header_item1}>
+              <div className={styles.header_ima}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/grupo913.png"
+                  width={90}
+                  height={134}
+                />
+              </div>
+              <div className={styles.header_text}>
+                <Subtitle color="black">
+                  SESJ cuenta con una Filosofía Institucional
+                </Subtitle>
+                <Paragraph color="black">
+                  Política de Calidad y Medio Ambiente, Misión, Visión,
+                  Objetivos de Calidad y Medio Ambiente, y valores; aprobada por
+                  la Dirección.
+                </Paragraph>
+              </div>
+            </div>
+            <div className={styles.header_item1}>
+              <div className={styles.header_ima}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/grupo914.png"
+                  width={154}
+                  height={134}
+                />
+              </div>
+              <div className={styles.header_text}>
+                <Subtitle color="black">
+                  SESJ cuenta con una Filosofía Institucional
+                </Subtitle>
+                <Paragraph color="black">
+                  Política de Calidad y Medio Ambiente, Misión, Visión,
+                  Objetivos de Calidad y Medio Ambiente, y valores; aprobada por
+                  la Dirección.
+                </Paragraph>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.line}>
-          <Image alt="Divider" src="/img/linea.png" width={2444} height={335} />
-        </div>
+        <div className={styles.line}></div>
       </div>
       <div className={styles.section}>
         <div className={styles.container}>
-          <div className={styles.section1}>
-            <Subtitle color="white">LAS MEJORES SOLUCIONES</Subtitle>
-            <Title size="medium" color="white" align="left">
-              Nuestros Servicios
+          <div className={styles.section1_title}>
+            <Title size="small" color="white" align="left">
+              Nuestro Equipo
             </Title>
           </div>
-          <div className={styles.section_card}>
-            <div className={styles.section_cards}>
-              <h5>Servicios Especializados</h5>
-              <div className={styles.separador}></div>
+          <div className={styles.section1}>
+            <div className={styles.section1_item_1}>
               <Image
                 alt="Servicios Especializados"
-                src="/img/im1.png"
-                width={200}
-                height={200}
+                src="/img/im918.png"
+                width={518}
+                height={468}
               />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>Gestion de Residuos</p>
-                <p>Limpieza Industrial y Corporativa</p>
-                <p>Conservacion de Edificios</p>
+            </div>
+            <div className={styles.section1_item_2}>
+              <div className={styles.section1_item_2_text}>
+                <Title size="small" color="green1" align="left">
+                  Abraham Gonzalez
+                </Title>
+                <Subtitle color="black">Administración Mantenimiento</Subtitle>
+                <div className={styles.line}>
+                  <div className={styles.separador}></div>
+                </div>
+                <Paragraph color="black">
+                  “Llevo más de 15 años mejorando procesos que reflejan el
+                  cuidado por el medio ambiente”
+                </Paragraph>
               </div>
             </div>
-            <div className={styles.section_cards}>
-              <h5>Residuos Industriales</h5>
-              <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im2.png" width={200} height={200} />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>Compra-venta de residuos</p>
-                <p>Reciclaje</p>
-                <p>Disposicion final</p>
-              </div>
-            </div>
-            <div className={styles.section_cards}>
-              <h5>Transportes Especializados de Residuos</h5>
-              <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im3.png" width={200} height={200} />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>
-                  Caja seca, plataforma, roll-off
-                  <br />
-                  tolvas, etc.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.section2}>
-            <div className={styles.separador3}></div>
-          </div>
-
-          <div className={styles.section3}>
-            <div className={styles.somos}>
-              <Title size="medium" color="white" align="center">
-                Somos una empresa especializada <br /> en servicios integrales
-              </Title>
-              <Paragraph color="white">
-                Estamos comprometidos con la mejora continua de los procesos y
-                de <br /> nuestri Sistema de Gestion Integral
-              </Paragraph>
-            </div>
-            <Link href="#">
-              <Button>CONTÁCTANOS</Button>
-            </Link>
           </div>
         </div>
       </div>
@@ -162,11 +166,25 @@ export default function Home() {
                 <li>Respeto y equidad</li>
                 <li>Enfoque al cliente y a las excelencia</li>
               </div>
-              <div className={styles.content_right_boton}>
-                <Link href="#">
-                  <Button>VER MÁS</Button>
-                </Link>
-              </div>
+            </div>
+          </div>
+          <div className={styles.content4_down}>
+            <div className={styles.content4_down_title}>
+              <Title size="small" color="black" align="left">
+                Política
+              </Title>
+            </div>
+            <div className={styles.content4_down_text}>
+              <Paragraph color="black">
+                Somos una empresa especializada en servicios integrales, con un
+                equipo altamente competitivo; comprometida con la calidad, la
+                protección del medio ambiente, la prevención de la contaminación
+                y el uso sostenible de los recursos, para mejorar el desempeño
+                ambiental. Estamos comprometidos con la mejora continua de los
+                procesos y de nuestro Sistema de Gestión Integral. Cumpliendo
+                siempre con los requisitos legales y otros requisitos
+                aplicables.
+              </Paragraph>
             </div>
           </div>
         </div>
@@ -174,110 +192,61 @@ export default function Home() {
 
       <div className={styles.clients}>
         <div className={styles.container}>
-          <div className={styles.clients_inner}>
+          <div className={styles.calidad}>
             <div className={styles.clients_text}>
-              <Subtitle color="black">CLIENTES</Subtitle>
-              <Title size="small" color="black" align="left">
-                Lo que dicen los clientes
+              <Subtitle color="white">NOSOTROS</Subtitle>
+              <Title size="small" color="white" align="left">
+                Objetivos de Calidad y Medio Ambiente
               </Title>
-            </div>
-            <div className={styles.clients_card}>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Vestibulum sollicitudin nunc in eros a justo facilisis
-                  rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                  nibh tortor mauris condimentum nibh”
-                </Paragraph>
-                <Subtitle color="black">JONT KOOK</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Sollicitudin nunc in eros a justo facilisis rutrum. Aenean id
-                  ullamcorper libero. Vestibulum imperdiet nibh tortor mauris
-                  condimentum”
-                </Paragraph>
-                <Subtitle color="black"> DAVID JAME</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
+              <Subtitle color="white">
+                La dirección de SESJ establece los objetivos del Sistema de
+                Gestión Integral, los cuales son:
+              </Subtitle>
+              <Paragraph color="white">
+                ✓ Asegurar la sustentabilidad financiera.
+                <br />
+                ✓ Mejorar la calidad, seguridad e impacto ambiental de los
+                servicios
+                <br />✓ Desarrollar y Capacitar a los colaboradores.
+              </Paragraph>
             </div>
             <div className={styles.clients_img}>
-              <Image
-                alt="im1"
-                src="/img/Content.png"
-                width={1180}
-                height={140}
-              />
+              <Image alt="im1" src="/img/imacli.png" width={606} height={458} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.contact}>
+      <div className={styles.section6}>
         <div className={styles.container}>
-          <div className={styles.contact1}>
-            <div className={styles.contact_left}>
-              <div className={styles.contact_left_text}>
-                <Subtitle color="black">ESTAMOS A TU SERVICIO</Subtitle>
-                <Title size="medium" color="black" align="left">
-                  Contáctanos
-                </Title>
-              </div>
-              <form action="/send-data-here" method="post">
-                <div className={styles.empresa}>
-                  <input
-                    type="text"
-                    id="empresa"
-                    name="empresa"
-                    placeholder="Empresa"
-                  />
-                </div>
-                <div className={styles.nombre}>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Nombre"
-                  />
-                </div>
-                <div className={styles.inps}>
-                  <div className={styles.tel}>
-                    <input
-                      type="text"
-                      id="telefono"
-                      name="telefono"
-                      placeholder="Telefono"
-                    />
-                  </div>
-                  <div className={styles.email}>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div className={styles.contact_boton}>
-                  <Link type="submit" href="#">
-                    <Button> ENVIAR</Button>
-                  </Link>
-                </div>
-              </form>
+          <div className={styles.certificacion}>
+            <div className={styles.cert_title}>
+              <Title size="small" color="black" align="left">
+                Certificaciones
+              </Title>
             </div>
-            <div className={styles.contact_right}>
-              <div className={styles.contact_img}>
-                <Image
-                  alt="im1"
-                  src="/img/artboard506.png"
-                  width={1548}
-                  height={955}
-                />
-              </div>
+            <div className={styles.cert_sub}>
+              <Subtitle color="black">Calidad / Ambiental / Seguridad</Subtitle>
+            </div>
+            <div className={styles.cert_text}>
+              <Paragraph color="black">
+                Servicios Especializados Silviano Julio S. A. de C.V. (SESJ),
+                actualmente cuenta con un Sistema de Gestión Integral
+                certificado en:
+              </Paragraph>
+            </div>
+            <div className={styles.acordion}>
+              <ul>
+                <li>ISO 9001:2015</li>
+                <li>ISO 14001:2015</li>
+                <li>REPSE y STPS</li>
+                <li>PASST</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div className={styles.footer_space1}></div>
       <div className={styles.footer}>
         <div className={styles.container}>
