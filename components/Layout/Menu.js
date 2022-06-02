@@ -30,7 +30,7 @@ function Menu() {
             <Link href="/clientes">
               <a className={styles.link}>CLIENTES</a>
             </Link>
-            <Link href="#">
+            <Link href="/contacto">
               <a className={styles.link}>CONTACTO</a>
             </Link>
           </div>
