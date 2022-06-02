@@ -7,10 +7,20 @@ import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 
 export default function Home() {
+  const showHandler = (item) => {
+    const itemDiv = document.getElementById(`item${item}`);
+    const activeClass = `${styles.active}`;
+    if (itemDiv.classList.contains(`${styles.active}`)) {
+      itemDiv.classList.remove(activeClass);
+    } else {
+      itemDiv.classList.add(activeClass);
+    }
+  };
+
   return (
     <main>
       <div className={styles.head}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.header}>
             <Title size="big" color="black" align="left">
               Nosotros
@@ -86,10 +96,10 @@ export default function Home() {
         <div className={styles.line}></div>
       </div>
       <div className={styles.section}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.nuestro}>
             <div className={styles.section1_title}>
-              <Title size="small" color="white" align="left">
+              <Title size="medium" color="white" align="left">
                 Nuestro Equipo
               </Title>
             </div>
@@ -125,7 +135,7 @@ export default function Home() {
       </div>
 
       <div className={styles.section4}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.content4}>
             <div className={styles.content_left}>
               <div className={styles.img}>
@@ -195,7 +205,7 @@ export default function Home() {
       </div>
 
       <div className={styles.clients}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.calidad}>
             <div className={styles.clients_text}>
               <Subtitle color="white">NOSOTROS</Subtitle>
@@ -222,10 +232,10 @@ export default function Home() {
       </div>
 
       <div className={styles.section6}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.certificacion}>
             <div className={styles.cert_title}>
-              <Title size="small" color="black" align="left">
+              <Title size="medium" color="black" align="left">
                 Certificaciones
               </Title>
             </div>
@@ -239,120 +249,59 @@ export default function Home() {
                 certificado en:
               </Paragraph>
             </div>
-            <div className={styles.acordion}>
-              <ul>
-                <li>ISO 9001:2015</li>
-                <li>ISO 14001:2015</li>
-                <li>REPSE y STPS</li>
-                <li>PASST</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.footer_space1}></div>
-      <div className={styles.footer}>
-        <div className={styles.container}>
-          <div className={styles.footer_img}>
-            <Image alt="footer" src="/img/footer.png" width={80} height={83} />
-          </div>
-          <div className={styles.flex_footer}>
-            <div className={styles.footer_left}>
-              <div className={styles.footer_text}>
-                <Subtitle color="black">Contacto</Subtitle>
-                <Paragraph color="black">
-                  London Oxford Street, 012 United <br /> Kingdom.
-                </Paragraph>
-                <Paragraph color="black">+032 3456 7890</Paragraph>
-                <Paragraph color="black">Business@moontheme.net</Paragraph>
+            <div className={styles.box_acordion}>
+              <div className={styles.box_acordion_item} id="item1">
+                <div
+                  className={styles.box_acordion_item_trigger}
+                  onClick={showHandler.bind({}, 1)}
+                >
+                  <div className={styles.title}>ISO 9001:2015</div>
+                </div>
+                <div className={styles.box_acordion_item_content}>
+                  <Paragraph color="gray">
+                    Sistema de Gestión de Calidad
+                  </Paragraph>
+                </div>
               </div>
-            </div>
-            <div className={styles.footer_right}>
-              <Subtitle color="black">Email Newsletters</Subtitle>
-              <Paragraph color="black">Suscríbete al Newsleter</Paragraph>
-              <div className={styles.email}>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                />
-                <Link type="submit" href="#">
-                  <Button> SUSCRÍBETE</Button>
-                </Link>
+              <div className={styles.box_acordion_item} id="item2">
+                <div
+                  className={styles.box_acordion_item_trigger}
+                  onClick={showHandler.bind({}, 2)}
+                >
+                  <div className={styles.title}>ISO 9001:2015</div>
+                </div>
+                <div className={styles.box_acordion_item_content}>
+                  <Paragraph color="gray">
+                    Sistema de Gestión de Calidad
+                  </Paragraph>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.space}>
-        <div className={styles.footer_space}></div>
-      </div>
-      <div className={styles.footer_down}>
-        <div className={styles.container}>
-          <div className={styles.flex_footer_down}>
-            <div className={styles.foo_left}>
-              <Link href="#">
-                <a className={styles.link}>Privacy Policy</a>
-              </Link>
-              <Link href="#">
-                <a className={styles.link}>Terms and Conditions</a>
-              </Link>
-              <Link href="#">
-                <a className={styles.link}>Help </a>
-              </Link>
-              <Link href="#">
-                <a className={styles.link}>Partners</a>
-              </Link>
-            </div>
-            <div className={styles.foo_right}>
-              <Link href="https://www.facebook.com">
-                <a target="_blank" rel="noreferrer">
-                  <Image
-                    alt="facebook"
-                    src="/img/facebook-svgrepo-com.svg"
-                    width={25}
-                    height={25}
-                  />
-                </a>
-              </Link>
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  alt="twitter"
-                  src="/img/gorjeo.png"
-                  width={25}
-                  height={25}
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  alt="instagram"
-                  src="/img/instagram.png"
-                  width={25}
-                  height={25}
-                />
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  alt="youtube"
-                  src="/img/youtube.png"
-                  width={25}
-                  height={25}
-                />
-              </a>
+              <div className={styles.box_acordion_item} id="item3">
+                <div
+                  className={styles.box_acordion_item_trigger}
+                  onClick={showHandler.bind({}, 3)}
+                >
+                  <div className={styles.title}>ISO 9001:2015</div>
+                </div>
+                <div className={styles.box_acordion_item_content}>
+                  <Paragraph color="gray">
+                    Sistema de Gestión de Calidad
+                  </Paragraph>
+                </div>
+              </div>
+              <div className={styles.box_acordion_item} id="item4">
+                <div
+                  className={styles.box_acordion_item_trigger}
+                  onClick={showHandler.bind({}, 4)}
+                >
+                  <div className={styles.title}>ISO 9001:2015</div>
+                </div>
+                <div className={styles.box_acordion_item_content}>
+                  <Paragraph color="gray">
+                    Sistema de Gestión de Calidad
+                  </Paragraph>
+                </div>
+              </div>
             </div>
           </div>
         </div>

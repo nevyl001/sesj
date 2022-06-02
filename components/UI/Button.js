@@ -1,12 +1,21 @@
-import { Fragment } from "react";
+import React from "react";
 import classes from "./Button.module.css";
 
-const Button = (props) => {
+const Button = React.forwardRef((props, ref) => {
+  const classNames = `${classes.button} ${classes["type_" + props.type]}`;
+
   return (
-    <Fragment>
-      <button className={classes.button}>{props.children}</button>
-    </Fragment>
+    <button
+      href={props.href}
+      onClick={props.onClick}
+      ref={ref}
+      className={classNames}
+    >
+      {props.children}
+    </button>
   );
-};
+});
+
+Button.displayName = "Button";
 
 export default Button;
