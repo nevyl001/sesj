@@ -44,13 +44,13 @@ function Menu() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/servicios-especializados">
-                      <a className={styles.link}>SERVICIOS ESPECIALIZADOS</a>
+                    <Link href="/residuos-industriales">
+                      <a className={styles.link}>RESIDUOS INDUSTRIALES</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/servicios-especializados">
-                      <a className={styles.link}>SERVICIOS ESPECIALIZADOS</a>
+                    <Link href="/transportes-especializados">
+                      <a className={styles.link}>TRANSPORTES ESPECIALIZADOS</a>
                     </Link>
                   </li>
                 </ul>
