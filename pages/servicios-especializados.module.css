@@ -1,0 +1,37 @@
+.section_1 {
+  padding: 100px 20px;
+}
+.section_1 .title {
+  margin-top: 100px;
+}
+.box_tabs {
+  margin: 20px 0;
+}
+.tabs_item {
+  display: inline-block;
+  padding: 20px;
+  border-bottom: 2px solid gray;
+  color: #666;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  margin-bottom: -2px;
+}
+.tabs {
+  border-bottom: 2px solid gray;
+}
+.tabs_item:hover {
+  color: #208d2e;
+  border-bottom: 2px solid #208d2e;
+  transition-duration: 0.2s;
+}
+.tabs_item.active {
+  color: #208d2e;
+  border-bottom: 2px solid #208d2e;
+  transition-duration: 0.2s;
+}
+.tab_content {
+  display: none;
+}
+.tab_content.active {
+  display: block;
+}
