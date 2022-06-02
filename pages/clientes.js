@@ -5,10 +5,11 @@ import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <main>
+    <Fragment>
       <div className={styles.head}>
         <div className="container">
           <div className={styles.header_ti}>
@@ -165,6 +166,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </Fragment>
   );
 }

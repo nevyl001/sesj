@@ -1,0 +1,146 @@
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.head {
+  background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
+  padding: 200px 100px;
+}
+
+.header_title h2 {
+  font-weight: 900;
+}
+
+.footer {
+  background-color: white;
+  padding: 100px 200px;
+}
+.flex_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_space1 {
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+  opacity: 1;
+  background-color: white;
+}
+.flex_footer p {
+  color: #7d7d7d;
+}
+
+.footer_right input {
+  border-style: none;
+  background: #f1f8fc 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  padding: 5px 75px;
+}
+.footer_right button {
+  color: white;
+  font-size: 10px;
+  background: linear-gradient(270deg, #007b3a 0%, #003e1d 100%);
+  border-style: none;
+  border-radius: 23px;
+  padding: 10px 50px;
+}
+
+/* footer-down */
+.footer_img {
+  padding: 30px 0;
+}
+.footer_down {
+  background-color: white;
+}
+.footer_text p {
+  margin: 20px 0 !important;
+}
+.flex_footer_down {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.space {
+  background-color: white;
+}
+.footer_space {
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+  opacity: 1;
+  width: 80%;
+  background-color: white;
+}
+.foo_left a {
+  font-size: 12px;
+  padding-right: 10px;
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  display: inline-block;
+}
+
+.foo_right a {
+  background-color: white;
+  padding-right: 10px;
+}
+
+/* box flez */
+
+.box_flex {
+  display: flex;
+}
+.box_flex_left {
+  width: 50%;
+}
+.box_flex_right {
+  width: 50%;
+}
+
+.box_image {
+  width: 60%;
+  margin: auto;
+}
+.box_contacto {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+.nombre {
+  padding-bottom: 20px;
+}
+.nombre input {
+  width: 100%;
+  border-style: none;
+  background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
+  border-radius: 25px;
+  padding: 10px 75px;
+}
+
+.nombreytel {
+  display: flex;
+  justify-content: space-between;
+}
+.nombreytel input {
+  border-style: none;
+  background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
+  border-radius: 25px;
+  padding: 10px 60px;
+}
+.email {
+  padding-bottom: 30px;
+}
+
+.tel {
+  padding-bottom: 30px;
+}
+.area {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.area input {
+  background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
+  border-style: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}

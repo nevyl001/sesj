@@ -9,14 +9,9 @@
 
 .box_flex {
   display: flex;
-  margin: 40px 0;
 }
-.box_flex_left {
-  width: 70%;
-}
+
 .box_flex_right {
-  width: 30%;
-  padding-top: 20px;
 }
 .box_grid {
   display: grid;
