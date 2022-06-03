@@ -46,43 +46,19 @@ export default function Home() {
               <Title size="small" color="white" align="left">
                 Contáctanos
               </Title>
-              <div className={styles.box_flex_inputs}>
-                <form action="/send-data-here" method="post">
-                  <div className={styles.nombre}>
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      placeholder="Nombre"
-                    />
-                  </div>
-                  <div className={styles.nombreytel}>
-                    <div className={styles.email}>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className={styles.tel}>
-                      <input
-                        type="text"
-                        id="telefono"
-                        name="telefono"
-                        placeholder="Telefono"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.area}>
-                    <input
-                      type="textarea"
-                      name="textValue"
-                      rows={20}
-                      cols={20}
-                    />
-                  </div>
-                </form>
+              <div className={styles.form}>
+                <div className={styles.input_box_full}>
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div className={styles.input_box_half}>
+                  <input type="email" name="email" placeholder="Email" />
+                </div>
+                <div className={styles.input_box_half}>
+                  <input type="text" name="phone" placeholder="Phone" />
+                </div>
+                <div className={styles.input_box_full}>
+                  <textarea name="text" placeholder="Your message"></textarea>
+                </div>
               </div>
 
               <Link href="#">

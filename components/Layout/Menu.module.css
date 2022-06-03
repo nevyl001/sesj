@@ -56,6 +56,7 @@
 .submenu li {
   display: block;
   padding: 5px;
+  text-align: left;
 }
 .submenu_trigger:hover .submenu {
   display: block;
