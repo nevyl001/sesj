@@ -1,72 +1,107 @@
 import styles from "./Menu.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 function Menu() {
+  const [submenuIsActive, setSubmenuIsActive] = useState(false);
+  const submenuActiveHandler = () => {
+    setSubmenuIsActive(true);
+  };
+  const submenuInactiveHandler = () => {
+    setSubmenuIsActive(false);
+  };
+
   return (
     <div className={styles.menu_desktop}>
       <div className={styles.container}>
-        <div className={styles.menu}>
-          <div className={styles.menu_desktop_left}>
-            <div className={styles.img}>
+        <div className={styles.menu_master}>
+          <div className={styles.menu_top}>
+            <div className={styles.menu_desktop_left}>
+              <div className={styles.img}>
+                <Link href="/">
+                  <a>
+                    <Image
+                      alt="logo"
+                      src="/img/SESJ_Logo_Pres_V5.png"
+                      width={157}
+                      height={90}
+                    />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.menu_desktop_right}>
               <Link href="/">
-                <a>
-                  <Image
-                    alt="logo"
-                    src="/img/SESJ_Logo_Pres_V5.png"
-                    width={157}
-                    height={90}
-                  />
-                </a>
+                <a className={styles.link}>HOME</a>
+              </Link>
+              <Link href="/nosotros">
+                <a className={styles.link}>NOSOTROS</a>
+              </Link>
+              <a className={styles.link} onClick={submenuActiveHandler}>
+                SERVICIOS
+              </a>
+              <Link href="/clientes">
+                <a className={styles.link}>CLIENTES</a>
+              </Link>
+              <Link href="/contacto">
+                <a className={styles.link}>CONTACTO</a>
               </Link>
             </div>
           </div>
-          <div className={styles.menu_desktop_right}>
-            <ul>
-              <li>
-                <Link href="/">
-                  <a className={styles.link}>HOME</a>
+          {submenuIsActive && (
+            <div className={styles.menu_bottom}>
+              <div
+                className={styles.menu_bottom_item}
+                onClick={submenuInactiveHandler}
+              >
+                <Link href="/servicios-especializados">
+                  <a className={styles.link}>
+                    <div className={styles.link_title}>
+                      SERVICIOS ESPECIALIZADOS
+                    </div>
+                    <div className={styles.link_text}>
+                      GESTIÓN DE RESIDUOS<br></br>
+                      LIMPIEZA INDUSTRIAL Y COOPERATIVA<br></br>
+                      CONSERVACIÓN DE EDIFICIOS<br></br>
+                    </div>
+                  </a>
                 </Link>
-              </li>
-              <li>
-                <Link href="/nosotros">
-                  <a className={styles.link}>NOSOTROS</a>
+              </div>
+              <div
+                className={styles.menu_bottom_item}
+                onClick={submenuInactiveHandler}
+              >
+                <Link href="/residuos-industriales">
+                  <a className={styles.link}>
+                    <div className={styles.link_title}>
+                      RESIDUOS INDUSTRIALES
+                    </div>
+                    <div className={styles.link_text}>
+                      COMPRA-VENTA DE RESIDUOS<br></br>
+                      RECICLAJE<br></br>
+                      DISPOSICIÓN FINAL<br></br>
+                    </div>
+                  </a>
                 </Link>
-              </li>
-              <li className={styles.submenu_trigger}>
-                <Link href="#">
-                  <a className={styles.link}>SERVICIOS</a>
+              </div>
+              <div
+                className={styles.menu_bottom_item}
+                onClick={submenuInactiveHandler}
+              >
+                <Link href="/transportes-especializados">
+                  <a className={styles.link}>
+                    <div className={styles.link_title}>
+                      TRANSPORTES ESPECIALIZADOS
+                    </div>
+                    <div className={styles.link_text}>
+                      DIFERENTES TIPOS DE TRANSPORTE
+                    </div>
+                  </a>
                 </Link>
-                <ul className={styles.submenu}>
-                  <li>
-                    <Link href="/servicios-especializados">
-                      <a className={styles.link}>SERVICIOS ESPECIALIZADOS</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/residuos-industriales">
-                      <a className={styles.link}>RESIDUOS INDUSTRIALES</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/transportes-especializados">
-                      <a className={styles.link}>TRANSPORTES ESPECIALIZADOS</a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link href="/clientes">
-                  <a className={styles.link}>CLIENTES</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacto">
-                  <a className={styles.link}>CONTACTO</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
