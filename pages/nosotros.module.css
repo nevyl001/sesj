@@ -87,7 +87,6 @@
 .content4_down {
   width: 75%;
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 /* section5 */
 
@@ -142,4 +141,55 @@
 }
 .active .box_acordion_item_content {
   display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 40px 30px;
+    padding-top: 150px;
+  }
+  .header_down {
+    display: block;
+    text-align: center;
+  }
+  .header_item1 {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .header_text {
+    text-align: center;
+  }
+  .nuestro {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .section1 {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .content4 {
+    display: block;
+  }
+  .content_right {
+    padding: 20px 30px;
+  }
+  .clients {
+    text-align: center;
+    padding: 100px 30px;
+  }
+  .calidad {
+    display: block;
+    padding: 25px 20px;
+  }
+  .clients_text {
+    padding-bottom: 50px;
+  }
+  .section6 {
+    padding: 0 30px;
+  }
+  .certificacion {
+    padding-top: 75px;
+  }
 }

@@ -11,8 +11,6 @@
   display: flex;
 }
 
-.box_flex_right {
-}
 .box_grid {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -44,4 +42,27 @@
   height: 1px;
   background-color: white;
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box_flex {
+    display: block;
+    font-size: 10px;
+  }
+  .header_title h2 {
+    font-size: 12px;
+  }
+  .header_p p {
+    font-size: 10px;
+  }
+  .box_image {
+    width: 75%;
+    margin: auto;
+  }
+  .box_image_background {
+    padding: 20px;
+  }
+  .divider {
+    display: none;
+  }
 }
