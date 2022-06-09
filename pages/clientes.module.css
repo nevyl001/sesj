@@ -49,11 +49,8 @@
     display: block;
     font-size: 10px;
   }
-  .header_title h2 {
-    font-size: 12px;
-  }
   .header_p p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .box_image {
     width: 75%;
