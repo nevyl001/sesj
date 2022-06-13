@@ -175,17 +175,21 @@
 }
 @media only screen and (max-width: 1000px) {
   .head {
-    padding: 75px;
+    padding: 100px 20px 40px 20px;
+    text-align: center;
   }
   .box_flex {
-    text-align: center;
     display: block;
   }
   .box_flex_left {
-    padding-top: 50px;
+    padding: 0;
     width: 100%;
   }
   .box_flex_right {
     width: 100%;
+  }
+  .input_box_half {
+    grid-column: span 2;
+    padding-right: 10px;
   }
 }

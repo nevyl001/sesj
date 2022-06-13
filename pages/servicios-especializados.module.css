@@ -54,4 +54,20 @@
   background-size: cover;
 }
 @media only screen and (max-width: 1000px) {
+  .tabs_item {
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    color: #666;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-bottom: -2px;
+    text-align: center;
+  }
+  .section_1 {
+    padding: 40px 20px;
+  }
+  .carousel {
+    margin-top: 20px;
+  }
 }
