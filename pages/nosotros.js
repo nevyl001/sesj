@@ -259,7 +259,7 @@ export default function Home() {
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
-                    Sistema de Gestión de Calidad
+                    “Sistema de Gestión de Calidad”.
                   </Paragraph>
                 </div>
               </div>
@@ -268,11 +268,11 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 2)}
                 >
-                  <div className={styles.title}>ISO 9001:2015</div>
+                  <div className={styles.title}>ISO 14001:2015</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
-                    Sistema de Gestión de Calidad
+                    “Sistema de Gestión Ambiental”.
                   </Paragraph>
                 </div>
               </div>
@@ -284,7 +284,11 @@ export default function Home() {
                   <div className={styles.title}>ISO 9001:2015</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
-                  <Paragraph color="gray">Sistema de</Paragraph>
+                  <Paragraph color="gray">
+                    Estamos dados de alta en el REPSE (Registro de Prestadoras
+                    de Servicios Especializados y Obras Especializadas) de la
+                    STPS (Secretaría del Trabajo y Previsión Social).{" "}
+                  </Paragraph>
                 </div>
               </div>
               <div className={styles.box_acordion_item} id="item4">
@@ -292,11 +296,14 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 4)}
                 >
-                  <div className={styles.title}>ISO 9001:2015</div>
+                  <div className={styles.title}>PASST</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
-                    Sistema de Gestión de Calidad
+                    Reconocimiento de “Empresa Segura” por parte de la STPS
+                    (Secretaría del Trabajo y Previsión Social) al implementar
+                    el PASST (Programa de Autogestión en Seguridad y Salud en el
+                    Trabajo) en nuestra empresa.
                   </Paragraph>
                 </div>
               </div>
