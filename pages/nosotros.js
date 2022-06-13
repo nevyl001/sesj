@@ -284,9 +284,7 @@ export default function Home() {
                   <div className={styles.title}>ISO 9001:2015</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
-                  <Paragraph color="gray">
-                    Sistema de Gestión de Calidad
-                  </Paragraph>
+                  <Paragraph color="gray">Sistema de</Paragraph>
                 </div>
               </div>
               <div className={styles.box_acordion_item} id="item4">
