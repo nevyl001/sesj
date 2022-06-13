@@ -167,8 +167,7 @@
   }
 
   .contact_right {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding: 40px 20px;
   }
   .contact_right .contact_img {
     width: 100%;
@@ -177,16 +176,17 @@
   /* footer */
   .footer {
     background-color: white;
-    padding: 100px 20px;
+    padding: 40px 20px;
+    text-align: center;
   }
   .flex_footer {
     display: block;
   }
   .footer_left {
-    width: 60%;
+    width: 100%;
   }
   .footer_right {
-    width: 40%;
+    width: 100%;
   }
   .flex_footer p {
     margin: 10px 0 !important;
@@ -207,18 +207,19 @@
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
     padding: 15px 20px;
-    height: 50px;
-    width: 65%;
+    height: 40px;
+    width: 60%;
   }
   .footer_right button {
-    height: 50px;
+    height: 40px;
     color: white;
     background: linear-gradient(270deg, #007b3a 0%, #003e1d 100%);
     border-style: none;
     border-top-right-radius: 23px;
     border-bottom-right-radius: 23px;
     padding: 10px 0 10px 30px;
-    width: 35%;
+    width: 40%;
+    font-size: 12px;
     text-align: left;
   }
 
@@ -246,6 +247,9 @@
     opacity: 1;
     width: 80%;
     background-color: white;
+  }
+  .foo_left {
+    margin: 10px 0;
   }
   .foo_left a {
     font-size: 12px;
