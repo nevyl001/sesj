@@ -89,6 +89,11 @@
   width: 35%;
   text-align: left;
 }
+.footer_right button:hover {
+  background: white;
+  color: #007b3a;
+  border: 2px solid #007b3a;;
+}
 
 /* footer-down */
 .footer_img {
