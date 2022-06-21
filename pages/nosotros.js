@@ -1,12 +1,28 @@
 import Link from "next/link";
+
 import styles from "./nosotros.module.css";
 import Image from "next/image";
+
 import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default function Home() {
+
+const HEADER_IMAGES = [
+  {
+    id: 1,
+    image: "sl.png",
+  },
+  {
+    id: 2,
+    image: "sl1.png",
+  },
+];
+
+  export default function Home() {
   const showHandler = (item) => {
     const itemDiv = document.getElementById(`item${item}`);
     const activeClass = `${styles.active}`;
@@ -15,7 +31,9 @@ export default function Home() {
     } else {
       itemDiv.classList.add(activeClass);
     }
+
   };
+
 
   return (
     <main>
@@ -103,32 +121,182 @@ export default function Home() {
                 Nuestro Equipo
               </Title>
             </div>
+
+            {/* <div className={styles.carousel}>
+                <Carousel
+                showStatus={false}
+                autoPlay={true}
+                showArrows={false}
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+              >
+                {HEADER_IMAGES.map((item) => {
+                  return (
+                    <div
+                      key={item.id}
+                      className={styles.item}
+                      style={{
+                        backgroundImage: `url(/img/slider/${item.image})`,
+                      }}
+                    ></div>
+                  );
+                })}
+              </Carousel>
+            </div> */}
+             
+
+
             <div className={styles.section1}>
               <div className={styles.section1_item_1}>
                 <Image
                   alt="Servicios Especializados"
-                  src="/img/im918.png"
-                  width={518}
-                  height={468}
+                  src="/img/Empleados/maricelaramirez.jpg"
+                  width={3840}
+                  height={2160}
                 />
               </div>
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                    Abraham Gonzalez
+                  Mariela Ramírez
                   </Title>
                   <Subtitle color="black">
-                    Administración Mantenimiento
+                  Recursos Humanos
                   </Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                    “Llevo más de 15 años mejorando procesos que reflejan el
-                    cuidado por el medio ambiente”
+                  “Nuestro mayo reto es que la gente se sienta contenta en el área de trabajo. SESJ es una empresa sustentable preocupada por el medio ambiente.”
                   </Paragraph>
                 </div>
               </div>
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/Empleados/rijuarez.jpg"
+                  width={3840}
+                  height={2160}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                  Ricardo Juárez Correa
+                  </Title>
+                  <Subtitle color="black">
+                  Coordinador de Operaciones                
+                    </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                  “Un año trabajando en SESJ, es algo que me ha ayudado bastante, coordinamos y le damos la disposición adecuada al nuestros residuos de manejo especial y residuos peligrosos. Muy contento de trabajar en una empresa de manejo de residuos.”
+                  </Paragraph>
+                </div>
+              </div>
+
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/Empleados/jogua.jpg"
+                  width={3840}
+                  height={2160}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                  Jose Guadalupe Rodríguez Martínez
+                  </Title>
+                  <Subtitle color="black">
+                  Mantenimiento              
+                    </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                  “Un día de trabajo es estar al pendiente del mantenimiento de los equipos, que estén limpios, que no tengan ninguna fuga. Siempre sale todo bien.”
+                  </Paragraph>
+                </div>
+              </div>
+
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/Empleados/javial.jpg"
+                  width={3840}
+                  height={2160}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                  Javier Alejandro Torres Carrillo                  
+                  </Title>
+                  <Subtitle color="black">
+                  Supervisor              
+                    </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                  “Todas las empresas generan cierto tipo de residuos, principalmente nos encargamos de recepcionar, almacenar y disponer el material que recibimos y mandarlo a las distintas áreas donde es procesado”
+                  </Paragraph>
+                </div>
+              </div>
+
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/Empleados/marosa.jpg"
+                  width={3840}
+                  height={2160}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                  Maria del Rosario Sánchez Allende                 
+                  </Title>
+                  <Subtitle color="black">
+                  Gerente de Operaciones              
+                    </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                  “SESJ para mí es una empresa que me ha ayudado a descubrir capacidades y aptitudes que antes no tenía, además de que me ha hecho crecer profesionalmente y personalmente. Mi rol como gerente es brindar un servicio de excelencia.”                  </Paragraph>
+                </div>
+              </div>
+
+              <div className={styles.section1_item_1}>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/Empleados/jovita.jpg"
+                  width={3840}
+                  height={2160}
+                />
+              </div>
+              <div className={styles.section1_item_2}>
+                <div className={styles.section1_item_2_text}>
+                  <Title size="small" color="green1" align="left">
+                  Jovita Espinoza Palestina                 
+                  </Title>
+                  <Subtitle color="black">
+                  Operador General              
+                    </Subtitle>
+                  <div className={styles.line}>
+                    <div className={styles.separador}></div>
+                  </div>
+                  <Paragraph color="black">
+                  “Yo considero que esta empresa es muy importante porque contribuimos al medio ambiente, aquí le llevamos segregación, es la separación de los productos que se pueden separar y los que no.”
+                                 </Paragraph>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

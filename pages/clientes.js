@@ -25,7 +25,7 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/bmw.png"
+                        src="/img/clientes/bmw.svg"
                         width={150}
                         height={79}
                       />
@@ -50,9 +50,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/vw.png"
-                        width={182}
-                        height={162}
+                        src="/img/clientes/vw.png"
+                        width={325}
+                        height={325}
                       />
                     </div>
                   </div>
@@ -79,9 +79,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/audi.png"
-                        width={178}
-                        height={142}
+                        src="/img/clientes/audi.png"
+                        width={600}
+                        height={250}
                       />
                     </div>
                   </div>
@@ -103,9 +103,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/nissan.png"
-                        width={136}
-                        height={109}
+                        src="/img/clientes/nissan.png"
+                        width={1189}
+                        height={1025}
                       />
                     </div>
                   </div>
@@ -129,9 +129,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/veo.png"
-                        width={216}
-                        height={128}
+                        src="/img/clientes/veoli.jpeg"
+                        width={3009}
+                        height={1228}
                       />
                     </div>
                   </div>
