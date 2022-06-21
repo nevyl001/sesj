@@ -29,7 +29,7 @@
   border-radius: 10px;
 }
 .box_image {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 .box_contacto {
@@ -39,7 +39,6 @@
 }
 .divider {
   width: 100%;
-  height: 1px;
   background-color: white;
   margin-top: 40px;
 }
