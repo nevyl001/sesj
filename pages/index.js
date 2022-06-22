@@ -5,6 +5,8 @@ import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
   return (
@@ -166,26 +168,78 @@ export default function Home() {
                 Lo que dicen los clientes
               </Title>
             </div>
-            <div className={styles.clients_card}>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Vestibulum sollicitudin nunc in eros a justo facilisis
-                  rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                  nibh tortor mauris condimentum nibh”
-                </Paragraph>
-                <Subtitle color="black">JONT KOOK</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Sollicitudin nunc in eros a justo facilisis rutrum. Aenean id
-                  ullamcorper libero. Vestibulum imperdiet nibh tortor mauris
-                  condimentum”
-                </Paragraph>
-                <Subtitle color="black"> DAVID JAME</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
+            <div className={styles.carousel}>
+              <Carousel
+                showStatus={false}
+                autoPlay={true}
+                showArrows={true}
+                showThumbs={false}
+                showIndicators={true}
+                infiniteLoop={true}
+              >
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+              </Carousel>
             </div>
+
             <div className={styles.clients_img}>
               <Image
                 alt="im1"

@@ -55,13 +55,12 @@
   grid-template-columns: 1fr 1fr;
   background-color: white;
   border-radius: 10px;
- 
- 
 }
-.section1_item_1{
+.section1_item_1 {
   width: 100%;
+  font-size: 0;
 }
-.section1_item_1 img{
+.section1_item_1 img {
   border-radius: 10px;
 }
 .section1_title {
@@ -131,8 +130,9 @@
   margin: 20px 0;
 }
 .box_acordion_item {
+  position: relative;
   cursor: pointer;
-  padding: 20px;
+  padding: 30px 20px;
   transition-duration: 0.2s;
   border-bottom: 1px solid #ccc;
 }
@@ -141,6 +141,7 @@
 }
 .box_acordion_item .title {
   font-size: 30px;
+  font-weight: 800;
 }
 .box_acordion_item_content {
   display: none;
@@ -149,7 +150,7 @@
   display: block;
 }
 .carousel {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .carousel .image {
   width: 100%;
@@ -159,6 +160,37 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+.symbols {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.symbol_1 {
+  color: #208d2e;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #208d2e;
+  border-radius: 50%;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+  line-height: 28px;
+}
+.symbol_2 {
+  display: none;
+  color: white;
+  background-color: #208d2e;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #208d2e;
+  border-radius: 50%;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+  line-height: 25px;
 }
 
 @media only screen and (max-width: 1000px) {

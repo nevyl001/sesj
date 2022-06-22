@@ -1,7 +1,4 @@
-import Link from "next/link";
 import styles from "./servicios-especializados.module.css";
-import Image from "next/image";
-import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
