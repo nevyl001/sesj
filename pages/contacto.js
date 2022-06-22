@@ -60,10 +60,11 @@ export default function Home() {
                   <textarea name="text" placeholder="Your message"></textarea>
                 </div>
               </div>
-
-              <Link href="#">
+              <div className={styles.btnform}>
+              <Link   href="#">
                 <Button>CONTÁCTANOS</Button>
               </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -12,12 +12,28 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HEADER_IMAGES = [
   {
-    id: 1,
-    image: "sl.png",
+    id: 7,
+    image: "fa7.jpg",
   },
   {
-    id: 2,
-    image: "sl1.png",
+    id: 8,
+    image: "fa8.jpg",
+  },
+  {
+    id: 9,
+    image: "fa9.jpg",
+  },
+  {
+    id: 10,
+    image: "fa10.jpg",
+  },
+  {
+    id: 11,
+    image: "fa11.jpg",
+  },
+  {
+    id: 12,
+    image: "fa12.jpg",
   },
 ];
 
@@ -169,9 +185,9 @@ export default function ResiduosIndustriales() {
         <Carousel
           showStatus={false}
           autoPlay={true}
-          showArrows={false}
+          showArrows={true}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           infiniteLoop={true}
         >
           {HEADER_IMAGES.map((item) => {
