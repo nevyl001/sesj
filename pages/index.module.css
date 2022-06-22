@@ -62,7 +62,7 @@
   color: #003e1d;
   margin: 5px !important;
   text-align: left !important;
-  transition-duration: 0.2s;
+  transition-duration: 3s;
 }
 .separador2 {
   border: 1px solid rgb(13, 117, 13);
@@ -72,13 +72,13 @@
 }
 .section_cards:hover {
   border-top: 10px solid #003e1d;
-  transition-duration: 5s;
+  transition-duration: 3s;
   color: #208d2e;
 }
 .section_cards:hover h5 {
   font-size: 18px;
   color: #208d2e;
-  transition-duration: 0.2s;
+  transition-duration: 3s;
 }
 .section_cards:hover .separador {
   opacity: 0;
@@ -142,6 +142,14 @@
 .content_right_boton {
   padding-top: 25px;
 }
+.content_right_boton button{
+  box-shadow: 1px 6px 38px #CCCCDF4D;
+
+}
+.content_right_boton button:hover{
+  color: #208d2e ;
+  border: 1px solid #208d2e;
+}
 
 /* section5 */
 
@@ -160,7 +168,6 @@
   opacity: 1;
   width: 95%;
 }
-
 .clients_text {
   font-size: 10px;
   line-height: 0.5;

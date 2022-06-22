@@ -11,12 +11,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HEADER_IMAGES = [
   {
-    id: 1,
-    image: "sl.png",
+    id: 13,
+    image: "fa13.jpg",
   },
   {
-    id: 2,
-    image: "sl1.png",
+    id: 14,
+    image: "fa14.jpg",
+  },
+  {
+    id: 15,
+    image: "fa15.jpg",
+  },
+  {
+    id: 16,
+    image: "fa16.jpg",
+  },
+  {
+    id: 17,
+    image: "fa17.jpg",
   },
 ];
 
@@ -98,11 +110,11 @@ export default function ServiciosEspecializados() {
       </section>
       <div className={styles.carousel}>
         <Carousel
-          showStatus={false}
+          showStatus={true}
           autoPlay={true}
-          showArrows={false}
+          showArrows={true}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           infiniteLoop={true}
         >
           {HEADER_IMAGES.map((item) => {
