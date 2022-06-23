@@ -20,6 +20,25 @@
   background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
   box-shadow: 0px -5px 30px #00000045;
 }
+.custom-shape-divider-top-1655943989 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1655943989 svg {
+  position: relative;
+  display: block;
+  width: calc(201% + 1.3px);
+  height: 404px;
+}
+
+.custom-shape-divider-top-1655943989 .shape-fill {
+  fill: #39b44a;
+}
 
 /* section1 */
 .section1 {
@@ -142,12 +161,11 @@
 .content_right_boton {
   padding-top: 25px;
 }
-.content_right_boton button{
-  box-shadow: 1px 6px 38px #CCCCDF4D;
-
+.content_right_boton button {
+  box-shadow: 1px 6px 38px #ccccdf4d;
 }
-.content_right_boton button:hover{
-  color: #208d2e ;
+.content_right_boton button:hover {
+  color: #208d2e;
   border: 1px solid #208d2e;
 }
 

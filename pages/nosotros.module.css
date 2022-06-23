@@ -20,9 +20,7 @@
   color: white;
   font-size: 45px;
 }
-.header .line {
-  width: 100%;
-}
+
 .header_down {
   display: flex;
   padding: 10px 20px;
@@ -41,10 +39,13 @@
   font-size: 11px;
   margin: 15px 0;
 }
+.head .line {
+  width: 100%;
+  font-size: 0 !important;
+}
 /* section1 */
 .section {
-  background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
-  box-shadow: 0px -5px 30px #00000045;
+  background-color: #39b44a;
 }
 .nuestro {
   margin: 0 auto;
@@ -55,13 +56,11 @@
   grid-template-columns: 1fr 1fr;
   background-color: white;
   border-radius: 10px;
- 
- 
 }
-.section1_item_1{
+.section1_item_1 {
   width: 100%;
 }
-.section1_item_1 img{
+.section1_item_1 img {
   border-radius: 10px;
 }
 .section1_title {

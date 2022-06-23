@@ -29,9 +29,16 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.line}>
-          <Image alt="Divider" src="/img/linea.png" width={2444} height={335} />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#39B44A"
+              fill-opacity="1"
+              d="M0,256L120,234.7C240,213,480,171,720,154.7C960,139,1200,149,1320,154.7L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
         </div>
       </div>
+
       <div className={styles.section}>
         <div className="container">
           <div className={styles.section1}>

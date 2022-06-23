@@ -1,15 +1,12 @@
 import Link from "next/link";
-
 import styles from "./nosotros.module.css";
 import Image from "next/image";
-
 import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 
 const HEADER_IMAGES = [
   {
@@ -22,7 +19,7 @@ const HEADER_IMAGES = [
   },
 ];
 
-  export default function Home() {
+export default function Home() {
   const showHandler = (item) => {
     const itemDiv = document.getElementById(`item${item}`);
     const activeClass = `${styles.active}`;
@@ -31,9 +28,7 @@ const HEADER_IMAGES = [
     } else {
       itemDiv.classList.add(activeClass);
     }
-
   };
-
 
   return (
     <main>
@@ -111,8 +106,17 @@ const HEADER_IMAGES = [
             </div>
           </div>
         </div>
-        <div className={styles.line}></div>
+        <div className={styles.line}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#39B54A"
+              fill-opacity="1"
+              d="M0,32L120,69.3C240,107,480,181,720,202.7C960,224,1200,192,1320,176L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
       </div>
+
       <div className={styles.section}>
         <div className="container">
           <div className={styles.nuestro}>
@@ -144,8 +148,6 @@ const HEADER_IMAGES = [
                 })}
               </Carousel>
             </div> */}
-             
-
 
             <div className={styles.section1}>
               <div className={styles.section1_item_1}>
@@ -159,16 +161,16 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Mariela Ramírez
+                    Mariela Ramírez
                   </Title>
-                  <Subtitle color="black">
-                  Recursos Humanos
-                  </Subtitle>
+                  <Subtitle color="black">Recursos Humanos</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “Nuestro mayo reto es que la gente se sienta contenta en el área de trabajo. SESJ es una empresa sustentable preocupada por el medio ambiente.”
+                    “Nuestro mayo reto es que la gente se sienta contenta en el
+                    área de trabajo. SESJ es una empresa sustentable preocupada
+                    por el medio ambiente.”
                   </Paragraph>
                 </div>
               </div>
@@ -183,16 +185,18 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Ricardo Juárez Correa
+                    Ricardo Juárez Correa
                   </Title>
-                  <Subtitle color="black">
-                  Coordinador de Operaciones                
-                    </Subtitle>
+                  <Subtitle color="black">Coordinador de Operaciones</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “Un año trabajando en SESJ, es algo que me ha ayudado bastante, coordinamos y le damos la disposición adecuada al nuestros residuos de manejo especial y residuos peligrosos. Muy contento de trabajar en una empresa de manejo de residuos.”
+                    “Un año trabajando en SESJ, es algo que me ha ayudado
+                    bastante, coordinamos y le damos la disposición adecuada al
+                    nuestros residuos de manejo especial y residuos peligrosos.
+                    Muy contento de trabajar en una empresa de manejo de
+                    residuos.”
                   </Paragraph>
                 </div>
               </div>
@@ -208,16 +212,16 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Jose Guadalupe Rodríguez Martínez
+                    Jose Guadalupe Rodríguez Martínez
                   </Title>
-                  <Subtitle color="black">
-                  Mantenimiento              
-                    </Subtitle>
+                  <Subtitle color="black">Mantenimiento</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “Un día de trabajo es estar al pendiente del mantenimiento de los equipos, que estén limpios, que no tengan ninguna fuga. Siempre sale todo bien.”
+                    “Un día de trabajo es estar al pendiente del mantenimiento
+                    de los equipos, que estén limpios, que no tengan ninguna
+                    fuga. Siempre sale todo bien.”
                   </Paragraph>
                 </div>
               </div>
@@ -233,16 +237,17 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Javier Alejandro Torres Carrillo                  
+                    Javier Alejandro Torres Carrillo
                   </Title>
-                  <Subtitle color="black">
-                  Supervisor              
-                    </Subtitle>
+                  <Subtitle color="black">Supervisor</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “Todas las empresas generan cierto tipo de residuos, principalmente nos encargamos de recepcionar, almacenar y disponer el material que recibimos y mandarlo a las distintas áreas donde es procesado”
+                    “Todas las empresas generan cierto tipo de residuos,
+                    principalmente nos encargamos de recepcionar, almacenar y
+                    disponer el material que recibimos y mandarlo a las
+                    distintas áreas donde es procesado”
                   </Paragraph>
                 </div>
               </div>
@@ -258,16 +263,18 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Maria del Rosario Sánchez Allende                 
+                    Maria del Rosario Sánchez Allende
                   </Title>
-                  <Subtitle color="black">
-                  Gerente de Operaciones              
-                    </Subtitle>
+                  <Subtitle color="black">Gerente de Operaciones</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “SESJ para mí es una empresa que me ha ayudado a descubrir capacidades y aptitudes que antes no tenía, además de que me ha hecho crecer profesionalmente y personalmente. Mi rol como gerente es brindar un servicio de excelencia.”                  </Paragraph>
+                    “SESJ para mí es una empresa que me ha ayudado a descubrir
+                    capacidades y aptitudes que antes no tenía, además de que me
+                    ha hecho crecer profesionalmente y personalmente. Mi rol
+                    como gerente es brindar un servicio de excelencia.”{" "}
+                  </Paragraph>
                 </div>
               </div>
 
@@ -282,21 +289,20 @@ const HEADER_IMAGES = [
               <div className={styles.section1_item_2}>
                 <div className={styles.section1_item_2_text}>
                   <Title size="small" color="green1" align="left">
-                  Jovita Espinoza Palestina                 
+                    Jovita Espinoza Palestina
                   </Title>
-                  <Subtitle color="black">
-                  Operador General              
-                    </Subtitle>
+                  <Subtitle color="black">Operador General</Subtitle>
                   <div className={styles.line}>
                     <div className={styles.separador}></div>
                   </div>
                   <Paragraph color="black">
-                  “Yo considero que esta empresa es muy importante porque contribuimos al medio ambiente, aquí le llevamos segregación, es la separación de los productos que se pueden separar y los que no.”
-                                 </Paragraph>
+                    “Yo considero que esta empresa es muy importante porque
+                    contribuimos al medio ambiente, aquí le llevamos
+                    segregación, es la separación de los productos que se pueden
+                    separar y los que no.”
+                  </Paragraph>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
