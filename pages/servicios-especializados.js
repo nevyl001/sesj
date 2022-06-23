@@ -1,7 +1,4 @@
-import Link from "next/link";
 import styles from "./servicios-especializados.module.css";
-import Image from "next/image";
-import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
@@ -12,11 +9,27 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const HEADER_IMAGES = [
   {
     id: 1,
-    image: "sl.png",
+    image: "fa1.JPG",
   },
   {
     id: 2,
-    image: "sl1.png",
+    image: "fa2.JPG",
+  },
+  {
+    id: 3,
+    image: "fa3.JPG",
+  },
+  {
+    id: 4,
+    image: "fa4.JPG",
+  },
+  {
+    id: 5,
+    image: "fa5.JPG",
+  },
+  {
+    id: 6,
+    image: "fa6.JPG",
   },
 ];
 
@@ -186,9 +199,9 @@ export default function ServiciosEspecializados() {
         <Carousel
           showStatus={false}
           autoPlay={true}
-          showArrows={false}
+          showArrows={true}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           infiniteLoop={true}
         >
           {HEADER_IMAGES.map((item) => {

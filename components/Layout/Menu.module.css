@@ -1,8 +1,9 @@
 .menu_desktop {
+  padding: 40px 0;
+  background-color: white;
   width: 100%;
   position: fixed;
   text-align: center;
-  top: 42px;
   left: 0;
   z-index: 999;
 }

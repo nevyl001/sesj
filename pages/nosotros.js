@@ -1,39 +1,27 @@
-import Link from "next/link";
-
 import styles from "./nosotros.module.css";
 import Image from "next/image";
-
-import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
-const HEADER_IMAGES = [
-  {
-    id: 1,
-    image: "sl.png",
-  },
-  {
-    id: 2,
-    image: "sl1.png",
-  },
-];
-
-  export default function Home() {
+export default function Home() {
   const showHandler = (item) => {
     const itemDiv = document.getElementById(`item${item}`);
+    const symbolOpen = document.getElementById(`symbolopen${item}`);
+    const symbolClose = document.getElementById(`symbolclose${item}`);
     const activeClass = `${styles.active}`;
     if (itemDiv.classList.contains(`${styles.active}`)) {
       itemDiv.classList.remove(activeClass);
+      symbolOpen.style.display = "block";
+      symbolClose.style.display = "none";
     } else {
       itemDiv.classList.add(activeClass);
+      symbolOpen.style.display = "none";
+      symbolClose.style.display = "block";
     }
-
   };
-
 
   return (
     <main>
@@ -111,7 +99,15 @@ const HEADER_IMAGES = [
             </div>
           </div>
         </div>
-        <div className={styles.line}></div>
+        <div className={styles.line}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#39B54A"
+              fill-opacity="1"
+              d="M0,64L120,101.3C240,139,480,213,720,229.3C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
       </div>
       <div className={styles.section}>
         <div className="container">
@@ -122,8 +118,8 @@ const HEADER_IMAGES = [
               </Title>
             </div>
 
-            {/* <div className={styles.carousel}>
-                <Carousel
+            <div className={styles.carousel}>
+              <Carousel
                 showStatus={false}
                 autoPlay={true}
                 showArrows={false}
@@ -131,177 +127,149 @@ const HEADER_IMAGES = [
                 showIndicators={false}
                 infiniteLoop={true}
               >
-                {HEADER_IMAGES.map((item) => {
-                  return (
-                    <div
-                      key={item.id}
-                      className={styles.item}
-                      style={{
-                        backgroundImage: `url(/img/slider/${item.image})`,
-                      }}
-                    ></div>
-                  );
-                })}
+                <div className={styles.section1}>
+                  <div className={styles.section1_item_1}>
+                    <Image
+                      alt="Servicios Especializados"
+                      src="/img/Empleados/rijuarez.jpg"
+                      width={3840}
+                      height={2160}
+                    />
+                  </div>
+                  <div className={styles.section1_item_2}>
+                    <div className={styles.section1_item_2_text}>
+                      <Title size="small" color="green1" align="left">
+                        Ricardo Juárez Correa
+                      </Title>
+                      <Subtitle color="black">
+                        Coordinador de Operaciones
+                      </Subtitle>
+                      <div className={styles.line}>
+                        <div className={styles.separador}></div>
+                      </div>
+                      <Paragraph color="black">
+                        “Un año trabajando en SESJ, es algo que me ha ayudado
+                        bastante, coordinamos y le damos la disposición adecuada
+                        al nuestros residuos de manejo especial y residuos
+                        peligrosos. Muy contento de trabajar en una empresa de
+                        manejo de residuos.”
+                      </Paragraph>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.section1}>
+                  <div className={styles.section1_item_1}>
+                    <Image
+                      alt="Servicios Especializados"
+                      src="/img/Empleados/jogua.jpg"
+                      width={3840}
+                      height={2160}
+                    />
+                  </div>
+                  <div className={styles.section1_item_2}>
+                    <div className={styles.section1_item_2_text}>
+                      <Title size="small" color="green1" align="left">
+                        Jose Guadalupe Rodríguez Martínez
+                      </Title>
+                      <Subtitle color="black">Mantenimiento</Subtitle>
+                      <div className={styles.line}>
+                        <div className={styles.separador}></div>
+                      </div>
+                      <Paragraph color="black">
+                        “Un día de trabajo es estar al pendiente del
+                        mantenimiento de los equipos, que estén limpios, que no
+                        tengan ninguna fuga. Siempre sale todo bien.”
+                      </Paragraph>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.section1}>
+                  <div className={styles.section1_item_1}>
+                    <Image
+                      alt="Servicios Especializados"
+                      src="/img/Empleados/javial.jpg"
+                      width={3840}
+                      height={2160}
+                    />
+                  </div>
+                  <div className={styles.section1_item_2}>
+                    <div className={styles.section1_item_2_text}>
+                      <Title size="small" color="green1" align="left">
+                        Javier Alejandro Torres Carrillo
+                      </Title>
+                      <Subtitle color="black">Supervisor</Subtitle>
+                      <div className={styles.line}>
+                        <div className={styles.separador}></div>
+                      </div>
+                      <Paragraph color="black">
+                        “Todas las empresas generan cierto tipo de residuos,
+                        principalmente nos encargamos de recepcionar, almacenar
+                        y disponer el material que recibimos y mandarlo a las
+                        distintas áreas donde es procesado”
+                      </Paragraph>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.section1}>
+                  <div className={styles.section1_item_1}>
+                    <Image
+                      alt="Servicios Especializados"
+                      src="/img/Empleados/marosa.jpg"
+                      width={3840}
+                      height={2160}
+                    />
+                  </div>
+                  <div className={styles.section1_item_2}>
+                    <div className={styles.section1_item_2_text}>
+                      <Title size="small" color="green1" align="left">
+                        Maria del Rosario Sánchez Allende
+                      </Title>
+                      <Subtitle color="black">Gerente de Operaciones</Subtitle>
+                      <div className={styles.line}>
+                        <div className={styles.separador}></div>
+                      </div>
+                      <Paragraph color="black">
+                        “SESJ para mí es una empresa que me ha ayudado a
+                        descubrir capacidades y aptitudes que antes no tenía,
+                        además de que me ha hecho crecer profesionalmente y
+                        personalmente. Mi rol como gerente es brindar un
+                        servicio de excelencia.”{" "}
+                      </Paragraph>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.section1}>
+                  <div className={styles.section1_item_1}>
+                    <Image
+                      alt="Servicios Especializados"
+                      src="/img/Empleados/jovita.jpg"
+                      width={3840}
+                      height={2160}
+                    />
+                  </div>
+                  <div className={styles.section1_item_2}>
+                    <div className={styles.section1_item_2_text}>
+                      <Title size="small" color="green1" align="left">
+                        Jovita Espinoza Palestina
+                      </Title>
+                      <Subtitle color="black">Operador General</Subtitle>
+                      <div className={styles.line}>
+                        <div className={styles.separador}></div>
+                      </div>
+                      <Paragraph color="black">
+                        “Yo considero que esta empresa es muy importante porque
+                        contribuimos al medio ambiente, aquí le llevamos
+                        segregación, es la separación de los productos que se
+                        pueden separar y los que no.”
+                      </Paragraph>
+                    </div>
+                  </div>
+                </div>
               </Carousel>
-            </div> */}
-             
-
-
-            <div className={styles.section1}>
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/maricelaramirez.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Mariela Ramírez
-                  </Title>
-                  <Subtitle color="black">
-                  Recursos Humanos
-                  </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “Nuestro mayo reto es que la gente se sienta contenta en el área de trabajo. SESJ es una empresa sustentable preocupada por el medio ambiente.”
-                  </Paragraph>
-                </div>
-              </div>
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/rijuarez.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Ricardo Juárez Correa
-                  </Title>
-                  <Subtitle color="black">
-                  Coordinador de Operaciones                
-                    </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “Un año trabajando en SESJ, es algo que me ha ayudado bastante, coordinamos y le damos la disposición adecuada al nuestros residuos de manejo especial y residuos peligrosos. Muy contento de trabajar en una empresa de manejo de residuos.”
-                  </Paragraph>
-                </div>
-              </div>
-
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/jogua.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Jose Guadalupe Rodríguez Martínez
-                  </Title>
-                  <Subtitle color="black">
-                  Mantenimiento              
-                    </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “Un día de trabajo es estar al pendiente del mantenimiento de los equipos, que estén limpios, que no tengan ninguna fuga. Siempre sale todo bien.”
-                  </Paragraph>
-                </div>
-              </div>
-
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/javial.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Javier Alejandro Torres Carrillo                  
-                  </Title>
-                  <Subtitle color="black">
-                  Supervisor              
-                    </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “Todas las empresas generan cierto tipo de residuos, principalmente nos encargamos de recepcionar, almacenar y disponer el material que recibimos y mandarlo a las distintas áreas donde es procesado”
-                  </Paragraph>
-                </div>
-              </div>
-
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/marosa.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Maria del Rosario Sánchez Allende                 
-                  </Title>
-                  <Subtitle color="black">
-                  Gerente de Operaciones              
-                    </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “SESJ para mí es una empresa que me ha ayudado a descubrir capacidades y aptitudes que antes no tenía, además de que me ha hecho crecer profesionalmente y personalmente. Mi rol como gerente es brindar un servicio de excelencia.”                  </Paragraph>
-                </div>
-              </div>
-
-              <div className={styles.section1_item_1}>
-                <Image
-                  alt="Servicios Especializados"
-                  src="/img/Empleados/jovita.jpg"
-                  width={3840}
-                  height={2160}
-                />
-              </div>
-              <div className={styles.section1_item_2}>
-                <div className={styles.section1_item_2_text}>
-                  <Title size="small" color="green1" align="left">
-                  Jovita Espinoza Palestina                 
-                  </Title>
-                  <Subtitle color="black">
-                  Operador General              
-                    </Subtitle>
-                  <div className={styles.line}>
-                    <div className={styles.separador}></div>
-                  </div>
-                  <Paragraph color="black">
-                  “Yo considero que esta empresa es muy importante porque contribuimos al medio ambiente, aquí le llevamos segregación, es la separación de los productos que se pueden separar y los que no.”
-                                 </Paragraph>
-                </div>
-              </div>
-
-
             </div>
           </div>
         </div>
       </div>
-
       <div className={styles.section4}>
         <div className="container">
           <div className={styles.content4}>
@@ -371,7 +339,6 @@ const HEADER_IMAGES = [
           </div>
         </div>
       </div>
-
       <div className={styles.clients}>
         <div className="container">
           <div className={styles.calidad}>
@@ -398,7 +365,6 @@ const HEADER_IMAGES = [
           </div>
         </div>
       </div>
-
       <div className={styles.section6}>
         <div className="container">
           <div className={styles.certificacion}>
@@ -430,6 +396,14 @@ const HEADER_IMAGES = [
                     “Sistema de Gestión de Calidad”.
                   </Paragraph>
                 </div>
+                <div className={styles.symbols}>
+                  <div className={styles.symbol_1} id="symbolopen1">
+                    +
+                  </div>
+                  <div className={styles.symbol_2} id="symbolclose1">
+                    -
+                  </div>
+                </div>
               </div>
               <div className={styles.box_acordion_item} id="item2">
                 <div
@@ -442,6 +416,14 @@ const HEADER_IMAGES = [
                   <Paragraph color="gray">
                     “Sistema de Gestión Ambiental”.
                   </Paragraph>
+                </div>
+                <div className={styles.symbols}>
+                  <div className={styles.symbol_1} id="symbolopen2">
+                    +
+                  </div>
+                  <div className={styles.symbol_2} id="symbolclose2">
+                    -
+                  </div>
                 </div>
               </div>
               <div className={styles.box_acordion_item} id="item3">
@@ -458,6 +440,14 @@ const HEADER_IMAGES = [
                     STPS (Secretaría del Trabajo y Previsión Social).{" "}
                   </Paragraph>
                 </div>
+                <div className={styles.symbols}>
+                  <div className={styles.symbol_1} id="symbolopen3">
+                    +
+                  </div>
+                  <div className={styles.symbol_2} id="symbolclose3">
+                    -
+                  </div>
+                </div>
               </div>
               <div className={styles.box_acordion_item} id="item4">
                 <div
@@ -473,6 +463,14 @@ const HEADER_IMAGES = [
                     el PASST (Programa de Autogestión en Seguridad y Salud en el
                     Trabajo) en nuestra empresa.
                   </Paragraph>
+                </div>
+                <div className={styles.symbols}>
+                  <div className={styles.symbol_1} id="symbolopen4">
+                    +
+                  </div>
+                  <div className={styles.symbol_2} id="symbolclose4">
+                    -
+                  </div>
                 </div>
               </div>
             </div>

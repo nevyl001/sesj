@@ -5,6 +5,8 @@ import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
   return (
@@ -29,7 +31,13 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.line}>
-          <Image alt="Divider" src="/img/linea.png" width={2444} height={335} />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#39B54A"
+              fill-opacity="1"
+              d="M0,256L120,229.3C240,203,480,149,720,117.3C960,85,1200,75,1320,69.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
         </div>
       </div>
       <div className={styles.section}>
@@ -166,26 +174,78 @@ export default function Home() {
                 Lo que dicen los clientes
               </Title>
             </div>
-            <div className={styles.clients_card}>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Vestibulum sollicitudin nunc in eros a justo facilisis
-                  rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                  nibh tortor mauris condimentum nibh”
-                </Paragraph>
-                <Subtitle color="black">JONT KOOK</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
-              <div className={styles.clients_card1}>
-                <Paragraph color="black">
-                  “Sollicitudin nunc in eros a justo facilisis rutrum. Aenean id
-                  ullamcorper libero. Vestibulum imperdiet nibh tortor mauris
-                  condimentum”
-                </Paragraph>
-                <Subtitle color="black"> DAVID JAME</Subtitle>
-                <h4>CEO lacinia faucibus risus</h4>
-              </div>
+            <div className={styles.carousel}>
+              <Carousel
+                showStatus={false}
+                autoPlay={true}
+                showArrows={true}
+                showThumbs={false}
+                showIndicators={true}
+                infiniteLoop={true}
+              >
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+                <div className={styles.clients_card}>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Vestibulum sollicitudin nunc in eros a justo facilisis
+                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
+                      nibh tortor mauris condimentum nibh”
+                    </Paragraph>
+                    <Subtitle color="black">JONT KOOK</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                  <div className={styles.clients_card1}>
+                    <Paragraph color="black">
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum”
+                    </Paragraph>
+                    <Subtitle color="black"> DAVID JAME</Subtitle>
+                    <h4>CEO lacinia faucibus risus</h4>
+                  </div>
+                </div>
+              </Carousel>
             </div>
+
             <div className={styles.clients_img}>
               <Image
                 alt="im1"

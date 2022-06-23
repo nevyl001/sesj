@@ -77,20 +77,23 @@
   display: flex;
   display: inline-block;
 }
-
 .foo_right a {
   background-color: white;
   padding-right: 10px;
 }
-
-/* box flez */
-
+/* box flex */
 .box_flex {
   display: flex;
 }
 .box_flex_left {
   width: 50%;
 }
+
+.box_flex_left h2{
+  padding-top: 50px;
+}
+
+
 .box_flex_right {
   width: 50%;
 }
@@ -145,6 +148,7 @@
 }
 
 .form {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -163,7 +167,7 @@
   border-radius: 20px;
   width: 100%;
   margin: 10px 0;
-  padding: 15px 20px;
+  padding: 20px 20px;
   color: #ddd;
 }
 .form input::placeholder,
@@ -173,6 +177,11 @@
 .form textarea {
   min-height: 100px;
 }
+
+.btnform{
+  padding-top: 25px;
+}
+
 @media only screen and (max-width: 1000px) {
   .head {
     padding: 100px 20px 40px 20px;
