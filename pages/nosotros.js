@@ -1,6 +1,5 @@
 import styles from "./nosotros.module.css";
 import Image from "next/image";
-
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
@@ -100,7 +99,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.line}></div>
+        <div className={styles.line}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#39B54A"
+              fill-opacity="1"
+              d="M0,64L120,101.3C240,139,480,213,720,229.3C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
       </div>
       <div className={styles.section}>
         <div className="container">

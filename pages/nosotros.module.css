@@ -6,6 +6,9 @@
   text-align: left;
   background-color: white;
 }
+.head .line {
+  font-size: 0;
+}
 .header {
   margin: 0 auto;
   padding: 0 20px;
