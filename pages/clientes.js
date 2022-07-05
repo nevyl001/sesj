@@ -151,17 +151,20 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.box_flex_right}>
-              <div className={styles.box_contacto}>
-                <Subtitle color="black">Estamos para ayudarte.</Subtitle>
-                <Paragraph color="black">
-                  Servicios acordes con los requerimientos de nuestros clientes
-                  de talla internacional.
-                </Paragraph>
-                <Link href="/contacto">
-                  <Button type="green">CONTÁCTANOS</Button>
-                </Link>
+              <div className={styles.padre}>
+                <div className={styles.hijo}>
+                  <div className={styles.box_contacto}>
+                    <Subtitle color="black">Estamos para ayudarte.</Subtitle>
+                    <Paragraph color="black">
+                      Servicios acordes con los requerimientos de nuestros
+                      clientes de talla internacional.
+                    </Paragraph>
+                    <Link href="/contacto">
+                      <Button type="green">CONTÁCTANOS</Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <div className={styles.divider} />
             </div>
           </div>
         </div>
