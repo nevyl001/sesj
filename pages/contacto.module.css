@@ -89,10 +89,9 @@
   width: 50%;
 }
 
-.box_flex_left h2{
+.box_flex_left h2 {
   padding-top: 50px;
 }
-
 
 .box_flex_right {
   width: 50%;
@@ -178,13 +177,13 @@
   min-height: 100px;
 }
 
-.btnform{
+.btnform {
   padding-top: 25px;
 }
 
 @media only screen and (max-width: 1000px) {
   .head {
-    padding: 100px 20px 40px 20px;
+    padding: 120px 20px 40px 20px;
     text-align: center;
   }
   .box_flex {

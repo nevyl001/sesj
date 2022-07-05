@@ -64,6 +64,9 @@
     display: block;
     font-size: 10px;
   }
+  .header_ti {
+    padding-top: 50px;
+  }
   .header_p p {
     font-size: 12px;
   }
