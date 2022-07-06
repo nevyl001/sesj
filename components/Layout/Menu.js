@@ -23,12 +23,18 @@ function Menu() {
 
   return (
     <Fragment>
-      <div className={styles.menu_desktop}>
+      <div
+        className={styles.menu_desktop}
+        onMouseLeave={submenuInactiveHandler}
+      >
         <div className={styles.container}>
           <div className={styles.menu_master}>
             <div className={styles.menu_top}>
               <div className={styles.menu_desktop_left}>
-                <div className={styles.img} onClick={submenuInactiveHandler}>
+                <div
+                  className={styles.img}
+                  onMouseEnter={submenuInactiveHandler}
+                >
                   <Link href="/">
                     <a>
                       <Image
@@ -43,25 +49,37 @@ function Menu() {
               </div>
               <div className={styles.menu_desktop_right}>
                 <Link href="/">
-                  <a className={styles.link} onClick={submenuInactiveHandler}>
+                  <a
+                    className={styles.link}
+                    onMouseEnter={submenuInactiveHandler}
+                  >
                     HOME
                   </a>
                 </Link>
                 <Link href="/nosotros">
-                  <a className={styles.link} onClick={submenuInactiveHandler}>
+                  <a
+                    className={styles.link}
+                    onMouseEnter={submenuInactiveHandler}
+                  >
                     NOSOTROS
                   </a>
                 </Link>
-                <a className={styles.link} onClick={submenuActiveHandler}>
+                <a className={styles.link} onMouseEnter={submenuActiveHandler}>
                   SERVICIOS
                 </a>
                 <Link href="/clientes">
-                  <a className={styles.link} onClick={submenuInactiveHandler}>
+                  <a
+                    className={styles.link}
+                    onMouseEnter={submenuInactiveHandler}
+                  >
                     CLIENTES
                   </a>
                 </Link>
                 <Link href="/contacto">
-                  <a className={styles.link} onClick={submenuInactiveHandler}>
+                  <a
+                    className={styles.link}
+                    onMouseEnter={submenuInactiveHandler}
+                  >
                     CONTACTO
                   </a>
                 </Link>

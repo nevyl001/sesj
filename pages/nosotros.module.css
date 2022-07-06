@@ -107,10 +107,15 @@
 .calidad {
   column-gap: 25px;
   padding: 0 100px;
-  align-items: center;
   display: flex;
 }
 
+.clients_text {
+  width: 50%;
+}
+.clients_img {
+  width: 50%;
+}
 .clients_text p {
   margin: 10px 0;
 }
@@ -244,5 +249,11 @@
   }
   .certificacion {
     padding: 100px 20px 40px 20px;
+  }
+  .clients_text {
+    width: 100%;
+  }
+  .clients_img {
+    width: 100%;
   }
 }

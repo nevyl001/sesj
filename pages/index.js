@@ -49,44 +49,56 @@ export default function Home() {
             </Title>
           </div>
           <div className={styles.section_card}>
-            <div className={styles.section_cards}>
-              <h5>Servicios Especializados</h5>
-              <div className={styles.separador}></div>
-              <Image
-                alt="Servicios Especializados"
-                src="/img/im1.png"
-                width={200}
-                height={200}
-              />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>Gestion de Residuos</p>
-                <p>Limpieza Industrial y Corporativa</p>
-                <p>Conservacion de Edificios</p>
+            <div className={styles.section_card_item}>
+              <div className={styles.visible_content}>
+                <h5>Servicios Especializados</h5>
+                <div className={styles.separador}></div>
+                <Image
+                  alt="Servicios Especializados"
+                  src="/img/im1.png"
+                  width={200}
+                  height={200}
+                />
+                <div className={styles.separador2}></div>
+              </div>
+              <div className={styles.hidden_content}>
+                <div className={styles.text_card}>
+                  <p>Gestion de Residuos</p>
+                  <p>Limpieza Industrial y Corporativa</p>
+                  <p>Conservacion de Edificios</p>
+                </div>
               </div>
             </div>
-            <div className={styles.section_cards}>
-              <h5>Residuos Industriales</h5>
-              <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im2.png" width={200} height={200} />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>Compra-venta de residuos</p>
-                <p>Reciclaje</p>
-                <p>Disposicion final</p>
+            <div className={styles.section_card_item}>
+              <div className={styles.visible_content}>
+                <h5>Residuos Industriales</h5>
+                <div className={styles.separador}></div>
+                <Image alt="im1" src="/img/im2.png" width={200} height={200} />
+                <div className={styles.separador2}></div>
+              </div>
+              <div className={styles.hidden_content}>
+                <div className={styles.text_card}>
+                  <p>Compra-venta de residuos</p>
+                  <p>Reciclaje</p>
+                  <p>Disposicion final</p>
+                </div>
               </div>
             </div>
-            <div className={styles.section_cards}>
-              <h5>Transportes Especializados de Residuos</h5>
-              <div className={styles.separador}></div>
-              <Image alt="im1" src="/img/im3.png" width={200} height={200} />
-              <div className={styles.separador2}></div>
-              <div className={styles.text_card}>
-                <p>
-                  Caja seca, plataforma, roll-off
-                  <br />
-                  tolvas, etc.
-                </p>
+            <div className={styles.section_card_item}>
+              <div className={styles.visible_content}>
+                <h5>Transportes Especializados de Residuos</h5>
+                <div className={styles.separador}></div>
+                <Image alt="im1" src="/img/im3.png" width={200} height={200} />
+                <div className={styles.separador2}></div>
+              </div>
+              <div className={styles.hidden_content}>
+                <div className={styles.text_card}>
+                  <p>
+                    Caja seca, plataforma, roll-off
+                    <br />
+                    tolvas, etc.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
