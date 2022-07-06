@@ -360,7 +360,9 @@ export default function Home() {
               </Paragraph>
             </div>
             <div className={styles.clients_img}>
-              <Image alt="im1" src="/img/imacli.png" width={606} height={458} />
+              <video controls style={{ width: "100%" }}>
+                <source src="/img/video2.mp4" />
+              </video>
             </div>
           </div>
         </div>

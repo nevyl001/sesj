@@ -35,6 +35,21 @@
   padding-bottom: 100px;
   height: auto;
 }
+
+.section_card_item {
+  width: 30%;
+  background-color: white;
+  height: 280px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 4px;
+}
+.section_card_item:hover {
+  height: 450px;
+  transition-duration: 0.4s;
+}
+
 .section_cards {
   vertical-align: top;
   cursor: pointer;
@@ -58,7 +73,6 @@
 }
 .text_card p {
   font-size: 18px;
-  display: none;
   color: #003e1d;
   margin: 5px !important;
   text-align: left !important;
@@ -67,8 +81,8 @@
 .separador2 {
   border: 1px solid rgb(13, 117, 13);
   width: 90%;
-  opacity: 0;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .section_cards:hover {
   border-top: 10px solid #003e1d;
@@ -142,12 +156,11 @@
 .content_right_boton {
   padding-top: 25px;
 }
-.content_right_boton button{
-  box-shadow: 1px 6px 38px #CCCCDF4D;
-
+.content_right_boton button {
+  box-shadow: 1px 6px 38px #ccccdf4d;
 }
-.content_right_boton button:hover{
-  color: #208d2e ;
+.content_right_boton button:hover {
+  color: #208d2e;
   border: 1px solid #208d2e;
 }
 
