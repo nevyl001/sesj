@@ -25,9 +25,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/clientes/bmw.svg"
-                        width={150}
-                        height={79}
+                        src="/img/clientes/bmw.jpg"
+                        width={500}
+                        height={250}
                       />
                     </div>
                   </div>
@@ -50,9 +50,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/clientes/vw.png"
-                        width={325}
-                        height={325}
+                        src="/img/clientes/vw.jpg"
+                        width={500}
+                        height={250}
                       />
                     </div>
                   </div>
@@ -79,8 +79,8 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/clientes/audi.png"
-                        width={600}
+                        src="/img/clientes/audi.jpg"
+                        width={500}
                         height={250}
                       />
                     </div>
@@ -103,9 +103,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/clientes/nissan.png"
-                        width={1189}
-                        height={1025}
+                        src="/img/clientes/nissan.jpg"
+                        width={500}
+                        height={250}
                       />
                     </div>
                   </div>
@@ -129,9 +129,9 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
-                        src="/img/clientes/veoli.jpeg"
-                        width={3009}
-                        height={1228}
+                        src="/img/clientes/veoli.jpg"
+                        width={500}
+                        height={250}
                       />
                     </div>
                   </div>

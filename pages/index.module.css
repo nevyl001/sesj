@@ -39,15 +39,42 @@
 .section_card_item {
   width: 30%;
   background-color: white;
-  height: 280px;
   transition-duration: 0.4s;
   overflow: hidden;
-  padding: 20px;
   border-radius: 4px;
+  padding-top: 10px;
+  height: 250px;
 }
 .section_card_item:hover {
-  height: 450px;
+  height: 400px;
   transition-duration: 0.4s;
+}
+.section_card_item h3 {
+  color: white;
+  font-size: 16px;
+}
+.item_image {
+  padding: 20px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.2s;
+}
+.section_card_item:hover .item_image {
+  height: 200px;
+  transition-duration: 0.2s;
+}
+.section_card_item .hidden_content {
+  padding: 20px;
+}
+.section_card_item .separador {
+  width: 100%;
+}
+.item_text {
+  padding: 20px 0;
+  color: #003e1d;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .section_cards {
@@ -176,7 +203,6 @@
   padding: 30px;
   margin: 0 auto;
   background: #fafafa 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
   border-radius: 36px;
   opacity: 1;
   width: 95%;
@@ -189,7 +215,7 @@
 .clients_card {
   display: flex;
   background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 3px 3px 6px #00000029;
+
   border-radius: 36px;
   opacity: 1;
 }
