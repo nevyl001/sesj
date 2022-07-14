@@ -40,12 +40,12 @@
 }
 .box_image_background {
   background-color: white;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   border-radius: 10px;
 }
 .box_image {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 .box_contacto {
