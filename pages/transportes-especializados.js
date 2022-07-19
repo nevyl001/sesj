@@ -11,24 +11,60 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HEADER_IMAGES = [
   {
+    id: 1,
+    image: "fa1.JPG",
+  },
+  {
+    id: 2,
+    image: "fa2.JPG",
+  },
+  {
+    id: 3,
+    image: "fa3.JPG",
+  },
+  {
+    id: 4,
+    image: "fa4.JPG",
+  },
+  {
+    id: 5,
+    image: "fa5.JPG",
+  },
+  {
+    id: 6,
+    image: "fa6.JPG",
+  },
+  {
+    id: 7,
+    image: "fa7.jpg",
+  },
+  {
+    id: 8,
+    image: "fa8.jpg",
+  },
+  {
+    id: 9,
+    image: "fa9.jpg",
+  },
+  {
+    id: 10,
+    image: "fa10.jpg",
+  },
+  {
+    id: 11,
+    image: "fa11.jpg",
+  },
+  {
+    id: 12,
+    image: "fa12.jpg",
+  },
+  {
     id: 13,
     image: "fa13.jpg",
   },
   {
     id: 14,
     image: "fa14.jpg",
-  },
-  {
-    id: 15,
-    image: "fa15.jpg",
-  },
-  {
-    id: 16,
-    image: "fa16.jpg",
-  },
-  {
-    id: 17,
-    image: "fa17.jpg",
   },
 ];
 

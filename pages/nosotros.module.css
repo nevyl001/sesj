@@ -116,6 +116,10 @@
 .clients_img {
   width: 50%;
 }
+.clients_img video {
+  border-radius: 10px;
+}
+
 .clients_text p {
   margin: 10px 0;
 }

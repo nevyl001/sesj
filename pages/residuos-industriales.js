@@ -12,6 +12,30 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HEADER_IMAGES = [
   {
+    id: 1,
+    image: "fa1.JPG",
+  },
+  {
+    id: 2,
+    image: "fa2.JPG",
+  },
+  {
+    id: 3,
+    image: "fa3.JPG",
+  },
+  {
+    id: 4,
+    image: "fa4.JPG",
+  },
+  {
+    id: 5,
+    image: "fa5.JPG",
+  },
+  {
+    id: 6,
+    image: "fa6.JPG",
+  },
+  {
     id: 7,
     image: "fa7.jpg",
   },
@@ -34,6 +58,14 @@ const HEADER_IMAGES = [
   {
     id: 12,
     image: "fa12.jpg",
+  },
+  {
+    id: 13,
+    image: "fa13.jpg",
+  },
+  {
+    id: 14,
+    image: "fa14.jpg",
   },
 ];
 
