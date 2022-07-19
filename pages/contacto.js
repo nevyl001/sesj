@@ -61,9 +61,9 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.btnform}>
-              <Link   href="#">
-                <Button>CONTÁCTANOS</Button>
-              </Link>
+                <Link href="#">
+                  <Button>CONTÁCTANOS</Button>
+                </Link>
               </div>
             </div>
           </div>

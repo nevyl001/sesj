@@ -5,9 +5,34 @@ import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 
-export default function Home() {
+export default function Clientes() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [showSticky, setShowSticky] = useState(true);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+  console.log(scrollPosition);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrollPosition > 1000) {
+      setShowSticky(false);
+    } else {
+      setShowSticky(true);
+    }
+  }, [scrollPosition]);
+
   return (
     <Fragment>
       <div className={styles.head}>
@@ -104,7 +129,7 @@ export default function Home() {
                       <Image
                         alt="im1"
                         src="/img/clientes/audi.jpg"
-                        width={500}
+                        width={600}
                         height={250}
                       />
                     </div>
@@ -175,20 +200,22 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.box_flex_right}>
-              <div className={styles.padre}>
-                <div className={styles.hijo}>
-                  <div className={styles.box_contacto}>
-                    <Subtitle color="black">Estamos para ayudarte.</Subtitle>
-                    <Paragraph color="black">
-                      Servicios acordes con los requerimientos de nuestros
-                      clientes de talla internacional.
-                    </Paragraph>
-                    <Link href="/contacto">
-                      <Button type="green">CONTÁCTANOS</Button>
-                    </Link>
+              {showSticky && (
+                <div className={styles.padre}>
+                  <div className={styles.hijo}>
+                    <div className={styles.box_contacto}>
+                      <Subtitle color="black">Estamos para ayudarte.</Subtitle>
+                      <Paragraph color="black">
+                        Servicios acordes con los requerimientos de nuestros
+                        clientes de talla internacional.
+                      </Paragraph>
+                      <Link href="/contacto">
+                        <Button type="green">CONTÁCTANOS</Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
