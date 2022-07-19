@@ -7,13 +7,61 @@ import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef();
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+
+  const showVideoHandler = () => {
+    setShowVideo(true);
+  };
+
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setShowVideo(false);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
   return (
     <main>
+      {showVideo && (
+        <div ref={wrapperRef} className={styles.video_box}>
+          <video ref={videoRef} style={{ width: "100%" }} autoPlay controls>
+            <source src="/img/video2.mp4" />
+          </video>
+        </div>
+      )}
       <div className={styles.head}>
         <div className="container">
           <div className={styles.header}>
+            <div className={styles.video_btn} onClick={showVideoHandler}>
+              <button>
+                Ver video
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                </svg>
+              </button>
+            </div>
             <Title size="big" color="white" align="left">
               Somos empresa lider <br />
               en limpieza, mantenimiento
