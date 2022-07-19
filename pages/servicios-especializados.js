@@ -31,6 +31,38 @@ const HEADER_IMAGES = [
     id: 6,
     image: "fa6.JPG",
   },
+  {
+    id: 7,
+    image: "fa7.jpg",
+  },
+  {
+    id: 8,
+    image: "fa8.jpg",
+  },
+  {
+    id: 9,
+    image: "fa9.jpg",
+  },
+  {
+    id: 10,
+    image: "fa10.jpg",
+  },
+  {
+    id: 11,
+    image: "fa11.jpg",
+  },
+  {
+    id: 12,
+    image: "fa12.jpg",
+  },
+  {
+    id: 13,
+    image: "fa13.jpg",
+  },
+  {
+    id: 14,
+    image: "fa14.jpg",
+  },
 ];
 
 export default function ServiciosEspecializados() {

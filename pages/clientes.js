@@ -79,6 +79,30 @@ export default function Home() {
                     <div className={styles.box_image}>
                       <Image
                         alt="im1"
+                        src="/img/clientes/vw.jpg"
+                        width={500}
+                        height={250}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.box_grid_item_right}>
+                  <div className={styles.header_title}>
+                    <Subtitle color="white">Volkswagen Bang</Subtitle>
+                  </div>
+                  <div className={styles.header_p}>
+                    <Paragraph color="white">
+                      Volkswagen Bank, S.A. Institución de Banca Múltiple
+                    </Paragraph>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.box_grid}>
+                <div className={styles.box_grid_item_left}>
+                  <div className={styles.box_image_background}>
+                    <div className={styles.box_image}>
+                      <Image
+                        alt="im1"
                         src="/img/clientes/audi.jpg"
                         width={500}
                         height={250}

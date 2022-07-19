@@ -122,9 +122,9 @@ export default function Home() {
               <Carousel
                 showStatus={false}
                 autoPlay={true}
-                showArrows={false}
+                showArrows={true}
                 showThumbs={false}
-                showIndicators={false}
+                showIndicators={true}
                 infiniteLoop={true}
               >
                 <div className={styles.section1}>
@@ -456,6 +456,28 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 4)}
                 >
+                  <div className={styles.title}>ISO 45001:2018(es)</div>
+                </div>
+                <div className={styles.box_acordion_item_content}>
+                  <Paragraph color="gray">
+                    Sistemas de gestión de la seguridad y salud en el trabajo
+                    saludos
+                  </Paragraph>
+                </div>
+                <div className={styles.symbols}>
+                  <div className={styles.symbol_1} id="symbolopen4">
+                    +
+                  </div>
+                  <div className={styles.symbol_2} id="symbolclose4">
+                    -
+                  </div>
+                </div>
+              </div>
+              <div className={styles.box_acordion_item} id="item5">
+                <div
+                  className={styles.box_acordion_item_trigger}
+                  onClick={showHandler.bind({}, 5)}
+                >
                   <div className={styles.title}>PASST</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
@@ -467,10 +489,10 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <div className={styles.symbols}>
-                  <div className={styles.symbol_1} id="symbolopen4">
+                  <div className={styles.symbol_1} id="symbolopen5">
                     +
                   </div>
-                  <div className={styles.symbol_2} id="symbolclose4">
+                  <div className={styles.symbol_2} id="symbolclose5">
                     -
                   </div>
                 </div>
