@@ -94,12 +94,14 @@ function Menu() {
                   <Link href="/servicios-especializados">
                     <a className={styles.link}>
                       <div className={styles.link_title}>
-                        SERVICIOS ESPECIALIZADOS
+                        SERVICIOS AMBIENTALES
                       </div>
                       <div className={styles.link_text}>
-                        GESTIÓN DE RESIDUOS<br></br>
-                        LIMPIEZA INDUSTRIAL Y COOPERATIVA<br></br>
-                        CONSERVACIÓN DE EDIFICIOS<br></br>
+                        GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS, DE MANEJO
+                        ESPECIAL Y SCRAP
+                        <br></br>
+                        CONSULTORIA AMBIENTAL
+                        <br></br>
                       </div>
                     </a>
                   </Link>
@@ -111,12 +113,12 @@ function Menu() {
                   <Link href="/residuos-industriales">
                     <a className={styles.link}>
                       <div className={styles.link_title}>
-                        RESIDUOS INDUSTRIALES
+                        SERVICIOS INDUSTRIALES
                       </div>
                       <div className={styles.link_text}>
-                        COMPRA-VENTA DE RESIDUOS<br></br>
-                        RECICLAJE<br></br>
-                        DISPOSICIÓN FINAL<br></br>
+                        SERVISION INDUSTRIALES
+                        <br></br>
+                        RESIDUOS INDUSTRIALES<br></br>
                       </div>
                     </a>
                   </Link>

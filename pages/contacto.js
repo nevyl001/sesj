@@ -27,10 +27,10 @@ export default function Home() {
               <div className={styles.box_flex_left_text}>
                 <Subtitle color="white">México</Subtitle>
                 <Paragraph color="white">
-                  1010 Avenue of the Moon New York, NY 10018 US.
+                  7 oriente 1002, Amozoc, Puebla, México.
                 </Paragraph>
-                <Paragraph color="white">+032 3456 7890</Paragraph>
-                <Paragraph color="white"> Business@moontheme.net</Paragraph>
+                <Paragraph color="white">+52 (222) 271 4712</Paragraph>
+                <Paragraph color="white">ventas@serviciossesj.com.mx</Paragraph>
               </div>
               <div className={styles.box_flex_left_text}>
                 <Subtitle color="white">Guadalajara</Subtitle>

@@ -101,7 +101,7 @@ export default function ServiciosEspecializados() {
         <div className="container">
           <div className={styles.title}>
             <Title size="big" color="black" align="left">
-              Servicios Especializados
+              Servicios Ambientales
             </Title>
           </div>
           <div className={styles.box_tabs}>
@@ -111,22 +111,23 @@ export default function ServiciosEspecializados() {
                 onClick={tabClickHandler}
                 id="tab_1"
               >
-                GESTIÓN DE RESIDUOS
+                GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS, DE MANEJO ESPECIAL Y
+                SCRAP.
               </div>
               <div
                 className={styles.tabs_item}
                 onClick={tabClickHandler}
                 id="tab_2"
               >
-                LIMPIEZA INDUSTRIAL Y COOPERATIVA
+                CONSULTORIA AMBIENTAL
               </div>
-              <div
+              {/* <div
                 className={styles.tabs_item}
                 onClick={tabClickHandler}
                 id="tab_3"
               >
                 CONSERVACIÓN DE EDIFICIOS
-              </div>
+              </div> */}
             </div>
             <div className={styles.content}>
               <div
@@ -134,68 +135,64 @@ export default function ServiciosEspecializados() {
                 id="tab_content_tab_1"
               >
                 <div className={styles.sub}>
-                  <Subtitle color="black">
+                  {/* <Subtitle color="black">
                     Residuos Peligrosos / Residuos de Manejo Especial / Scrap:
-                  </Subtitle>
+                  </Subtitle> */}
                 </div>
                 <div className={styles.text}>
                   <Paragraph>
-                    Administramos residuos de manejo especial (RME), peligrosos
-                    (RP) y sólidos urbanos (SU). Realizamos la recolección,
-                    segregación, desarmado, triturado y compactado de los
-                    diferentes materiales; embarcándolos en transportes hacia
-                    destinos (centro de acopio o destino final) con permisos y
-                    autorizaciones Federales y/o Estatales según corresponda.
+                    El servicio integral de residuos en sitio incluye
+                    administración, transporte y destino final. Administramos
+                    residuos de manejo especial (RME), peligrosos (RP) y scrap.
+                    Realizamos la recolección, segregación, desarmado, triturado
+                    y compactado de los diferentes materiales; embarcándolos en
+                    transporte especializado y autorizado hacia destinos de
+                    acopio o finales con permisos y autorizaciones Federales y/o
+                    Estatales, según corresponda .SESJ cuenta con la flotilla
+                    adecuada, así como la capacitación necesaria para los
+                    transportistas, además de contar con las autorizaciones
+                    requeridas para este proceso. Recolectamos los residuos
+                    desde su punto de generación y los llevamos con seguridad a
+                    su destino final. Contamos con más de 20 años de experiencia
+                    en el transporte de residuos peligrosos a diversos destinos
+                    finales en toda la República Mexicana.
                   </Paragraph>
                   <Paragraph>
                     En paralelo a la gestión física de materiales documentamos:
-                    tipo de materiales, cantidad, estado para elaborar los
-                    manifiestos y documentación necesaria para cumplir con las
-                    leyes y reglamentos en la materia. Nuestros servicios
-                    incluyen (si el cliente lo requiere), Planes de Manejo,
-                    Información para el Alta como Generador, información para la
-                    Cédula de Operación Anual COA, para presentar a las
-                    autoridades. Análisis de Riesgos, análisis CRETIB,
-                    estrategias y planes para lograr Cero relleno sanitario,
-                    cero confinamiento, incremento de reciclaje y/o reuso.
-                  </Paragraph>
-                  <Paragraph>
-                    Aportamos nuestra experiencia para cumplir las metas
-                    ambientales en materia de residuos de nuestros clientes,
-                    participamos en auditorías de autoridades y/o
-                    certificadoras. Somos especialistas en Gestión de residuos y
-                    en los Ppocesos SCRAP; cumpliendo el calendario fiscal de
-                    destrucciones y las necesidades propias del cliente para que
-                    los productos dañados se destruyan inhabilitándolos para su
-                    comercialización y se pueda disponer como residuos: RME, RP,
-                    según sus propiedades.
+                    tipo de materiales, cantidad, elaboración de los manifiestos
+                    y documentación necesaria para cumplir con las leyes y
+                    reglamentos en la materia. Aportamos nuestra experiencia
+                    para cumplir las metas ambientales en materia de residuos de
+                    nuestros clientes, participamos en auditorías de autoridades
+                    y/o certificadoras. Somos especialistas en Gestión de
+                    residuos y en los procesos SCRAP; cumpliendo el calendario
+                    fiscal de destrucciones y las necesidades propias del
+                    cliente para que los productos dañados se destruyan
+                    inhabilitándolos para su comercialización y se pueda
+                    disponer como residuos: RME, RP, según sus propiedades.
                   </Paragraph>
                 </div>
               </div>
               <div className={styles.tab_content} id="tab_content_tab_2">
                 <div className={styles.sub}>
-                  <Subtitle color="black">
+                  {/* <Subtitle color="black">
                     Oficinas, Baños, Vestidores, Pasillos, Estructuras:
-                  </Subtitle>
+                  </Subtitle> */}
                 </div>
                 <div className={styles.text}>
                   <Paragraph>
-                    Limpieza Industrial, en el área industrial se destaca la
-                    limpieza especializada de equipos e instalaciones: áreas de
-                    desarrollo y prueba de vehículos y sus componentes
-                    (dinamómetros, bancos de prueba y simulación, etc)
-                    Principales procesos de producción: Prensas, Fabricación de
-                    carrocerías, todos los procesos de pintura (lavadoras,
-                    fosfato, primer, esmalte, acabado) Montaje, Componentes,
-                    Motores, Fundición. <br />
-                    Además la limpieza de altura en estructura interior de
-                    naves, Cubiertas, techos y fachadas, sin afectar las
-                    actividades productivas y por supuesto, todas las áreas
-                    auxiliares: oficinas, casetas, talleres, baños y vestidores.
+                    Nuestros servicios incluyen: Planes de Manejo, Información
+                    para el Alta como Generador, información para la Cédula de
+                    Operación Anual COA para presentar a las autoridades.
+                    Análisis de Riesgos, análisis CRETIB. Elaboramos estrategias
+                    y planes para lograr Cero relleno sanitario, cero
+                    confinamiento, incremento de reciclaje y reuso de residuos.
+                    Asistimos y asesoramos al cliente en auditorías ambientales,
+                    de certificación así como gubernamentales.
                   </Paragraph>
                 </div>
               </div>
-              <div className={styles.tab_content} id="tab_content_tab_3">
+              {/* <div className={styles.tab_content} id="tab_content_tab_3">
                 <div className={styles.sub}>
                   <Subtitle color="black">
                     Instalaciones eléctricas, mtto. hidrosanitario, mtto. aire
@@ -222,7 +219,7 @@ export default function ServiciosEspecializados() {
                     contra incendio.
                   </Paragraph>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
