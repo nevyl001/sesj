@@ -112,7 +112,7 @@ export default function ServiciosEspecializados() {
                 id="tab_1"
               >
                 GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS, DE MANEJO ESPECIAL Y
-                SCRAP.
+                SCRAP
               </div>
               <div
                 className={styles.tabs_item}
