@@ -15,15 +15,15 @@ export default function Home() {
         <div className="container">
           <div className={styles.header}>
             <Title size="big" color="white" align="left">
-              Somos empresa lider <br />
-              en limpieza, mantenimiento
-              <br />y administracion de residuos.
+              Somos una empresa líder en servicios logísticos, industriales y de
+              <br />
+              administracion de residuos.
             </Title>
             <Paragraph color="white">
-              Estamos comprometidos con el cumplimiento legal en materia
-              ambiental, seguridad y calidad para la <br />
-              proteccion del medio ambiente, de nuestros colaboradores y
-              sociedad.
+              Ofrecemos a nuestros clientes estrategias eficientes e
+              innovadoras, estando comprometidos con el cumplimiento legal en
+              materia ambiental, seguridad y calidad para beneficio de nuestros
+              clientes y la sociedad.
             </Paragraph>
             <Link href="/contacto">
               <Button>CONTÁCTANOS</Button>
@@ -55,15 +55,15 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-1.jpg)" }}
                 >
-                  <h3>Servicios Especializados</h3>
+                  <h3>Servicios Ambientales</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Gestion de Residuos<br></br>
-                  Limpieza Industrial y Corporativa<br></br>
-                  Conservacion de Edificios
+                  Gestión integral de residuos peligrosos, de manejo especial y
+                  scrap.<br></br>
+                  Consultoría Ambiental.<br></br>
                 </div>
               </div>
             </div>
@@ -73,15 +73,17 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-2.jpg)" }}
                 >
-                  <h3>Residuos Industriales</h3>
+                  <h3>Servicios industriales</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Compra-venta de residuos<br></br>
-                  Reciclaje<br></br>
-                  Disposicion final
+                  Limpieza industrial, corporativa, residencial.<br></br>
+                  Limpieza de altura y espacios confinados.<br></br>
+                  Mantenimiento y conservación integral de naves industriales,
+                  edificios corporativo y residencias.<br></br>
+                  Jardinería.
                 </div>
               </div>
             </div>
@@ -91,15 +93,23 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-3.jpg)" }}
                 >
-                  <h3>Transportes Especializados de Residuos</h3>
+                  <h3>Residuos Industriales</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Caja seca, plataforma, roll-off
+                  Tratamiento y reciclado de residuos.
                   <br />
-                  tolvas, etc.
+                  Compra venta de residuos ferrosos y de manejo especial.
+                  <br />
+                  Desmantelamiento de autos.
+                  <br />
+                  Detonación de elementos pirotécnicos.
+                  <br />
+                  Reciclaje y aprovechamiento de residuos ferrosos.
+                  <br />
+                  Reciclaje de solvente.
                 </div>
               </div>
             </div>
@@ -111,11 +121,13 @@ export default function Home() {
           <div className={styles.section3}>
             <div className={styles.somos}>
               <Title size="medium" color="white" align="center">
-                Somos una empresa especializada <br /> en servicios integrales
+                SESJ ofrece servicios integrales que brindan soluciones
+                especificas a sus clientes
               </Title>
               <Paragraph color="white">
-                Estamos comprometidos con la mejora continua de los procesos y
-                de <br /> nuestri Sistema de Gestion Integral
+                Nuestros servicios son robustos, eficientes y seguros enfocados
+                en la
+                <br /> mejora continua para beneficio de nuestros clientes
               </Paragraph>
             </div>
             <Link href="/contacto">
@@ -124,7 +136,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.section4}>
+      {/* <div className={styles.section4}>
         <div className="container">
           <div className={styles.content4}>
             <div className={styles.content_left}>
@@ -178,7 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles.clients}>
         <div className="container">
           <div className={styles.clients_inner}>
@@ -200,29 +212,32 @@ export default function Home() {
                 <div className={styles.clients_card}>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
-                      “Vestibulum sollicitudin nunc in eros a justo facilisis
-                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                      nibh tortor mauris condimentum nibh”
+                      “Hemos trabajado con SESJ por muchos años y nos han dado
+                      soluciones efectivas, en tiempo y con la mejor actitud. La
+                      calidad de sus servicios es excelente y hemos estado
+                      satisfechos con la calidad del servicio. ”
                     </Paragraph>
                     <Subtitle color="black">JONT KOOK</Subtitle>
-                    <h4>CEO lacinia faucibus risus</h4>
+                    <h4>Coordinador VW Puebla</h4>
                   </div>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
-                      “Sollicitudin nunc in eros a justo facilisis rutrum.
-                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
-                      tortor mauris condimentum”
+                      “Los procesos que maneja SESJ son muy delicados y en estos
+                      años que he trabajado con ellos estoy tranquilo ya que sus
+                      procesos son realizados de una manera profesional y
+                      segura. SESJ tiene una buena reputación y se refleja en la
+                      gran calidad de los servicios que tienen con nosotros.m”
                     </Paragraph>
                     <Subtitle color="black"> DAVID JAME</Subtitle>
-                    <h4>CEO lacinia faucibus risus</h4>
+                    <h4>Coordinador VW Silao</h4>
                   </div>
                 </div>
                 <div className={styles.clients_card}>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
-                      “Vestibulum sollicitudin nunc in eros a justo facilisis
-                      rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet
-                      nibh tortor mauris condimentum nibh”
+                      “Sollicitudin nunc in eros a justo facilisis rutrum.
+                      Aenean id ullamcorper libero. Vestibulum imperdiet nibh
+                      tortor mauris condimentum ”
                     </Paragraph>
                     <Subtitle color="black">JONT KOOK</Subtitle>
                     <h4>CEO lacinia faucibus risus</h4>
