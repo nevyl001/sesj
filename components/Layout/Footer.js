@@ -91,10 +91,12 @@ const Footer = () => {
                 <div className={styles.footer_text}>
                   <Subtitle color="black">Contacto</Subtitle>
                   <Paragraph color="black">
-                    London Oxford Street, 012 United <br /> Kingdom.
+                    7 oriente 1002, Amozoc, Puebla, México.
                   </Paragraph>
-                  <Paragraph color="black">+032 3456 7890</Paragraph>
-                  <Paragraph color="black">Business@moontheme.net</Paragraph>
+                  <Paragraph color="black">+52 (222) 271 4712</Paragraph>
+                  <Paragraph color="black">
+                    ventas@serviciossesj.com.mx
+                  </Paragraph>
                 </div>
               </div>
               <div className={styles.footer_right}>
@@ -114,7 +116,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={styles.space}>
+        {/* <div className={styles.space}>
           <div className={styles.footer_space}></div>
         </div>
         <div className={styles.footer_down}>
@@ -184,7 +186,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

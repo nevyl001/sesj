@@ -32,12 +32,12 @@ export default function Home() {
               Nosotros
             </Title>
             <Paragraph color="black">
-              Somos empresa líder de servicios que ofrecer servicios integrales
-              de administración de limpieza, mantenimiento en general y
-              administración de residuos de manejo especial y peligrosos,
-              conforme al marco regulatorio, que satisface las necesidades de
-              nuestros clientes en diferentes sectores de la industria y que
-              pertenecen primordialmente al Sector Automotriz.
+              Servicios Especializados Silviano Julio S.A. de C.V. fue fundada
+              en 1985 con el reciclaje de solvente proveniente de plantas
+              automotrices del estado de Puebla. Con el tiempo fue desarrollando
+              e implementado nuevos procesos y servicios especializados como la
+              Gestión Integral de Residuos Industriales, servicios industriales
+              y logísticos.
             </Paragraph>
             <Paragraph color="black">
               Estamos comprometidos con el cumplimiento legal en materia
@@ -48,12 +48,19 @@ export default function Home() {
               alienta su compromiso y crecimiento excepcional.
             </Paragraph>
             <Paragraph color="black">
-              Servicios Especializados Silviano Julio S.A. de C.V. fue fundada
-              en 1985 con el reciclaje de solvente proveniente de plantas
-              automotrices del estado de Puebla. Con el tiempo fue desarrollando
-              e implementado nuevos procesos y servicios especializados como la
-              Gestión Integral de Residuos Industriales, Limpieza Industrial y
-              Conservación de Edificios.
+              a) Bote de reciclaje: SESJ tiene mas de 30 años de experiencia.
+              Gracias a nuestra experiencia proporcionamos soluciones efectivas
+              y de valor agregado a las necesidades únicas de nuestros clientes.
+            </Paragraph>
+            <Paragraph color="black">
+              b) Camión: SESJ cuenta con una filosofía institucional basada en
+              la mejora continua de los procesos - SESJ se enfoca en la calidad
+              y seguridad de los procesos, lo que garantiza servicios de
+              excelencia y satisfacción del cliente.
+            </Paragraph>
+            <Paragraph color="black">
+              SESJ se enfoca en la calidad y seguridad de los procesos, lo que
+              garantiza servicios de excelencia y satisfacción del cliente.
             </Paragraph>
           </div>
           <div className={styles.header_down}>
@@ -233,7 +240,7 @@ export default function Home() {
                         descubrir capacidades y aptitudes que antes no tenía,
                         además de que me ha hecho crecer profesionalmente y
                         personalmente. Mi rol como gerente es brindar un
-                        servicio de excelencia.”{" "}
+                        servicio de excelencia.”
                       </Paragraph>
                     </div>
                   </div>
@@ -292,8 +299,8 @@ export default function Home() {
                 <Paragraph color="black">
                   Ofrecer servicios integrales de administración de limpieza,
                   mantenimiento en general y administración de residuos de
-                  manejo especial y peligrosos, conforme al marco regulatorio y
-                  requerimientos del cliente.
+                  manejo especial y peligrosos de la mas alta calidad, conforme
+                  al marco regulatorio y requerimientos del cliente.
                 </Paragraph>
               </div>
               <div className={styles.content_right_text}>
@@ -302,9 +309,9 @@ export default function Home() {
                 </Title>
                 <Paragraph color="black">
                   Ser la mejor opción en los servicios de limpieza,
-                  mantenimiento en general y administración de residuos,
-                  generando confianza a nuestros clientes., conforme al marco
-                  regulatorio y requerimientos del cliente.
+                  mantenimiento en general y administración de residuos. Dando
+                  soluciones especificas y eficientes mediante procesos robustos
+                  para la tranquilidad de nuestros clientes.
                 </Paragraph>
               </div>
               <div className={styles.content_right_text}>
@@ -315,6 +322,7 @@ export default function Home() {
                 <li>Calidad</li>
                 <li>Respeto y equidad</li>
                 <li>Enfoque al cliente y a las excelencia</li>
+                <li>Eficiencia</li>
               </div>
             </div>
           </div>
@@ -326,14 +334,15 @@ export default function Home() {
             </div>
             <div className={styles.content4_down_text}>
               <Paragraph color="black">
-                Somos una empresa especializada en servicios integrales, con un
-                equipo altamente competitivo; comprometida con la calidad, la
-                protección del medio ambiente, la prevención de la contaminación
-                y el uso sostenible de los recursos, para mejorar el desempeño
-                ambiental. Estamos comprometidos con la mejora continua de los
-                procesos y de nuestro Sistema de Gestión Integral. Cumpliendo
-                siempre con los requisitos legales y otros requisitos
-                aplicables.
+                Contamos con un equipo altamente competitivo; comprometidos con
+                la calidad, la protección del medio ambiente, la prevención de
+                la contaminación y el uso sostenible de los recursos para
+                mejorar el desempeño ambiental.
+              </Paragraph>
+              <Paragraph color="black">
+                Estamos comprometidos con la mejora continua de los procesos y
+                de nuestro Sistema de Gestión Integral. Cumpliendo siempre con
+                los requisitos legales y otros requisitos aplicables.
               </Paragraph>
             </div>
           </div>
@@ -343,7 +352,6 @@ export default function Home() {
         <div className="container">
           <div className={styles.calidad}>
             <div className={styles.clients_text}>
-              <Subtitle color="white">NOSOTROS</Subtitle>
               <Title size="small" color="white" align="left">
                 Objetivos de Calidad y Medio Ambiente
               </Title>
@@ -352,11 +360,13 @@ export default function Home() {
                 Gestión Integral, los cuales son:
               </Subtitle>
               <Paragraph color="white">
-                ✓ Asegurar la sustentabilidad financiera.
+                ✓ Asegurar la sustentabilidad financiera y ambiental de los
+                proyectos.
                 <br />
                 ✓ Mejorar la calidad, seguridad e impacto ambiental de los
-                servicios
-                <br />✓ Desarrollar y Capacitar a los colaboradores.
+                servicios.
+                <br />✓ Desarrollar y Capacitar a los colaboradores para dar el
+                mejor servicio al cliente.
               </Paragraph>
             </div>
             <div className={styles.clients_img}>
@@ -380,9 +390,7 @@ export default function Home() {
             </div>
             <div className={styles.cert_text}>
               <Paragraph color="black">
-                Servicios Especializados Silviano Julio S. A. de C.V. (SESJ),
-                actualmente cuenta con un Sistema de Gestión Integral
-                certificado en:
+                SESJ se encuentra certificada en las siguientes normas:
               </Paragraph>
             </div>
             <div className={styles.box_acordion}>
@@ -433,13 +441,13 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 3)}
                 >
-                  <div className={styles.title}>ISO 9001:2015</div>
+                  <div className={styles.title}>ISO REPSE:2015</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
                     Estamos dados de alta en el REPSE (Registro de Prestadoras
                     de Servicios Especializados y Obras Especializadas) de la
-                    STPS (Secretaría del Trabajo y Previsión Social).{" "}
+                    STPS (Secretaría del Trabajo y Previsión Social).
                   </Paragraph>
                 </div>
                 <div className={styles.symbols}>
@@ -456,12 +464,11 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 4)}
                 >
-                  <div className={styles.title}>ISO 45001:2018(es)</div>
+                  <div className={styles.title}>ISO 45001:2018 </div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
-                    Sistemas de gestión de la seguridad y salud en el trabajo
-                    saludos
+                    Sistemas de gestión de la seguridad y salud en el trabajo.
                   </Paragraph>
                 </div>
                 <div className={styles.symbols}>
