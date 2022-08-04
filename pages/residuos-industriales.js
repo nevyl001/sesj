@@ -105,7 +105,7 @@ export default function ResiduosIndustriales() {
         <div className="container">
           <div className={styles.title}>
             <Title size="big" color="black" align="left">
-              Residuos industriales
+              Servicios Industriales
             </Title>
           </div>
           <div className={styles.box_tabs}>
@@ -115,63 +115,108 @@ export default function ResiduosIndustriales() {
                 onClick={tabClickHandler}
                 id="tab_1"
               >
-                COMPRA-VENTA DE RESIDUOS
+                SERVICIOS INDUSTRIALES
               </div>
               <div
                 className={styles.tabs_item}
                 onClick={tabClickHandler}
                 id="tab_2"
               >
-                RECICLAJE
+                RESIDUOS INDUSTRIALES
               </div>
-              <div
+              {/* <div
                 className={styles.tabs_item}
                 onClick={tabClickHandler}
                 id="tab_3"
               >
                 DISPOSICIÓN FINAL
-              </div>
+              </div> */}
             </div>
             <div className={styles.content}>
               <div
                 className={`${styles.tab_content} ${styles.active}`}
                 id="tab_content_tab_1"
               >
-                <div className={styles.sub}>
+                {/* <div className={styles.sub}>
                   <Subtitle color="black">
                     Madera, cartón, chatarra estructural, metales ferrosos y no
                     ferrosos.
                   </Subtitle>
-                </div>
+                </div> */}
                 <div className={styles.text}>
                   <Paragraph>
-                    Para complementar la Gestión integral de los residuos
-                    industriales nuestra compañía ofrece la disposición de todos
-                    y cada uno de los residuos que genera una industria.
-                    Ofrecemos los mejores costos para reciclaje de residuos como
-                    cartón, madera, metales, plásticos; y encontramos el destino
-                    más conveniente ambiental y económico para residuos como:
-                    lodos, aguas y líquidos contaminados, químicos, etc.
-                    <br />
-                    Garantizamos reducir hasta CERO el envió a relleno sanitario
-                    o confinamiento. Presentamos un plan de disposición con por
-                    lo menos dos alternativas, recomendando las opciones con
-                    mayores ventajas ambientales y económicas. Tenemos convenio
-                    con las mejores empresas destino de residuos.
+                    1) Limpieza industrial, corporativa, residencial: Limpieza
+                    especializada del más alto nivel cumpliendo estándares de
+                    higiene en naves productivas, equipo e instalaciones
+                    industriales, hospitales, centros comerciales, unidades
+                    deportivas, residencias, edificios corporativos,
+                    universidades, oficinas y aeropuertos.
+                  </Paragraph>
+                  <Paragraph>
+                    2) Limpieza de altura y espacios confinados: limpieza segura
+                    y efectiva de alturas y espacios confinados en estructuras
+                    al interior de naves industriales y edificios corporativos.
+                    Además, de la limpieza de cubiertas, techos y fachadas, sin
+                    afectar las actividades productivas.
+                  </Paragraph>
+                  <Paragraph>
+                    3) Mantenimiento y conservación integral de naves
+                    industriales, edificios corporativo y residencias: nuestro
+                    propósito es conservar en inmejorables condiciones las
+                    instalaciones de edificios corporativos y naves
+                    industriales, ya que es un factor clave para lograr un
+                    ambiente ideal para las actividades de gestión corporativa e
+                    industrial. Somos especialistas en conservar todas las
+                    instalaciones en los rubros de: Limpieza, Jardinería
+                    interior y exterior, mantenimiento eléctrico, climas e
+                    hidrosanitario, cancelería, persianas, pintura y acabados.
+                    Además de la reubicación o distribución de áreas de trabajo,
+                    sistemas de control de acceso, seguridad patrimonial y
+                    contra incendio. Como resultado las instalaciones cumplirán
+                    los más altos estándares de Imagen, Funcionalidad e Higiene.
+                  </Paragraph>
+                  <Paragraph>
+                    4) Jardinería :Servicio de mantenimiento y conservación de
+                    áreas verdes industriales y residenciales donde se realizan
+                    trabajos preventivos para diagnosticar y prevenir
+                    enfermedades y plagas usando materiales amigables al medio
+                    ambiente.
                   </Paragraph>
                 </div>
               </div>
               <div className={styles.tab_content} id="tab_content_tab_2">
-                <div className={styles.sub}>
+                {/* <div className={styles.sub}>
                   <Subtitle color="black">Reciclado de solventes.</Subtitle>
-                </div>
+                </div> */}
                 <div className={styles.text}>
                   <Paragraph>
+                    1) Compra venta y tratamiento de residuos:
+                    <br />
+                    SESJ ofrece la disposición de todos y cada uno de los
+                    residuos que genera la industria. Ofrecemos los mejores
+                    costos para reciclaje de residuos como cartón, madera,
+                    metales ferrosos y no ferrosos, y plásticos. Encontramos el
+                    destino más conveniente ambiental y económico para residuos
+                    como: lodos, aguas y líquidos contaminados, químicos,
+                    etc.Garantizamos reducir hasta CERO el envió a relleno
+                    sanitario o confinamiento. Presentamos un plan de
+                    disposición con por lo menos dos alternativas, recomendando
+                    las opciones con mayores ventajas ambientales y económicas.
+                    Tenemos convenio con las mejores empresas destino de
+                    residuos.
+                    <br />
+                    Servicios Especializados Silviano Julio S.A. de C.V. es una
+                    empresa aliada apoyando a las industrias en los esfuerzos
+                    por el cuidado del medio ambiente.
+                  </Paragraph>
+                  <Paragraph>
+                    2) Reciclaje de solvente:
+                    <br />
                     Los solventes son sustancias líquidas en las que otras
                     sustancias pueden disolverse para adquirir propiedades
                     físicas que se adecuen a un uso particular. Sin embargo,
                     casi toda la producción mundial de solventes termina
-                    destruida o dispersada en la biosfera. <br /> Servicios
+                    destruida o dispersada en la biosfera.Servicios
                     Especializados Silviano Julio hace reciclado de solventes
                     como una solución para este problema. Un solvente gastado,
                     es aquel que se ha usado al menos una vez y que no puede
@@ -187,9 +232,27 @@ export default function ResiduosIndustriales() {
                     residuos de solventes, reduciendo los gastos de nuevos
                     solventes, y cuidando al medio ambiente.
                   </Paragraph>
+                  <Paragraph>
+                    3) Desmantelamiento de autos, Detonación de elementos
+                    pirotécnicos y desmantelamiento de naves productivas:
+                    <br />
+                    SESJ ofrece el servicio de desmantelamiento de autos. Esto
+                    incluye: destrucción de motor, desmantelamiento de partes
+                    electrónicas, inhabilitación de rines y destrucción de
+                    transmisiones. En este proceso cumplimos con los
+                    lineamientos de destrucción fiscal del SAT. Adicionalmente,
+                    deshabilitamos bolsas de aire y cinturones de seguridad de
+                    autos usando tecnología de punta.
+                    <br /> SESJ ofrece el servicio de desmontaje y saneamiento
+                    de equipos e infraestructura que ya son obsoletos en naves
+                    industriales. Estos son ejemplos de la infraestructura que
+                    se ha retirado: Equipos Productivos, tableros eléctricos,
+                    tuberías de energía, bandas transportadoras, polipastos,
+                    plataformas, soportes, barandales y escaleras eléctricas
+                  </Paragraph>
                 </div>
               </div>
-              <div className={styles.tab_content} id="tab_content_tab_3">
+              {/* <div className={styles.tab_content} id="tab_content_tab_3">
                 <div className={styles.sub}>
                   <Subtitle color="black">Lodos.</Subtitle>
                 </div>
@@ -208,7 +271,7 @@ export default function ResiduosIndustriales() {
                     por el cuidado del medio ambiente.
                   </Paragraph>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
