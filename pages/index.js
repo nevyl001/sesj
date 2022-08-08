@@ -225,7 +225,7 @@ export default function Home() {
                       años que he trabajado con ellos estoy tranquilo ya que sus
                       procesos son realizados de una manera profesional y
                       segura. SESJ tiene una buena reputación y se refleja en la
-                      gran calidad de los servicios que tienen con nosotros.m”
+                      gran calidad de los servicios que tienen con nosotros.”
                     </Paragraph>
                     <Subtitle color="black">COORDINADOR VW SILAO</Subtitle>
                   </div>
