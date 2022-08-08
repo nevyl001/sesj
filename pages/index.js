@@ -265,8 +265,7 @@ export default function Home() {
                       calidad de sus servicios es excelente y hemos estado
                       satisfechos con la calidad del servicio. ”
                     </Paragraph>
-                    <Subtitle color="black">JONT KOOK</Subtitle>
-                    <h4>Coordinador VW Puebla</h4>
+                    <Subtitle color="black">COORDINADOR WV PUEBLA</Subtitle>
                   </div>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
@@ -276,11 +275,10 @@ export default function Home() {
                       segura. SESJ tiene una buena reputación y se refleja en la
                       gran calidad de los servicios que tienen con nosotros.m”
                     </Paragraph>
-                    <Subtitle color="black"> DAVID JAME</Subtitle>
-                    <h4>Coordinador VW Silao</h4>
+                    <Subtitle color="black">COORDINADOR VW SILAO</Subtitle>
                   </div>
                 </div>
-                <div className={styles.clients_card}>
+                {/* <div className={styles.clients_card}>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
                       “Sollicitudin nunc in eros a justo facilisis rutrum.
@@ -319,7 +317,7 @@ export default function Home() {
                     <Subtitle color="black"> DAVID JAME</Subtitle>
                     <h4>CEO lacinia faucibus risus</h4>
                   </div>
-                </div>
+                </div> */}
               </Carousel>
             </div>
 
@@ -327,8 +325,8 @@ export default function Home() {
               <Image
                 alt="im1"
                 src="/img/Content.png"
-                width={1180}
-                height={140}
+                width={1940}
+                height={280}
               />
             </div>
           </div>
