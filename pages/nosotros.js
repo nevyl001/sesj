@@ -124,7 +124,7 @@ export default function Home() {
                   <div className={styles.section1_item_1}>
                     <Image
                       alt="Servicios Especializados"
-                      src="/img/Empleados/rijuarez.jpg"
+                      src="/img/Empleados/ANGELES.jpg"
                       width={3840}
                       height={2160}
                     />
@@ -132,20 +132,20 @@ export default function Home() {
                   <div className={styles.section1_item_2}>
                     <div className={styles.section1_item_2_text}>
                       <Title size="small" color="green1" align="left">
-                        Ricardo Juárez Correa
+                        Angeles Sánchez
                       </Title>
-                      <Subtitle color="black">
-                        Coordinador de Operaciones
-                      </Subtitle>
+                      <Subtitle color="black">Coordinadora Limpieza</Subtitle>
                       <div className={styles.line}>
                         <div className={styles.separador}></div>
                       </div>
                       <Paragraph color="black">
-                        “Un año trabajando en SESJ, es algo que me ha ayudado
-                        bastante, coordinamos y le damos la disposición adecuada
-                        al nuestros residuos de manejo especial y residuos
-                        peligrosos. Muy contento de trabajar en una empresa de
-                        manejo de residuos.”
+                        “Mi meta es lograr óptimos resultados tanto para el
+                        cliente como para la empresa. SESJ para mí es una parte
+                        muy importante en mi vida, he obtenido grandes logros y
+                        satisfacciones gracias a la confianza que SESJ me ha
+                        brindado. Pertenecer a SESJ que es una empresa bien
+                        consolidada, con valores y metas bien definidas me hace
+                        sentir muy orgullosa”
                       </Paragraph>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ export default function Home() {
                   <div className={styles.section1_item_1}>
                     <Image
                       alt="Servicios Especializados"
-                      src="/img/Empleados/jogua.jpg"
+                      src="/img/Empleados/GERMAN.jpg"
                       width={3840}
                       height={2160}
                     />
@@ -162,16 +162,18 @@ export default function Home() {
                   <div className={styles.section1_item_2}>
                     <div className={styles.section1_item_2_text}>
                       <Title size="small" color="green1" align="left">
-                        Jose Guadalupe Rodríguez Martínez
+                        German Flores
                       </Title>
-                      <Subtitle color="black">Mantenimiento</Subtitle>
+                      <Subtitle color="black">Gerente Limpieza</Subtitle>
                       <div className={styles.line}>
                         <div className={styles.separador}></div>
                       </div>
                       <Paragraph color="black">
-                        “Un día de trabajo es estar al pendiente del
-                        mantenimiento de los equipos, que estén limpios, que no
-                        tengan ninguna fuga. Siempre sale todo bien.”
+                        “SESJ para mí siempre ha representado un reto en todos
+                        los ámbitos de mi vida ya que las exigencias del día a
+                        día siempre sacan lo mejor de mí, aquí sigo aprendiendo
+                        y creciendo como persona, algo muy relevante es que me
+                        doy cuenta que el trabajo en equipo
                       </Paragraph>
                     </div>
                   </div>
@@ -180,7 +182,7 @@ export default function Home() {
                   <div className={styles.section1_item_1}>
                     <Image
                       alt="Servicios Especializados"
-                      src="/img/Empleados/javial.jpg"
+                      src="/img/Empleados/HAYDEE.jpg"
                       width={3840}
                       height={2160}
                     />
@@ -188,17 +190,17 @@ export default function Home() {
                   <div className={styles.section1_item_2}>
                     <div className={styles.section1_item_2_text}>
                       <Title size="small" color="green1" align="left">
-                        Javier Alejandro Torres Carrillo
+                        Haydee Vazquez
                       </Title>
-                      <Subtitle color="black">Supervisor</Subtitle>
+                      <Subtitle color="black">Especialista de Ventas </Subtitle>
                       <div className={styles.line}>
                         <div className={styles.separador}></div>
                       </div>
                       <Paragraph color="black">
-                        “Todas las empresas generan cierto tipo de residuos,
-                        principalmente nos encargamos de recepcionar, almacenar
-                        y disponer el material que recibimos y mandarlo a las
-                        distintas áreas donde es procesado”
+                        “Estoy orgullosa de pertenecer a SESJ ya que me ha
+                        permitido desarrollarme como profesional sin descuidar
+                        mi rol como madre de familia. Mi meta es brindarle la
+                        mejor solución a las necesidades de nuestros clientes.”
                       </Paragraph>
                     </div>
                   </div>
@@ -235,7 +237,7 @@ export default function Home() {
                   <div className={styles.section1_item_1}>
                     <Image
                       alt="Servicios Especializados"
-                      src="/img/Empleados/jovita.jpg"
+                      src="/img/Empleados/OSWALDO.jpg"
                       width={3840}
                       height={2160}
                     />
@@ -243,17 +245,17 @@ export default function Home() {
                   <div className={styles.section1_item_2}>
                     <div className={styles.section1_item_2_text}>
                       <Title size="small" color="green1" align="left">
-                        Jovita Espinoza Palestina
+                        Oswaldo Sarmiento
                       </Title>
-                      <Subtitle color="black">Operador General</Subtitle>
+                      <Subtitle color="black">Especialista de Compras</Subtitle>
                       <div className={styles.line}>
                         <div className={styles.separador}></div>
                       </div>
                       <Paragraph color="black">
-                        “Yo considero que esta empresa es muy importante porque
-                        contribuimos al medio ambiente, aquí le llevamos
-                        segregación, es la separación de los productos que se
-                        pueden separar y los que no.”
+                        “En SESJ he evolucionado en todos los aspectos y he
+                        encontrado un lugar donde mi granito de arena hace la
+                        diferencia. En estos diez años en la empresa he podido
+                        darle soluciones a los problemas de los clientes.”
                       </Paragraph>
                     </div>
                   </div>

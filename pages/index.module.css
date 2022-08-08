@@ -46,7 +46,7 @@
   height: 250px;
 }
 .section_card_item:hover {
-  height: 500px;
+  height: 400px;
   transition-duration: 0.4s;
 }
 .section_card_item h3 {
@@ -73,7 +73,7 @@
 .item_text {
   padding: 20px 0;
   color: #003e1d;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
 }
 

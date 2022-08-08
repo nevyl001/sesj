@@ -30,7 +30,7 @@
 .box_grid {
   display: grid;
   grid-template-columns: 30% 70%;
-  align-items: center;
+  align-items: flex-start;
 }
 .box_grid_item_left {
   padding: 20px 10px;
