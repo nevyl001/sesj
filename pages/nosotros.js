@@ -47,21 +47,6 @@ export default function Home() {
               altamente competitivo e íntegro que propicia su desarrollo,
               alienta su compromiso y crecimiento excepcional.
             </Paragraph>
-            <Paragraph color="black">
-              a) Bote de reciclaje: SESJ tiene mas de 30 años de experiencia.
-              Gracias a nuestra experiencia proporcionamos soluciones efectivas
-              y de valor agregado a las necesidades únicas de nuestros clientes.
-            </Paragraph>
-            <Paragraph color="black">
-              b) Camión: SESJ cuenta con una filosofía institucional basada en
-              la mejora continua de los procesos - SESJ se enfoca en la calidad
-              y seguridad de los procesos, lo que garantiza servicios de
-              excelencia y satisfacción del cliente.
-            </Paragraph>
-            <Paragraph color="black">
-              SESJ se enfoca en la calidad y seguridad de los procesos, lo que
-              garantiza servicios de excelencia y satisfacción del cliente.
-            </Paragraph>
           </div>
           <div className={styles.header_down}>
             <div className={styles.header_item1}>
@@ -75,12 +60,12 @@ export default function Home() {
               </div>
               <div className={styles.header_text}>
                 <Subtitle color="black">
-                  SESJ cuenta con una Filosofía Institucional
+                  SESJ tiene mas de 30 años de experiencia.
                 </Subtitle>
                 <Paragraph color="black">
-                  Política de Calidad y Medio Ambiente, Misión, Visión,
-                  Objetivos de Calidad y Medio Ambiente, y valores; aprobada por
-                  la Dirección.
+                  Gracias a nuestra experiencia proporcionamos soluciones
+                  efectivas y de valor agregado a las necesidades únicas de
+                  nuestros clientes.
                 </Paragraph>
               </div>
             </div>
@@ -95,12 +80,13 @@ export default function Home() {
               </div>
               <div className={styles.header_text}>
                 <Subtitle color="black">
-                  SESJ cuenta con una Filosofía Institucional
+                  SESJ cuenta con una filosofía institucional basada en la
+                  mejora continua de los procesos.
                 </Subtitle>
                 <Paragraph color="black">
-                  Política de Calidad y Medio Ambiente, Misión, Visión,
-                  Objetivos de Calidad y Medio Ambiente, y valores; aprobada por
-                  la Dirección.
+                  SESJ se enfoca en la calidad y seguridad de los procesos, lo
+                  que garantiza servicios de excelencia y satisfacción del
+                  cliente.
                 </Paragraph>
               </div>
             </div>
