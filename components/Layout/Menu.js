@@ -23,6 +23,7 @@ function Menu() {
 
   return (
     <Fragment>
+      <div className={styles.menu_back_box} />
       <div
         className={styles.menu_desktop}
         onMouseLeave={submenuInactiveHandler}

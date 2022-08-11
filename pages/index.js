@@ -41,51 +41,61 @@ export default function Home() {
   return (
     <main>
       {showVideo && (
-        <div ref={wrapperRef} className={styles.video_box}>
-          <video ref={videoRef} style={{ width: "100%" }} autoPlay controls>
-            <source src="/img/video2.mp4" />
-          </video>
-        </div>
-      )}
-      <div className={styles.head}>
-        <div className="container">
-          <div className={styles.header}>
-            <div className={styles.video_btn} onClick={showVideoHandler}>
-              <button>
-                Ver video
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                </svg>
-              </button>
-            </div>
-            <Title size="big" color="white" align="left">
-              Somos una empresa líder en servicios logísticos, industriales y de
-              <br />
-              administracion de residuos.
-            </Title>
-            <Paragraph color="white">
-              Ofrecemos a nuestros clientes estrategias eficientes e
-              innovadoras, estando comprometidos con el cumplimiento legal en
-              materia ambiental, seguridad y calidad para beneficio de nuestros
-              clientes y la sociedad.
-            </Paragraph>
-            <Link href="/contacto">
-              <Button>CONTÁCTANOS</Button>
-            </Link>
+        <div className={styles.hidden_overlay}>
+          <div ref={wrapperRef} className={styles.video_box}>
+            <video ref={videoRef} style={{ width: "100%" }} autoPlay controls>
+              <source src="/img/video2.mp4" />
+            </video>
           </div>
         </div>
-        <div className={styles.line}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#39B54A"
-              fillOpacity="1"
-              d="M0,256L120,229.3C240,203,480,149,720,117.3C960,85,1200,75,1320,69.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-            ></path>
-          </svg>
+      )}
+      <div className={styles.head_video}>
+        <div className={styles.video}>
+          <video loop muted autoPlay>
+            <source src="/img/back.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className={styles.content}>
+          <div className="container">
+            <div className={styles.header}>
+              <div className={styles.video_btn} onClick={showVideoHandler}>
+                <button>
+                  Ver video
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                  </svg>
+                </button>
+              </div>
+              <Title size="big" color="white" align="left">
+                Somos una empresa líder en servicios logísticos, industriales y
+                de
+                <br />
+                administracion de residuos.
+              </Title>
+              <Paragraph color="white">
+                Ofrecemos a nuestros clientes estrategias eficientes e
+                innovadoras, estando comprometidos con el cumplimiento legal en
+                materia ambiental, seguridad y calidad para beneficio de
+                nuestros clientes y la sociedad.
+              </Paragraph>
+              <Link href="/contacto">
+                <Button>CONTÁCTANOS</Button>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.line}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#39B54A"
+                fillOpacity="1"
+                d="M0,256L120,229.3C240,203,480,149,720,117.3C960,85,1200,75,1320,69.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
       <div className={styles.section}>
