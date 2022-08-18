@@ -82,9 +82,6 @@ export default function Home() {
                 materia ambiental, seguridad y calidad para beneficio de
                 nuestros clientes y la sociedad.
               </Paragraph>
-              <Link href="/contacto">
-                <Button>CONTÁCTANOS</Button>
-              </Link>
             </div>
           </div>
           <div className={styles.line}>
