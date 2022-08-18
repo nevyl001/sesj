@@ -44,7 +44,7 @@ export default function Home() {
         <div className={styles.hidden_overlay}>
           <div ref={wrapperRef} className={styles.video_box}>
             <video ref={videoRef} style={{ width: "100%" }} autoPlay controls>
-              <source src="/img/video2.mp4" />
+              <source src="/img/final.mp4" />
             </video>
           </div>
         </div>

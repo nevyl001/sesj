@@ -32,14 +32,14 @@ export default function Home() {
                 <Paragraph color="white">+52 (222) 271 4712</Paragraph>
                 <Paragraph color="white">ventas@serviciossesj.com.mx</Paragraph>
               </div>
-              <div className={styles.box_flex_left_text}>
+              {/* <div className={styles.box_flex_left_text}>
                 <Subtitle color="white">Guadalajara</Subtitle>
                 <Paragraph color="white">
                   1010 Avenue of the Moon New York, NY 10018 US.
                 </Paragraph>
                 <Paragraph color="white">+032 3456 7890</Paragraph>
                 <Paragraph color="white"> Business@moontheme.net</Paragraph>
-              </div>
+              </div> */}
             </div>
             <div className={styles.box_flex_right}>
               <Paragraph color="white">CONTACTO</Paragraph>

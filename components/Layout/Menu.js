@@ -117,7 +117,7 @@ function Menu() {
                         SERVICIOS INDUSTRIALES
                       </div>
                       <div className={styles.link_text}>
-                        SERVISION INDUSTRIALES
+                        SERVICIOS INDUSTRIALES
                         <br></br>
                         RESIDUOS INDUSTRIALES<br></br>
                       </div>
