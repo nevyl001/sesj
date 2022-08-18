@@ -429,7 +429,7 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 3)}
                 >
-                  <div className={styles.title}>ISO REPSE:2015</div>
+                  <div className={styles.title}>ISO REPSE</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
