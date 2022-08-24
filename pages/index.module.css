@@ -288,7 +288,7 @@
 @media only screen and (max-width: 1000px) {
   .header {
     padding: 40px 20px;
-    padding-top: 150px;
+    padding-top: 60px;
   }
   .section {
     background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
@@ -398,5 +398,38 @@
 
   .clients_img {
     padding: 10px;
+  }
+  .head_video {
+    background-image: url("/img/FONDO.jpg");
+    background-position: right bottom;
+    background-size: cover;
+    padding: 100px 0 0 0;
+  }
+  .head_video video {
+    display: none;
+  }
+  .video_btn {
+    display: none;
+  }
+  .head_video .line {
+    margin-top: 60px;
+  }
+  .section {
+    position: relative;
+    top: -2px;
+  }
+
+  .section_card {
+    padding: 10px 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 100px;
+    height: auto;
+  }
+
+  .section_card_item {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

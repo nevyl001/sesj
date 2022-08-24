@@ -120,4 +120,11 @@
     text-align: center;
     padding: 10px 0;
   }
+
+  .menu_back_box {
+    display: none;
+  }
+  .menu_mobile {
+    z-index: 999;
+  }
 }
