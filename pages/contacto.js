@@ -1,13 +1,36 @@
 import Link from "next/link";
 import styles from "./contacto.module.css";
-import Image from "next/image";
 import Button from "../components/UI/Button";
 import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
+import emailjs from "emailjs-com";
 
 export default function Home() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("hola");
+
+    emailjs
+      .sendForm(
+        "vannelo",
+        "template_k0c39kb",
+        form.current,
+        "GWoEfazLvcexVN1vn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <Fragment>
       <div className={styles.head}>
@@ -32,14 +55,6 @@ export default function Home() {
                 <Paragraph color="white">+52 (222) 271 4712</Paragraph>
                 <Paragraph color="white">ventas@serviciossesj.com.mx</Paragraph>
               </div>
-              {/* <div className={styles.box_flex_left_text}>
-                <Subtitle color="white">Guadalajara</Subtitle>
-                <Paragraph color="white">
-                  1010 Avenue of the Moon New York, NY 10018 US.
-                </Paragraph>
-                <Paragraph color="white">+032 3456 7890</Paragraph>
-                <Paragraph color="white"> Business@moontheme.net</Paragraph>
-              </div> */}
             </div>
             <div className={styles.box_flex_right}>
               <Paragraph color="white">CONTACTO</Paragraph>
@@ -47,23 +62,26 @@ export default function Home() {
                 Contáctanos
               </Title>
               <div className={styles.form}>
-                <div className={styles.input_box_full}>
-                  <input type="text" name="name" placeholder="Name" />
-                </div>
-                <div className={styles.input_box_half}>
-                  <input type="email" name="email" placeholder="Email" />
-                </div>
-                <div className={styles.input_box_half}>
-                  <input type="text" name="phone" placeholder="Phone" />
-                </div>
-                <div className={styles.input_box_full}>
-                  <textarea name="text" placeholder="Your message"></textarea>
-                </div>
-              </div>
-              <div className={styles.btnform}>
-                <Link href="#">
-                  <Button>CONTÁCTANOS</Button>
-                </Link>
+                <form onSubmit={sendEmail} ref={form}>
+                  <div className={styles.input_box_full}>
+                    <input type="text" name="name" placeholder="Name" />
+                  </div>
+                  <div className={styles.input_box_half}>
+                    <input type="email" name="email" placeholder="Email" />
+                  </div>
+                  <div className={styles.input_box_half}>
+                    <input type="text" name="phone" placeholder="Phone" />
+                  </div>
+                  <div className={styles.input_box_full}>
+                    <textarea
+                      name="message"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <div className={styles.btnform}>
+                    <button type="submit">Enviar</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

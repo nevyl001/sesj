@@ -5,8 +5,33 @@ import Button from "../UI/Button";
 import Paragraph from "../UI/Paragraph";
 import Subtitle from "../UI/Subtitle";
 import Title from "../UI/Title";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("hola");
+
+    emailjs
+      .sendForm(
+        "vannelo",
+        "template_k0c39kb",
+        form.current,
+        "GWoEfazLvcexVN1vn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -20,20 +45,12 @@ const Footer = () => {
                     Contáctanos
                   </Title>
                 </div>
-                <form action="/send-data-here" method="post">
-                  <div className={styles.empresa}>
-                    <input
-                      type="text"
-                      id="empresa"
-                      name="empresa"
-                      placeholder="Empresa"
-                    />
-                  </div>
+                <form onSubmit={sendEmail} ref={form}>
                   <div className={styles.nombre}>
                     <input
                       type="text"
-                      id="nombre"
-                      name="nombre"
+                      id="name"
+                      name="name"
                       placeholder="Nombre"
                     />
                   </div>
@@ -41,8 +58,8 @@ const Footer = () => {
                     <div className={styles.tel}>
                       <input
                         type="text"
-                        id="telefono"
-                        name="telefono"
+                        id="phone"
+                        name="phone"
                         placeholder="Telefono"
                       />
                     </div>
@@ -56,9 +73,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className={styles.contact_boton}>
-                    <Link type="submit" href="#">
-                      <Button type="green"> ENVIAR</Button>
-                    </Link>
+                    <button type="submit">Enviar</button>
                   </div>
                 </form>
               </div>
@@ -99,7 +114,7 @@ const Footer = () => {
                   </Paragraph>
                 </div>
               </div>
-              <div className={styles.footer_right}>
+              {/* <div className={styles.footer_right}>
                 <Subtitle color="black">Email Newsletters</Subtitle>
                 <Paragraph color="black">Suscríbete al Newsleter</Paragraph>
                 <div className={styles.newsletter_input}>
@@ -112,81 +127,10 @@ const Footer = () => {
                   <button>SUSCRÍBETE</button>
                 </div>
                 <div className={styles.email}></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        {/* <div className={styles.space}>
-          <div className={styles.footer_space}></div>
-        </div>
-        <div className={styles.footer_down}>
-          <div className={styles.container}>
-            <div className={styles.flex_footer_down}>
-              <div className={styles.foo_left}>
-                <Link href="#">
-                  <a className={styles.link}>Privacy Policy</a>
-                </Link>
-                <Link href="#">
-                  <a className={styles.link}>Terms and Conditions</a>
-                </Link>
-                <Link href="#">
-                  <a className={styles.link}>Help </a>
-                </Link>
-                <Link href="#">
-                  <a className={styles.link}>Partners</a>
-                </Link>
-              </div>
-              <div className={styles.foo_right}>
-                <Link href="https://www.facebook.com">
-                  <a target="_blank" rel="noreferrer">
-                    <Image
-                      alt="facebook"
-                      src="/img/facebook-svgrepo-com.svg"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                </Link>
-                <a
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    alt="twitter"
-                    src="/img/gorjeo.png"
-                    width={25}
-                    height={25}
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    alt="instagram"
-                    src="/img/instagram.png"
-                    width={25}
-                    height={25}
-                  />
-                </a>
-                <a
-                  href="https://www.youtube.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    alt="youtube"
-                    src="/img/youtube.png"
-                    width={25}
-                    height={25}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </footer>
   );
