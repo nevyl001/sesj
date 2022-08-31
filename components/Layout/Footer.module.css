@@ -34,6 +34,14 @@
   padding: 10px;
 }
 
+.contact_boton button {
+  border: 1px solid #003e1d;
+}
+.contact_boton button:hover {
+  background-color: #007b3a;
+  border: 1px solid white;
+}
+
 .contact_right {
   padding-top: 100px;
   padding-left: 100px;

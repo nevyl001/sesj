@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className={styles.contact_boton}>
-                    <button type="submit">Enviar</button>
+                    <Button type="submit">Enviar</Button>
                   </div>
                 </form>
               </div>
