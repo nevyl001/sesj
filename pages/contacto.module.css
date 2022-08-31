@@ -89,10 +89,9 @@
   width: 50%;
 }
 
-.box_flex_left h2{
+.box_flex_left h2 {
   padding-top: 50px;
 }
-
 
 .box_flex_right {
   width: 50%;
@@ -178,7 +177,7 @@
   min-height: 100px;
 }
 
-.btnform{
+.btnform {
   padding-top: 25px;
 }
 
@@ -200,5 +199,9 @@
   .input_box_half {
     grid-column: span 2;
     padding-right: 10px;
+  }
+  .form {
+    padding-top: 10px;
+    display: block;
   }
 }
