@@ -79,7 +79,7 @@ export default function Home() {
                     ></textarea>
                   </div>
                   <div className={styles.btnform}>
-                    <button type="submit">Enviar</button>
+                    <Button type="submit">Enviar</Button>
                   </div>
                 </form>
               </div>
