@@ -12,18 +12,17 @@ export default function Home() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("hola");
 
     emailjs
       .sendForm(
-        "vannelo",
-        "template_k0c39kb",
+        "service_95y2ufq",
+        "template_qwgm1fo",
         form.current,
-        "GWoEfazLvcexVN1vn"
+        "1Dg3aFKjyBpMhLfFG"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Mensaje enviado con éxito")
         },
         (error) => {
           console.log(error.text);
