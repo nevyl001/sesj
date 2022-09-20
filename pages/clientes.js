@@ -66,8 +66,8 @@ export default function Clientes() {
                   <div className={styles.header_p}>
                     <Paragraph color="white">
                       Desde el inicio de operaciones de esta prestigiosa planta
-                      prestamos el servicio integral de administración de
-                      residuos.
+                      en 2018 prestamos el servicio integral de administración
+                      de residuos.
                     </Paragraph>
                   </div>
                 </div>
@@ -92,7 +92,8 @@ export default function Clientes() {
                   <div className={styles.header_p}>
                     <Paragraph color="white">
                       Tenemos relación comercial de más de 20 años con esta
-                      importante planta, servicios ambientales e industriales.
+                      importante planta, donde les brindamos servicios
+                      ambientales e industriales.
                     </Paragraph>
                   </div>
                   <div className={styles.header_title}>

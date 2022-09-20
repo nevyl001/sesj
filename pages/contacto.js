@@ -22,7 +22,7 @@ export default function Home() {
       )
       .then(
         (result) => {
-          alert("Mensaje enviado con éxito")
+          alert("Mensaje enviado con éxito");
         },
         (error) => {
           console.log(error.text);
