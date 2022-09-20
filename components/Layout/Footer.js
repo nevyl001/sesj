@@ -23,14 +23,13 @@ const Footer = () => {
       )
       .then(
         (result) => {
-          alert("Mensaje enviado con éxito")
+          alert("Mensaje enviado con éxito");
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
-
 
   return (
     <footer className={styles.footer}>
@@ -72,6 +71,16 @@ const Footer = () => {
                       />
                     </div>
                   </div>
+
+                  <div className={styles.mensaje}>
+                    <input
+                      type="textarea"
+                      id="msj"
+                      name="mensaje"
+                      placeholder="Tu Mensaje"
+                    />
+                  </div>
+
                   <div className={styles.contact_boton}>
                     <Button type="submit">Enviar</Button>
                   </div>

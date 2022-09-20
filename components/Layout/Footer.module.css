@@ -22,6 +22,14 @@
   opacity: 1;
   border-style: none;
 }
+.contact .mensaje {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact .mensaje input {
+  padding: 20px 10px;
+}
+
 .inps {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -161,7 +169,7 @@
   }
   .contact input {
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background: #f1f8fc 0% 0% no-repeat padding-box;
     border-radius: 23px;
     opacity: 1;
