@@ -272,7 +272,7 @@ export default function Home() {
                       calidad de sus servicios es excelente y hemos estado
                       satisfechos con la calidad del servicio. ”
                     </Paragraph>
-                    <Subtitle color="black">COORDINADOR WV PUEBLA</Subtitle>
+                    <Subtitle color="black">COORDINADOR VW PUEBLA</Subtitle>
                   </div>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">

@@ -173,7 +173,8 @@ export default function Home() {
                         los ámbitos de mi vida ya que las exigencias del día a
                         día siempre sacan lo mejor de mí, aquí sigo aprendiendo
                         y creciendo como persona, algo muy relevante es que me
-                        doy cuenta que el trabajo en equipo
+                        doy cuenta que el trabajo en equipo es el camino al
+                        éxito.
                       </Paragraph>
                     </div>
                   </div>
@@ -429,7 +430,7 @@ export default function Home() {
                   className={styles.box_acordion_item_trigger}
                   onClick={showHandler.bind({}, 3)}
                 >
-                  <div className={styles.title}>ISO REPSE</div>
+                  <div className={styles.title}>REPSE</div>
                 </div>
                 <div className={styles.box_acordion_item_content}>
                   <Paragraph color="gray">
