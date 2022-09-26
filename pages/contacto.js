@@ -6,6 +6,7 @@ import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Fragment, useRef } from "react";
 import emailjs from "emailjs-com";
+import Menu from "../components/Layout/Menu";
 
 export default function Home() {
   const form = useRef();
@@ -32,6 +33,7 @@ export default function Home() {
 
   return (
     <Fragment>
+      <Menu />
       <div className={styles.head}>
         <div className={styles.container}>
           <div className={styles.header_ti}>

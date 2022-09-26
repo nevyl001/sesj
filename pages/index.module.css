@@ -15,7 +15,7 @@
 }
 .head_video .line {
   width: 100%;
-  margin-top: -100px;
+  margin-top: -50px;
 }
 .section {
   background: linear-gradient(180deg, #39b44a 0%, #208d2e 100%);
@@ -259,9 +259,11 @@
 
 .head_video {
   position: relative;
+  overflow: hidden;
+  font-size: 0;
 }
 .head_video .video {
-  width: 100%;
+  width: 120%;
   position: absolute;
   z-index: 1;
 }

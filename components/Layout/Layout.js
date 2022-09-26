@@ -31,7 +31,6 @@ function Layout(props) {
         {/* <meta property="og:url" content="https://sud777.com.mx/"></meta>
         <meta property="og:type" content="website" /> */}
       </Head>
-      <Menu />
       <main className={classes.main}>{props.children}</main>
       <Footer />
     </div>

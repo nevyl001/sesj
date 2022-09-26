@@ -6,6 +6,7 @@ import Paragraph from "../components/UI/Paragraph";
 import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Fragment, useEffect, useState } from "react";
+import Menu from "../components/Layout/Menu";
 
 export default function Clientes() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -35,6 +36,7 @@ export default function Clientes() {
 
   return (
     <Fragment>
+      <Menu />
       <div className={styles.head}>
         <div className="container">
           <div className={styles.header_ti}>

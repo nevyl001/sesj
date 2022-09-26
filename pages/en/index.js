@@ -1,14 +1,14 @@
 import Link from "next/link";
-import styles from "./index.module.css";
+import styles from "../index.module.css";
 import Image from "next/image";
-import Button from "../components/UI/Button";
-import Paragraph from "../components/UI/Paragraph";
-import Subtitle from "../components/UI/Subtitle";
-import Title from "../components/UI/Title";
+import Button from "../../components/UI/Button";
+import Paragraph from "../../components/UI/Paragraph";
+import Subtitle from "../../components/UI/Subtitle";
+import Title from "../../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
-import Menu from "../components/Layout/Menu";
+import MenuEn from "../../components/Layout/Menu-en";
 
 export default function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <main>
-      <Menu />
+      <MenuEn />
       {showVideo && (
         <div className={styles.hidden_overlay}>
           <div ref={wrapperRef} className={styles.video_box}>
@@ -73,16 +73,17 @@ export default function Home() {
                 </button>
               </div>
               <Title size="big" color="white" align="left">
-                Somos una empresa líder en servicios logísticos, industriales y
-                de
+                SESJ is a leading company in logistics, industrial, and waste
                 <br />
-                administracion de residuos.
+                management services. administracion de residuos.
               </Title>
               <Paragraph color="white">
-                Ofrecemos a nuestros clientes estrategias eficientes e
-                innovadoras, estando comprometidos con el cumplimiento legal en
-                materia ambiental, seguridad y calidad para beneficio de
-                nuestros clientes y la sociedad.
+                We offer our customers effective, efficient, and innovative
+                strategies. We at SESJ are committed to meeting and exceeding
+                all environmental, safety, and quality regulations for the
+                benefit of our customers and society. Our top priority is to
+                make a positive impact on both our customers and the
+                environment.
               </Paragraph>
             </div>
           </div>
@@ -100,9 +101,9 @@ export default function Home() {
       <div className={styles.section}>
         <div className="container">
           <div className={styles.section1}>
-            <Subtitle color="white">LAS MEJORES SOLUCIONES</Subtitle>
+            <Subtitle color="white">The best solutions</Subtitle>
             <Title size="medium" color="white" align="left">
-              Nuestros Servicios
+              OUR SERVICES
             </Title>
           </div>
           <div className={styles.section_card}>
@@ -112,15 +113,17 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-1.jpg)" }}
                 >
-                  <h3>Servicios Ambientales</h3>
+                  <h3>Environmental Services</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Gestión integral de residuos peligrosos, de manejo especial y
-                  scrap.<br></br>
-                  Consultoría Ambiental.<br></br>
+                  Waste management of hazardous waste, non-hazardous waste, and
+                  scrap.
+                  <br></br>
+                  Environmental Consulting.
+                  <br></br>
                 </div>
               </div>
             </div>
@@ -130,17 +133,22 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-2.jpg)" }}
                 >
-                  <h3>Servicios industriales</h3>
+                  <h3>Industrial Services</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Limpieza industrial, corporativa, residencial.<br></br>
-                  Limpieza de altura y espacios confinados.<br></br>
-                  Mantenimiento y conservación integral de naves industriales,
-                  edificios corporativo y residencias.<br></br>
-                  Jardinería.
+                  Industrial, corporate, and residential cleaning.
+                  <br></br>
+                  Cleaning of interior and exterior of high-rise buildings.
+                  <br></br>
+                  Cleaning of high-altitude, specialized, and confined spaces.
+                  <br></br>
+                  Comprehensive maintenance, janitorial services, and general
+                  upkeep of industrial buildings, corporate buildings, and
+                  residences. <br></br>
+                  Gardening services.
                 </div>
               </div>
             </div>
@@ -150,23 +158,23 @@ export default function Home() {
                   className={styles.item_image}
                   style={{ backgroundImage: "url(/img/new-service-3.jpg)" }}
                 >
-                  <h3>Residuos Industriales</h3>
+                  <h3>Industrial Waste</h3>
                 </div>
               </div>
               <div className={styles.hidden_content}>
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
-                  Tratamiento y reciclado de residuos.
+                  Waste treatment and recycling.
                   <br />
-                  Compra venta de residuos ferrosos y de manejo especial.
+                  Purchase and sale of ferrous waste and non-hazardous waste.
                   <br />
-                  Desmantelamiento de autos.
+                  Car dismantling and secure disposal.
                   <br />
-                  Detonación de elementos pirotécnicos.
+                  Detonation of pyrotechnic elements.
                   <br />
-                  Reciclaje y aprovechamiento de residuos ferrosos.
+                  Use and recycling of ferrous waste.
                   <br />
-                  Reciclaje de solvente.
+                  Solvent recycling.
                 </div>
               </div>
             </div>
@@ -178,17 +186,15 @@ export default function Home() {
           <div className={styles.section3}>
             <div className={styles.somos}>
               <Title size="medium" color="white" align="center">
-                SESJ ofrece servicios integrales que brindan soluciones
-                especificas a sus clientes
+                SESJ offers comprehensive, tailored solutions to its customers
               </Title>
               <Paragraph color="white">
-                Nuestros servicios son robustos, eficientes y seguros enfocados
-                en la
-                <br /> mejora continua para beneficio de nuestros clientes
+                Our services are efficient, robust, safe, and focused on
+                <br /> continuous improvement for the benefit of our customers
               </Paragraph>
             </div>
             <Link href="/contacto">
-              <Button>CONTÁCTANOS</Button>
+              <Button> Contact Us</Button>
             </Link>
           </div>
         </div>

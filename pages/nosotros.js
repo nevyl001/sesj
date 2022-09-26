@@ -5,6 +5,7 @@ import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Menu from "../components/Layout/Menu";
 
 export default function Home() {
   const showHandler = (item) => {
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <main>
+      <Menu />
       <div className={styles.head}>
         <div className="container">
           <div className={styles.header}>

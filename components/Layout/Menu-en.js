@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 
-function Menu() {
+function MenuEn() {
   const [submenuIsActive, setSubmenuIsActive] = useState(false);
   const [menuMovilEstaActivo, ponerMenuMovilEstaActivo] = useState(false);
 
@@ -62,18 +62,18 @@ function Menu() {
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
                   >
-                    NOSOTROS
+                    ABOUT US
                   </a>
                 </Link>
                 <a className={styles.link} onMouseEnter={submenuActiveHandler}>
-                  SERVICIOS
+                  SERVICES
                 </a>
                 <Link href="/clientes">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
                   >
-                    CLIENTES
+                    CLIENTS
                   </a>
                 </Link>
                 <Link href="/contacto">
@@ -81,15 +81,15 @@ function Menu() {
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
                   >
-                    CONTACTO
+                    CONTACT
                   </a>
                 </Link>
-                <Link href="/en/">
+                <Link href="/">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
                   >
-                    ENGLISH
+                    ESPAÑOL
                   </a>
                 </Link>
               </div>
@@ -192,21 +192,21 @@ function Menu() {
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
               >
-                NOSOTROS
+                ABOUT US
               </a>
             </Link>
             <a
               className={styles.link}
               onClick={menuMovilManejadorDeClickInactivo}
             >
-              SERVICIOS
+              SERVICES
             </a>
             <Link href="/clientes">
               <a
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
               >
-                CLIENTES
+                CLIENTS
               </a>
             </Link>
             <Link href="/contacto">
@@ -214,7 +214,7 @@ function Menu() {
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
               >
-                CONTACTO
+                CONTACT
               </a>
             </Link>
           </div>
@@ -224,4 +224,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MenuEn;

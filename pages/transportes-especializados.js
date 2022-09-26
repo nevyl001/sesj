@@ -8,6 +8,7 @@ import Title from "../components/UI/Title";
 import { Fragment } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Menu from "../components/Layout/Menu";
 
 const HEADER_IMAGES = [
   {
@@ -100,6 +101,7 @@ export default function ServiciosEspecializados() {
 
   return (
     <Fragment>
+      <Menu />
       <section className={styles.section_1}>
         <div className="container">
           <div className={styles.title}>
