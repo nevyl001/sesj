@@ -140,14 +140,15 @@ export default function Home() {
                 <div className={styles.separador}></div>
                 <div className={styles.item_text}>
                   Industrial, corporate, and residential cleaning.
-                  <br></br>
+                  <br />
                   Cleaning of interior and exterior of high-rise buildings.
-                  <br></br>
+                  <br />
                   Cleaning of high-altitude, specialized, and confined spaces.
-                  <br></br>
+                  <br />
                   Comprehensive maintenance, janitorial services, and general
                   upkeep of industrial buildings, corporate buildings, and
-                  residences. <br></br>
+                  residences.
+                  <br />
                   Gardening services.
                 </div>
               </div>
@@ -258,9 +259,9 @@ export default function Home() {
         <div className="container">
           <div className={styles.clients_inner}>
             <div className={styles.clients_text}>
-              <Subtitle color="black">CLIENTES</Subtitle>
+              <Subtitle color="black">Customers</Subtitle>
               <Title size="small" color="black" align="left">
-                Lo que dicen los clientes
+                What our Customers say
               </Title>
             </div>
             <div className={styles.carousel}>
@@ -275,22 +276,24 @@ export default function Home() {
                 <div className={styles.clients_card}>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
-                      “Hemos trabajado con SESJ por muchos años y nos han dado
-                      soluciones efectivas, en tiempo y con la mejor actitud. La
-                      calidad de sus servicios es excelente y hemos estado
-                      satisfechos con la calidad del servicio. ”
+                      “We have worked with SESJ for many years, and they have
+                      given us effective solutions, on time and with the best
+                      attitude. The quality of their services is excellent, and
+                      we have always been satisfied with the work they have
+                      done.”
                     </Paragraph>
-                    <Subtitle color="black">COORDINADOR VW PUEBLA</Subtitle>
+                    <Subtitle color="black">VW COORDINATOR, PUEBLA</Subtitle>
                   </div>
                   <div className={styles.clients_card1}>
                     <Paragraph color="black">
-                      “Los procesos que maneja SESJ son muy delicados y en estos
-                      años que he trabajado con ellos estoy tranquilo ya que sus
-                      procesos son realizados de una manera profesional y
-                      segura. SESJ tiene una buena reputación y se refleja en la
-                      gran calidad de los servicios que tienen con nosotros.”
+                      “The processes that SESJ handles are hazardous and
+                      precise, and in the years that I have worked with them I
+                      have remained confident, since their work is carried out
+                      in a professional and safe manner. SESJ has a good
+                      reputation, and it is reflected in the high quality of the
+                      services they provide us with.”
                     </Paragraph>
-                    <Subtitle color="black">COORDINADOR VW SILAO</Subtitle>
+                    <Subtitle color="black">VW WOORDINATOR, SILAO</Subtitle>
                   </div>
                 </div>
                 {/* <div className={styles.clients_card}>

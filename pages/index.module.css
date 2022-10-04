@@ -46,7 +46,7 @@
   height: 250px;
 }
 .section_card_item:hover {
-  height: 400px;
+  height: 420px;
   transition-duration: 0.4s;
 }
 .section_card_item h3 {
