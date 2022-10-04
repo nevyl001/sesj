@@ -49,7 +49,7 @@ function MenuEn() {
                 </div>
               </div>
               <div className={styles.menu_desktop_right}>
-                <Link href="/">
+                <Link href="/en">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
@@ -57,7 +57,7 @@ function MenuEn() {
                     HOME
                   </a>
                 </Link>
-                <Link href="/nosotros">
+                <Link href="/en/nosotros">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
