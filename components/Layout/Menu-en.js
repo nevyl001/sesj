@@ -68,7 +68,7 @@ function MenuEn() {
                 <a className={styles.link} onMouseEnter={submenuActiveHandler}>
                   SERVICES
                 </a>
-                <Link href="/clientes">
+                <Link href="/en/clientes">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
@@ -76,7 +76,7 @@ function MenuEn() {
                     CLIENTS
                   </a>
                 </Link>
-                <Link href="/contacto">
+                <Link href="/en/contacto">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
