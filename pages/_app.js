@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Layout from "../components/Layout/Layout";
 
 function MyApp({ Component, pageProps, ...appProps }) {
-  if ([`/contacto`].includes(appProps.router.pathname))
+  if ([`/contacto`, `/en/contacto`].includes(appProps.router.pathname))
     return <Component {...pageProps} />;
 
   return (
