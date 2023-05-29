@@ -81,6 +81,9 @@
   padding: 100px 20px;
   background-color: white;
 }
+.section4 .space_sec4 {
+  margin-bottom: 50px;
+}
 .content4 {
   display: flex;
   align-items: center;
@@ -231,6 +234,9 @@
     width: 90%;
     margin: 0 auto;
     display: block;
+  }
+  .section4 .content4_down {
+    width: 90%;
   }
   .content4 {
     display: block;
