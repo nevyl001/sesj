@@ -290,8 +290,8 @@ export default function Home() {
                 <Paragraph color="black">
                   Ofrecer servicios integrales de administración de limpieza,
                   mantenimiento en general y administración de residuos de
-                  manejo especial y peligrosos de la mas alta calidad, conforme
-                  al marco regulatorio y requerimientos del cliente.
+                  manejo especial y peligrosos, conforme al marco regulatorio y
+                  requerimientos de nuestras partes interesadas.
                 </Paragraph>
               </div>
               <div className={styles.content_right_text}>
@@ -300,9 +300,8 @@ export default function Home() {
                 </Title>
                 <Paragraph color="black">
                   Ser la mejor opción en los servicios de limpieza,
-                  mantenimiento en general y administración de residuos. Dando
-                  soluciones especificas y eficientes mediante procesos robustos
-                  para la tranquilidad de nuestros clientes.
+                  mantenimiento en general y administración de residuos,
+                  generando confianza y seguridad a nuestras partes interesadas.
                 </Paragraph>
               </div>
               <div className={styles.content_right_text}>
@@ -312,28 +311,62 @@ export default function Home() {
                 <li>Integridad</li>
                 <li>Calidad</li>
                 <li>Respeto y equidad</li>
-                <li>Enfoque al cliente y a las excelencia</li>
-                <li>Eficiencia</li>
+                <li>Enfoque al cliente y a la excelencia.</li>
               </div>
             </div>
           </div>
           <div className={styles.content4_down}>
             <div className={styles.content4_down_title}>
               <Title size="small" color="black" align="left">
-                Política
+                POLÍTICA DE CALIDAD,MEDIO AMBIENTE, SEGURIDAD Y SALUD EN EL
+                TRABAJO
               </Title>
             </div>
             <div className={styles.content4_down_text}>
               <Paragraph color="black">
-                Contamos con un equipo altamente competitivo; comprometidos con
-                la calidad, la protección del medio ambiente, la prevención de
-                la contaminación y el uso sostenible de los recursos para
-                mejorar el desempeño ambiental.
+                Somos una empresa especializada en servicios integrales, con un
+                equipo altamente competitivo; comprometida con la calidad, la
+                protección del medio ambiente, la prevención de la contaminación
+                y el uso sostenible de los recursos, para mejorar el desempeño
+                ambiental. Promoviendo una cultura de seguridad y salud laboral,
+                para proporcionar condiciones de trabajo seguras y saludables,
+                para la prevención de lesiones y deterioro de la salud en el
+                trabajo; así como, para eliminar los peligros y reducir los
+                riesgos en el trabajo. Estamos comprometidos con la mejora
+                continua de los procesos y de nuestro Sistema de Gestión
+                Integral; a través de la consulta y participación de los
+                trabajadores. Cumpliendo siempre con los requisitos legales y
+                otros requisitos aplicables.
+              </Paragraph>
+            </div>
+          </div>
+          <div className={styles.space_sec4}></div>
+
+          <div className={styles.content4_down}>
+            <div className={styles.content4_down_title}>
+              <Title size="small" color="black" align="left">
+                OBJETIVOS DE CALIDAD,MEDIO AMBIENTE,SEGURIDAD Y SALUD EN EL
+                TRABAJO
+              </Title>
+            </div>
+            <div className={styles.content4_down_text}>
+              <Paragraph color="black">
+                La dirección de SESJ establece los objetivos del Sistema de
+                Gestión Integral de Calidad, Medio Ambiente, Seguridad y Salud
+                en el Trabajo:
               </Paragraph>
               <Paragraph color="black">
-                Estamos comprometidos con la mejora continua de los procesos y
-                de nuestro Sistema de Gestión Integral. Cumpliendo siempre con
-                los requisitos legales y otros requisitos aplicables.
+                1. Asegurar la sustentabilidad financiera.
+              </Paragraph>
+              <Paragraph color="black">
+                2. Mejorar la calidad e impacto ambiental de los servicios.
+              </Paragraph>
+              <Paragraph color="black">
+                3. Desarrollar y capacitar a los colaboradores.
+              </Paragraph>
+              <Paragraph color="black">
+                4. Promover, mantener y mejorar las condiciones de seguridad y
+                salud en el trabajo.
               </Paragraph>
             </div>
           </div>
