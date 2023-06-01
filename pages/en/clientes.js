@@ -7,6 +7,7 @@ import Subtitle from "../../components/UI/Subtitle";
 import Title from "../../components/UI/Title";
 import { Fragment, useEffect, useState } from "react";
 import MenuEn from "../../components/Layout/Menu-en";
+import Footeren from "../../components/Layout/Footeren";
 
 export default function Clientes() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,7 +42,7 @@ export default function Clientes() {
         <div className="container">
           <div className={styles.header_ti}>
             <Title size="big" color="white" align="left">
-              Clientes
+              Customers
             </Title>
           </div>
           <div className={styles.box_flex}>
@@ -237,6 +238,7 @@ export default function Clientes() {
           </div>
         </div>
       </div>
+      <Footeren />
     </Fragment>
   );
 }

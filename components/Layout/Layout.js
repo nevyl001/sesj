@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Menu from "./Menu";
 import Footer from "./Footer";
 import classes from "./Layout.module.css";
 
@@ -28,11 +27,8 @@ function Layout(props) {
           property="og:description"
           content="Estamos comprometidos con el cumplimiento legal en materia ambiental, seguridad y calidad para la proteccion del medio ambiente, de nuestros colaboradores y sociedad."
         ></meta>
-        {/* <meta property="og:url" content="https://sud777.com.mx/"></meta>
-        <meta property="og:type" content="website" /> */}
       </Head>
       <main className={classes.main}>{props.children}</main>
-      <Footer />
     </div>
   );
 }

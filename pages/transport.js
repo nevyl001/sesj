@@ -8,8 +8,8 @@ import Title from "../components/UI/Title";
 import { Fragment } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Menu from "../components/Layout/Menu";
-import Footer from "../components/Layout/Footer";
+import Footeren from "../components/Layout/Footeren";
+import MenuEn from "../components/Layout/Menu-en";
 
 const HEADER_IMAGES = [
   {
@@ -102,12 +102,12 @@ export default function ServiciosEspecializados() {
 
   return (
     <Fragment>
-      <Menu />
+      <MenuEn />
       <section className={styles.section_1}>
         <div className="container">
           <div className={styles.title}>
             <Title size="medium" color="black" align="left">
-              Transportes Especializados de Residuos
+              Specialized Waste Transport
             </Title>
           </div>
           <div className={styles.box_tabs}>
@@ -117,7 +117,7 @@ export default function ServiciosEspecializados() {
                 onClick={tabClickHandler}
                 id="tab_1"
               >
-                TIPO DE TRANSPORTE
+                TYPE OF TRANSPORT
               </div>
             </div>
             <div className={styles.content}>
@@ -126,20 +126,21 @@ export default function ServiciosEspecializados() {
                 id="tab_content_tab_1"
               >
                 <div className={styles.sub}>
-                  <Subtitle color="black">
+                  {/* <Subtitle color="black">
                     Caja seca, plataforma, roll-off, tolvas, etc.
-                  </Subtitle>
+                  </Subtitle> */}
                 </div>
                 <div className={styles.text}>
                   <Paragraph>
-                    Servicios Especializados Silviano Julio cuenta con la
-                    flotilla adecuada, así como la capacitación necesaria para
-                    los transportistas, además de contar con las autorizaciones
-                    requeridas para este proceso. Recolectamos los residuos
-                    desde su punto de generación y los llevamos con seguridad a
-                    su destino final. Contamos con más de 20 años de experiencia
-                    en el transporte de residuos peligrosos a diversos destinos
-                    finales en toda la República Mexicana.
+                    Dry box, platform, roll-off, hoppers, etc. Servicios
+                    Especializados Silviano Julio has a highly trained team of
+                    carriers, a first-rate fleet, and all of the required
+                    authorizations to effectively transport all types of goods.
+                    Waste is collected from its origination point and taken
+                    securely to its final destination. We have more than 20
+                    years of experience in the transportation of hazardous waste
+                    to various final destinations throughout the Mexican
+                    Republic.
                   </Paragraph>
                 </div>
               </div>
@@ -169,7 +170,7 @@ export default function ServiciosEspecializados() {
           })}
         </Carousel>
       </div>
-      <Footer />
+      <Footeren />
     </Fragment>
   );
 }

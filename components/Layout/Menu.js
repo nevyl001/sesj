@@ -84,7 +84,7 @@ function Menu() {
                     CONTACTO
                   </a>
                 </Link>
-                <Link href="/en/">
+                <Link href="/en">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}

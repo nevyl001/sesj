@@ -5,8 +5,8 @@ import Title from "../components/UI/Title";
 import { Fragment } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Menu from "../components/Layout/Menu";
-import Footer from "../components/Layout/Footer";
+import MenuEn from "../components/Layout/Menu-en";
+import Footeren from "../components/Layout/Footeren";
 
 const HEADER_IMAGES = [
   {
@@ -99,12 +99,12 @@ export default function ServiciosEspecializados() {
 
   return (
     <Fragment>
-      <Menu />
+      <MenuEn />
       <section className={styles.section_1}>
         <div className="container">
           <div className={styles.title}>
             <Title size="big" color="black" align="left">
-              Servicios Ambientales
+              Environmental Services
             </Title>
           </div>
           <div className={styles.box_tabs}>
@@ -114,7 +114,7 @@ export default function ServiciosEspecializados() {
                 onClick={tabClickHandler}
                 id="tab_1"
               >
-                GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS, DE MANEJO ESPECIAL Y
+                INTEGRAL MANAGEMENT OF HAZARDOUS WASTE, SPECIAL MANAGEMENT, AND
                 SCRAP
               </div>
               <div
@@ -122,7 +122,7 @@ export default function ServiciosEspecializados() {
                 onClick={tabClickHandler}
                 id="tab_2"
               >
-                CONSULTORIA AMBIENTAL
+                ENVIRONMENTAL CONSULTING
               </div>
               {/* <div
                 className={styles.tabs_item}
@@ -144,35 +144,36 @@ export default function ServiciosEspecializados() {
                 </div>
                 <div className={styles.text}>
                   <Paragraph>
-                    El servicio integral de residuos en sitio incluye
-                    administración, transporte y destino final. Administramos
-                    residuos de manejo especial (RME), peligrosos (RP) y scrap.
-                    Realizamos la recolección, segregación, desarmado, triturado
-                    y compactado de los diferentes materiales; embarcándolos en
-                    transporte especializado y autorizado hacia destinos de
-                    acopio o finales con permisos y autorizaciones Federales y/o
-                    Estatales, según corresponda .SESJ cuenta con la flotilla
-                    adecuada, así como la capacitación necesaria para los
-                    transportistas, además de contar con las autorizaciones
-                    requeridas para este proceso. Recolectamos los residuos
-                    desde su punto de generación y los llevamos con seguridad a
-                    su destino final. Contamos con más de 20 años de experiencia
-                    en el transporte de residuos peligrosos a diversos destinos
-                    finales en toda la República Mexicana.
+                    The integral on-site waste service includes administration,
+                    transportation and disposal. SESJ manages special handling
+                    waste (SHW), hazardous waste (HW), and scrap. We carry out
+                    the collection, segregation, disassembly, crushing, and
+                    compacting of the different materials. As required, SESJ
+                    also ships these in specialized and authorized
+                    transportation to storage and/or final destinations with
+                    Federal and/or State permits and authorizations, as
+                    appropriate. SESJ has the appropriate fleet, the necessary
+                    training for drivers, and the authorizations required for
+                    this process. We collect waste from its point of generation
+                    and take it safely to its final destination. SESJ has more
+                    than 20 years of experience in the transportation of
+                    hazardous waste to various final destinations throughout the
+                    Mexican Republic.
                   </Paragraph>
                   <Paragraph>
-                    En paralelo a la gestión física de materiales documentamos:
-                    tipo de materiales, cantidad, elaboración de los manifiestos
-                    y documentación necesaria para cumplir con las leyes y
-                    reglamentos en la materia. Aportamos nuestra experiencia
-                    para cumplir las metas ambientales en materia de residuos de
-                    nuestros clientes, participamos en auditorías de autoridades
-                    y/o certificadoras. Somos especialistas en Gestión de
-                    residuos y en los procesos SCRAP; cumpliendo el calendario
-                    fiscal de destrucciones y las necesidades propias del
-                    cliente para que los productos dañados se destruyan
-                    inhabilitándolos para su comercialización y se pueda
-                    disponer como residuos: RME, RP, según sus propiedades.
+                    Along with the physical handling of materials, SESJ also
+                    manages the administrative aspect: documentation of the type
+                    and quantity of materials, preparation of manifests, and any
+                    other documentation necessary to comply with the applicable
+                    laws and regulations. We contribute our experience to
+                    meeting the environmental goals with regards to our
+                    customers’ waste, as well as participating in audits of
+                    authorities and/or certifiers. At SESJ, we are specialists
+                    in waste management and SCRAP processes. We are experienced
+                    in complying with the fiscal calendar for destruction, and
+                    the customer's own needs so that damaged products are
+                    destroyed, rendered unable to be resold, and disposed of as
+                    waste (SWH or HW, according to their properties).
                   </Paragraph>
                 </div>
               </div>
@@ -184,14 +185,14 @@ export default function ServiciosEspecializados() {
                 </div>
                 <div className={styles.text}>
                   <Paragraph>
-                    Nuestros servicios incluyen: Planes de Manejo, Información
-                    para el Alta como Generador, información para la Cédula de
-                    Operación Anual COA para presentar a las autoridades.
-                    Análisis de Riesgos, análisis CRETIB. Elaboramos estrategias
-                    y planes para lograr Cero relleno sanitario, cero
-                    confinamiento, incremento de reciclaje y reuso de residuos.
-                    Asistimos y asesoramos al cliente en auditorías ambientales,
-                    de certificación así como gubernamentales.
+                    Our services include: Management Plans, Information for
+                    Registration as a Generator, Information for the Annual
+                    Operation Certificate (COA) to present to the authorities,
+                    Risk Analysis, and CRETIB analysis. We develop strategies
+                    and plans to increase the reuse and recycling of waste with
+                    a zero-landfill, zero-confinement approach. We assist and
+                    advise the client in environmental, certification, and
+                    government audits.
                   </Paragraph>
                 </div>
               </div>
@@ -249,7 +250,7 @@ export default function ServiciosEspecializados() {
           })}
         </Carousel>
       </div>
-      <Footer />
+      <Footeren />
     </Fragment>
   );
 }

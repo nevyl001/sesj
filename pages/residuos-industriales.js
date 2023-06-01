@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Menu from "../components/Layout/Menu";
+import Footer from "../components/Layout/Footer";
 
 const HEADER_IMAGES = [
   {
@@ -295,6 +296,7 @@ export default function ResiduosIndustriales() {
           })}
         </Carousel>
       </div>
+      <Footer />
     </Fragment>
   );
 }
