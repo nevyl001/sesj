@@ -9,6 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
 import MenuEn from "../../components/Layout/Menu-en";
+import Footeren from "../../components/Layout/Footeren";
 
 export default function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -62,7 +63,7 @@ export default function Home() {
             <div className={styles.header}>
               <div className={styles.video_btn} onClick={showVideoHandler}>
                 <button>
-                  Ver video
+                  Watch video
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -350,6 +351,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footeren />
     </main>
   );
 }

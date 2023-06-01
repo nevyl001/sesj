@@ -57,7 +57,7 @@ function MenuEn() {
                     HOME
                   </a>
                 </Link>
-                <Link href="/en/nosotros">
+                <Link href="/en/aboutus">
                   <a
                     className={styles.link}
                     onMouseEnter={submenuInactiveHandler}
@@ -100,16 +100,16 @@ function MenuEn() {
                   className={styles.menu_bottom_item}
                   onClick={submenuInactiveHandler}
                 >
-                  <Link href="/servicios-especializados">
+                  <Link href="/enviromental-services">
                     <a className={styles.link}>
                       <div className={styles.link_title}>
-                        SERVICIOS AMBIENTALES
+                        ENVIRONMENTAL SERVICES
                       </div>
                       <div className={styles.link_text}>
-                        GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS, DE MANEJO
-                        ESPECIAL Y SCRAP
+                        INTEGRAL MANAGEMENT OF HAZARDOUS WASTE, NON-HAZARDOUS
+                        WASTE, AND SCRAP
                         <br></br>
-                        CONSULTORIA AMBIENTAL
+                        ENVIRONMENTAL CONSULTING
                         <br></br>
                       </div>
                     </a>
@@ -119,15 +119,16 @@ function MenuEn() {
                   className={styles.menu_bottom_item}
                   onClick={submenuInactiveHandler}
                 >
-                  <Link href="/residuos-industriales">
+                  <Link href="/industrial-services">
                     <a className={styles.link}>
                       <div className={styles.link_title}>
-                        SERVICIOS INDUSTRIALES
+                        INDUSTRIAL SERVICES
                       </div>
                       <div className={styles.link_text}>
-                        SERVICIOS INDUSTRIALES
+                        INDUSTRIAL SERVICES
                         <br></br>
-                        RESIDUOS INDUSTRIALES<br></br>
+                        INDUSTRIAL WASTE
+                        <br></br>
                       </div>
                     </a>
                   </Link>
@@ -136,13 +137,13 @@ function MenuEn() {
                   className={styles.menu_bottom_item}
                   onClick={submenuInactiveHandler}
                 >
-                  <Link href="/transportes-especializados">
+                  <Link href="/transport">
                     <a className={styles.link}>
                       <div className={styles.link_title}>
-                        TRANSPORTES ESPECIALIZADOS
+                        SPECIALIZED TRANSPORTATION
                       </div>
                       <div className={styles.link_text}>
-                        DIFERENTES TIPOS DE TRANSPORTE
+                        DIFFERENT TYPES OF TRANSPORTATION
                       </div>
                     </a>
                   </Link>

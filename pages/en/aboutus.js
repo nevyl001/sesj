@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "../nosotros.module.css";
 import Image from "next/image";
-import Button from "../../components/UI/Button";
 import Paragraph from "../../components/UI/Paragraph";
 import Subtitle from "../../components/UI/Subtitle";
 import Title from "../../components/UI/Title";
@@ -9,6 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
 import MenuEn from "../../components/Layout/Menu-en";
+import Footeren from "../../components/Layout/Footeren";
 
 export default function Home() {
   const showHandler = (item) => {
@@ -503,6 +503,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footeren />
     </main>
   );
 }

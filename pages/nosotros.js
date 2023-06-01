@@ -6,6 +6,7 @@ import Title from "../components/UI/Title";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Menu from "../components/Layout/Menu";
+import Footer from "../components/Layout/Footer";
 
 export default function Home() {
   const showHandler = (item) => {
@@ -532,6 +533,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

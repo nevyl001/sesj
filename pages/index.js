@@ -9,6 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
 import Menu from "../components/Layout/Menu";
+import Footer from "../components/Layout/Footer";
 
 export default function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -341,6 +342,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

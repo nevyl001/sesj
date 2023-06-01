@@ -7,6 +7,7 @@ import Subtitle from "../components/UI/Subtitle";
 import Title from "../components/UI/Title";
 import { Fragment, useEffect, useState } from "react";
 import Menu from "../components/Layout/Menu";
+import Footer from "../components/Layout/Footer";
 
 export default function Clientes() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -234,6 +235,7 @@ export default function Clientes() {
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 }
