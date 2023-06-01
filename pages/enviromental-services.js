@@ -171,9 +171,10 @@ export default function ServiciosEspecializados() {
                     authorities and/or certifiers. At SESJ, we are specialists
                     in waste management and SCRAP processes. We are experienced
                     in complying with the fiscal calendar for destruction, and
-                    the customer's own needs so that damaged products are
-                    destroyed, rendered unable to be resold, and disposed of as
-                    waste (SWH or HW, according to their properties).
+                    the customer&apos;'&apos;s own needs so that damaged
+                    products are destroyed, rendered unable to be resold, and
+                    disposed of as waste (SWH or HW, according to their
+                    properties).
                   </Paragraph>
                 </div>
               </div>
