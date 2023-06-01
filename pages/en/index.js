@@ -75,7 +75,7 @@ export default function Home() {
               <Title size="big" color="white" align="left">
                 SESJ is a leading company in logistics, industrial, and waste
                 <br />
-                management services. administracion de residuos.
+                management services.
               </Title>
               <Paragraph color="white">
                 We offer our customers effective, efficient, and innovative
