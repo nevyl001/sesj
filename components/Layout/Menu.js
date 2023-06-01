@@ -201,6 +201,21 @@ function Menu() {
             >
               SERVICIOS
             </a>
+            <Link href="/servicios-especializados">
+              <a className={styles.link}>
+                <li>SERVICIOS AMBIENTALES</li>
+              </a>
+            </Link>
+            <Link href="/residuos-industriales">
+              <a className={styles.link}>
+                <li> SERVICIOS INDUSTRIALES</li>
+              </a>
+            </Link>
+            <Link href="/transportes-especializados">
+              <a className={styles.link}>
+                <li> TRANSPORTES ESPECIALIZADOS</li>
+              </a>
+            </Link>
             <Link href="/clientes">
               <a
                 className={styles.link}
@@ -215,6 +230,11 @@ function Menu() {
                 onClick={menuMovilManejadorDeClickInactivo}
               >
                 CONTACTO
+              </a>
+            </Link>
+            <Link href="/en">
+              <a className={styles.link} onMouseEnter={submenuInactiveHandler}>
+                ENGLISH
               </a>
             </Link>
           </div>
