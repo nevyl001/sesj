@@ -188,7 +188,7 @@ function MenuEn() {
                 HOME
               </a>
             </Link>
-            <Link href="/nosotros">
+            <Link href="/en/aboutus">
               <a
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
@@ -202,7 +202,22 @@ function MenuEn() {
             >
               SERVICES
             </a>
-            <Link href="/clientes">
+            <Link href="/enviromental-services">
+              <a className={styles.link}>
+                <li>ENVIRONMENTAL SERVICES</li>
+              </a>
+            </Link>
+            <Link href="/industrial-services">
+              <a className={styles.link}>
+                <li>INDUSTRIAL SERVICES</li>
+              </a>
+            </Link>
+            <Link href="/transport">
+              <a className={styles.link}>
+                <li>SPECIALIZED TRANSPORTATION</li>
+              </a>
+            </Link>
+            <Link href="/en/clientes">
               <a
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
@@ -210,12 +225,17 @@ function MenuEn() {
                 CLIENTS
               </a>
             </Link>
-            <Link href="/contacto">
+            <Link href="/en/contacto">
               <a
                 className={styles.link}
                 onClick={menuMovilManejadorDeClickInactivo}
               >
                 CONTACT
+              </a>
+            </Link>
+            <Link href="/">
+              <a className={styles.link} onMouseEnter={submenuInactiveHandler}>
+                ESPAÑOL
               </a>
             </Link>
           </div>
